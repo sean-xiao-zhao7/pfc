@@ -1,5 +1,9 @@
+// general
 @use "fonts"as fonts;
+
+// main top menu
 @use "menu/top_links";
+@use "menu/main_menu";
 
 *,
 html,
@@ -11,4 +15,8 @@ body {
 html,
 body {
     margin: 0;
+}
+
+ul {
+    list-style: none;
 }

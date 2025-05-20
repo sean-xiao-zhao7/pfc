@@ -1,0 +1,53 @@
+@use '../fonts'as fonts;
+
+#main-menu-contents-container {
+    display: flex;
+    padding: .5rem 12rem;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+
+    #main-menu-logo {
+        img {
+            height: 142px;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+        display: block;
+        margin-right: 2rem;
+        font-size: 1.3rem;
+        font-weight: 300;
+        font-family: fonts.$pfc-menu-captial;
+    }
+
+    .button-menu {
+        a {
+            font-size: 1.2rem;
+        }
+    }
+
+    #main-menu-right-contents {
+        display: flex;
+    }
+
+    ul {
+        display: flex;
+        padding: 0;
+
+        .sub-menu {
+            display: none;
+            position: absolute;
+        }
+    }
+
+    .hover-trigger-menu-item:hover+.sub-menu {
+        display: block;
+    }
+
+    #main-menu-right-contents {}
+}
