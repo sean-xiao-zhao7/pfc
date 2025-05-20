@@ -1,0 +1,8 @@
+@use "fonts"as fonts;
+
+*,
+html,
+body {
+    background-color: white;
+    font-family: fonts.$pfc-text;
+}
