@@ -25,14 +25,9 @@
         font-family: fonts.$pfc-menu-captial;
     }
 
-    .button-menu {
-        a {
-            font-size: 1.2rem;
-        }
-    }
-
     #main-menu-right-contents {
         display: flex;
+        align-items: center;
     }
 
     ul {

@@ -1,0 +1,20 @@
+@use '../colors'as colors;
+@use '../fonts'as fonts;
+
+.main-button {
+    padding: 1rem;
+    cursor: pointer;
+    border: 0;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 300;
+    font-family: fonts.$pfc-menu-captial;
+}
+
+.orange-color-button {
+    background-color: colors.$pfc-orange;
+}
+
+.blue-color-button {
+    background-color: colors.$pfc-blue;
+}

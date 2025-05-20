@@ -5,6 +5,9 @@
 @use "menu/top_links";
 @use "menu/main_menu";
 
+// buttons
+@use "buttons/main-button.scss";
+
 *,
 html,
 body {

@@ -1,3 +1,5 @@
+import MainButton from "~/components/buttons/MainButton";
+
 export default function MainMenuContents() {
     return (
         <div id="main-menu-contents-container">
@@ -176,7 +178,7 @@ export default function MainMenuContents() {
                             href="https://prisonfellowship.ca/get-involved/"
                             className="hover-trigger-menu-item"
                         >
-                            Get Involved
+                            <MainButton text="Get Involved" color="orange" />
                         </a>
                         <ul className="sub-menu">
                             <li id="menu-item-37352">
@@ -218,7 +220,7 @@ export default function MainMenuContents() {
                             href="https://prisonfellowship.ca/donate-online/"
                             className="hover-trigger-menu-item"
                         >
-                            Donate
+                            <MainButton text="Donate" color="blue" />
                         </a>
                         <ul className="sub-menu">
                             <li id="menu-item-1264">
