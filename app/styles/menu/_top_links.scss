@@ -1,0 +1,26 @@
+#top-links-container {
+    background-color: black;
+    padding: .5rem 12rem;
+    display: flex;
+    justify-content: space-between;
+
+    ul,
+    li,
+    a {
+        background-color: black;
+        text-decoration: none;
+        color: white;
+        font-size: 0.8rem;
+        list-style: none;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+
+        li {
+            margin-right: 1rem
+        }
+    }
+}

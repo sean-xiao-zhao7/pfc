@@ -1,8 +1,14 @@
 @use "fonts"as fonts;
+@use "menu/top_links";
 
 *,
 html,
 body {
     background-color: white;
     font-family: fonts.$pfc-text;
+}
+
+html,
+body {
+    margin: 0;
 }
