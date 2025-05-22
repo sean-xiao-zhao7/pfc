@@ -38,6 +38,21 @@
         .sub-menu {
             display: none;
             position: absolute;
+            padding: 1.5rem;
+            z-index: 100;
+            box-shadow: 1px 1px 1px whitesmoke;
+            border: solid 1px whitesmoke;
+            border-top: 0;
+
+            li:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+
+            li {
+                a {
+                    text-transform: capitalize;
+                }
+            }
         }
     }
 
