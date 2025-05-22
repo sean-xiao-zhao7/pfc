@@ -1,1 +1,36 @@
 @use './hero_carousel';
+@use '../fonts'as fonts;
+
+main#home {
+    #intro {
+        padding: 2rem 12rem;
+        display: flex;
+        align-items: center;
+
+        .info {
+            h1 {
+                font-family: fonts.$pfc-cursive;
+                font-size: 2.5rem;
+            }
+
+            p {
+                font-weight: 300;
+                font-size: 1.1rem;
+            }
+
+            img {
+                width: 5rem;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        iframe {
+            width: 250rem;
+            height: 20rem;
+            border: solid 1px whitesmoke;
+            box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+            margin-left: 2rem;
+        }
+    }
+}
