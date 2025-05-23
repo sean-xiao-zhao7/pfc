@@ -127,7 +127,36 @@ export default function Home() {
 
                 {/* Testimony / RESTORATIVE JUSTICE */}
 
-                <div id="testimony"></div>
+                <div id="testimony">
+                    <div className="left">
+                        <h1>Testimony</h1>
+                        <p>
+                            “Prison Fellowship Canada is playing a spiritual
+                            mentoring role in my life and is helping me to be
+                            honest, truthful, lawful, conscientious, generous,
+                            compassionate and more Christ centred day by day.”
+                        </p>
+                        <span>– An inmate in Dorchester, New Brunswick.</span>
+                    </div>
+                    <div className="right">
+                        <img
+                            src="/images/home/photos/restorative-justice.jpg"
+                            alt="restorative justice"
+                        />
+                        <div>
+                            <h1>RESTORATIVE JUSTICE</h1>
+                            <p>
+                                Restorative justice takes brokenness and works
+                                to make it whole. Only when individuals are
+                                restored and healed can the cycle of crime end.
+                                PFC believes in the crucial work of restorative
+                                justice and we offer multiple programs that help
+                                heal all those affected by crime.
+                            </p>
+                            <PfcButton text="Learn more" color="black" />
+                        </div>
+                    </div>
+                </div>
 
                 {/* SIGN UP TO STAY UP TO DATE */}
 
