@@ -1,9 +1,17 @@
+import { FaPhoneAlt } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
+import { FaFacebookF, FaXTwitter, FaInstagram } from "react-icons/fa6";
+
 export default function TopLinks() {
     return (
         <div id="top-links-container">
             <ul>
-                <li>1.844.618.5867</li>
                 <li>
+                    <FaPhoneAlt />
+                    1.844.618.5867
+                </li>
+                <li>
+                    <IoMdMail />
                     <a href="mailto:info@prisonfellowship.ca">
                         info@prisonfellowship.ca
                     </a>
@@ -13,7 +21,7 @@ export default function TopLinks() {
                         href="https://www.facebook.com/PrisonFellowshipCanada/"
                         className="icon"
                     >
-                        Facebook
+                        <FaFacebookF />
                     </a>
                 </li>
                 <li className="et-social-icon et-social-twitter">
@@ -21,7 +29,7 @@ export default function TopLinks() {
                         href="https://twitter.com/pfcpath2change"
                         className="icon"
                     >
-                        X
+                        <FaXTwitter />
                     </a>
                 </li>
                 <li className="et-social-icon et-social-instagram">
@@ -29,7 +37,7 @@ export default function TopLinks() {
                         href="https://www.instagram.com/prisonfellowship_canada/?hl=en"
                         className="icon"
                     >
-                        Instagram
+                        <FaInstagram />
                     </a>
                 </li>
             </ul>

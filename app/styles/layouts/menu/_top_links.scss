@@ -1,6 +1,8 @@
+@use '../../fonts'as fonts;
+
 #top-links-container {
     background-color: black;
-    padding: .5rem 12rem;
+    padding: .6rem 12rem;
     display: flex;
     justify-content: space-between;
 
@@ -10,9 +12,23 @@
         background-color: black;
         text-decoration: none;
         color: white;
-        font-size: 0.8rem;
+        font-size: .9rem;
         list-style: none;
+        font-family: fonts.$pfc-menu-capital;
     }
+
+    li,
+    a {
+        display: flex;
+        align-items: center;
+
+        svg {
+            background-color: black;
+            margin-right: .2rem;
+        }
+    }
+
+
 
     ul {
         margin: 0;
