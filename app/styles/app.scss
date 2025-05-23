@@ -1,9 +1,10 @@
 // general
 @use "fonts"as fonts;
 
-// main top menu
-@use "menu/top_links";
-@use "menu/main_menu";
+// main layout
+@use "layouts/menu/top_links";
+@use "layouts/menu/main_menu";
+@use "layouts/footer";
 
 // buttons
 @use "buttons/main-button.scss";

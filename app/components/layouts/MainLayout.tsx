@@ -1,5 +1,6 @@
 import { Links, Meta, Scripts, ScrollRestoration } from "react-router";
 import MainTopMenu from "./menu/MainTopMenu";
+import Footer from "./Footer";
 
 export default function MainLayout({
     children,
@@ -20,6 +21,7 @@ export default function MainLayout({
             <body>
                 <MainTopMenu />
                 {children}
+                <Footer />
                 <ScrollRestoration />
                 <Scripts />
             </body>

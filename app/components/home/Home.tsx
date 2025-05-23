@@ -54,7 +54,7 @@ export default function Home() {
                             <h2>The 2025 Angel Tree Camping Season is here!</h2>
                         </div>
                         <div className="inner">
-                            <div class="fluid-width-video-wrapper">
+                            <div className="fluid-width-video-wrapper">
                                 <iframe
                                     title="Stacey Campbell - Prison Fellowship Canada"
                                     data-src="https://www.youtube.com/embed/qERUHQ2kXlc?feature=oembed"
@@ -62,7 +62,6 @@ export default function Home() {
                                     referrerPolicy="strict-origin-when-cross-origin"
                                     allowFullScreen
                                     src="https://www.youtube.com/embed/qERUHQ2kXlc?feature=oembed"
-                                    class=" lazyloaded"
                                     data-load-mode="1"
                                     name="fitvid1"
                                 ></iframe>

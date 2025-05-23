@@ -1,0 +1,19 @@
+#footer {
+    background-color: black;
+    padding: 2rem 12rem;
+
+    ul {
+        padding: 0;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: inherit;
+
+        li,
+        a,
+        span {
+            background-color: inherit;
+            text-decoration: none;
+            color: rgb(105, 105, 105)
+        }
+    }
+}
