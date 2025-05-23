@@ -224,7 +224,6 @@ export default function Home() {
                     </h1>
                     <PfcButton text="GET INVOLVED" color="orange" />
                     <PfcButton text="DONATE HERE" color="blue" />
-                    <p>© 2025 Prison Fellowship Canada | All Rights Reserved</p>
                 </div>
             </div>
         </main>

@@ -1,6 +1,7 @@
 export default function Footer() {
     return (
         <div id="footer">
+            <p>© 2025 Prison Fellowship Canada | All Rights Reserved</p>
             <ul className="et-social-icons">
                 <li className="et-social-icon et-social-facebook">
                     <a
