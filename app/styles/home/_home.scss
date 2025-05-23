@@ -36,7 +36,7 @@ main#home {
         }
 
         #happening {
-            padding: 3rem 12rem;
+            padding: 2rem 12rem;
 
             &>div {
                 display: flex;
@@ -53,6 +53,20 @@ main#home {
 
                 h2 {
                     font-size: 1.1rem;
+                }
+            }
+        }
+
+        #programs {
+            padding: 2rem 12rem;
+
+            .inner {
+                display: grid;
+                grid-template-columns: repeat(3, min-content);
+                justify-content: space-between;
+
+                img {
+                    width: 20rem;
                 }
             }
         }

@@ -79,7 +79,50 @@ export default function Home() {
 
                 <div id="programs">
                     <h1>PROGRAMS</h1>
-                    <div className="inner"></div>
+                    <div className="inner">
+                        <div>
+                            <img
+                                src="/images/home/photos/in-cell-study.png"
+                                alt="in cell study"
+                            />
+                            <h2>prisoners</h2>
+                            <p>
+                                PFC’s prison programs focus on providing
+                                life-changing hope and skills to incarcerated
+                                individuals through a variety of programs we
+                                offer.
+                            </p>
+                            <PfcButton text="Learn more" color="black" />
+                        </div>
+                        <div>
+                            <img
+                                src="/images/home/photos/group-study.jpg"
+                                alt="in cell study"
+                            />
+                            <h2>ex-prisoners</h2>
+                            <p>
+                                People released from prison with a support
+                                system experience a more secure sense of
+                                reintegration. PFC’s Bridgcare program is
+                                designed to provide this essential support.
+                            </p>
+                            <PfcButton text="Learn more" color="black" />
+                        </div>
+                        <div>
+                            <img
+                                src="/images/home/photos/group-kids.jpg"
+                                alt="in cell study"
+                            />
+                            <h2>PRISONERS' FAMILIES</h2>
+                            <p>
+                                PFC’s Angel Tree programs are designed to create
+                                connections with children and their incarcerated
+                                parents and community while also helping to
+                                reduce their anxiety.
+                            </p>
+                            <PfcButton text="Learn more" color="black" />
+                        </div>
+                    </div>
                 </div>
 
                 {/* Testimony / RESTORATIVE JUSTICE */}
