@@ -77,7 +77,10 @@ export default function Home() {
 
                 {/* PROGRAMS */}
 
-                <div id="programs"></div>
+                <div id="programs">
+                    <h1>PROGRAMS</h1>
+                    <div className="inner"></div>
+                </div>
 
                 {/* Testimony / RESTORATIVE JUSTICE */}
 
