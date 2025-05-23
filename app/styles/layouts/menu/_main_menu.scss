@@ -19,11 +19,13 @@
         text-decoration: none;
         text-transform: uppercase;
         color: black;
-        display: block;
+        display: flex;
         margin-right: 2rem;
         font-size: 1.3rem;
         font-weight: 300;
         font-family: fonts.$pfc-menu-capital;
+        align-items: center;
+        justify-content: center;
     }
 
     #main-menu-right-contents {

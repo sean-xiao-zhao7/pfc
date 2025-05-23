@@ -1,4 +1,6 @@
 import MainButton from "~/components/buttons/MainButton";
+import { FaSearch } from "react-icons/fa";
+import { MdKeyboardArrowDown } from "react-icons/md";
 
 export default function MainMenuContents() {
     return (
@@ -10,7 +12,7 @@ export default function MainMenuContents() {
                 <ul className="nav">
                     <li className="hover-trigger-menu-item">
                         <a href="https://prisonfellowship.ca/about-us/">
-                            About PFC
+                            About PFC <MdKeyboardArrowDown />
                         </a>
                         <ul className="sub-menu">
                             <li id="menu-item-68">
@@ -55,7 +57,7 @@ export default function MainMenuContents() {
                             href="https://prisonfellowship.ca/pfc-programs/"
                             className="hover-trigger-menu-item"
                         >
-                            Our Programs
+                            Our Programs <MdKeyboardArrowDown />
                         </a>
                         <ul className="sub-menu">
                             <li id="menu-item-830">
@@ -135,7 +137,7 @@ export default function MainMenuContents() {
                             href="https://prisonfellowship.ca/resources/"
                             className="hover-trigger-menu-item"
                         >
-                            Resources
+                            Resources <MdKeyboardArrowDown />
                         </a>
                         <ul className="sub-menu">
                             <li id="menu-item-64">
@@ -234,7 +236,9 @@ export default function MainMenuContents() {
                     </li>
                 </ul>
                 <ul>
-                    <li>Search</li>
+                    <li>
+                        <FaSearch />
+                    </li>
                 </ul>
             </div>
         </div>
