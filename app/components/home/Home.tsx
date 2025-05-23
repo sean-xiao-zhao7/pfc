@@ -190,7 +190,29 @@ export default function Home() {
 
                 {/* triple columns */}
 
-                <div id="triple-columns"></div>
+                <div id="triple-columns">
+                    <div>
+                        <img
+                            src="/images/home/photos/prayer-calendar.png"
+                            alt="in cell study"
+                        />
+                        <h2>PRAYER CALENDAR</h2>
+                    </div>
+                    <div>
+                        <img
+                            src="/images/home/photos/annual-reports.jpg"
+                            alt="in cell study"
+                        />
+                        <h2>ANNUAL REPORTS</h2>
+                    </div>
+                    <div>
+                        <img
+                            src="/images/home/photos/recommended-reading.jpg"
+                            alt="in cell study"
+                        />
+                        <h2>RECOMMENDED READING</h2>
+                    </div>
+                </div>
 
                 {/* get involved */}
 

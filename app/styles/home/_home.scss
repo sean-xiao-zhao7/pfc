@@ -99,5 +99,17 @@ main#home {
             background-color: colors.$pfc-orange;
             display: flex;
         }
+
+        #triple-columns {
+            background-color: whitesmoke;
+            padding: 2rem 12rem;
+            display: grid;
+            grid-template-columns: repeat(3, min-content);
+            justify-content: space-between;
+
+            img {
+                width: 20rem;
+            }
+        }
     }
 }
