@@ -46,11 +46,31 @@ export default function Home() {
                 <div id="happening">
                     <h1>Happening Now at PFC</h1>
                     <div>
-                        <div>
+                        <div className="inner">
                             <img
                                 src="/images/home/hero/item-1-kid.png"
                                 alt="angel tree camping"
                             />
+                            <h2>The 2025 Angel Tree Camping Season is here!</h2>
+                        </div>
+                        <div className="inner">
+                            <div class="fluid-width-video-wrapper">
+                                <iframe
+                                    title="Stacey Campbell - Prison Fellowship Canada"
+                                    data-src="https://www.youtube.com/embed/qERUHQ2kXlc?feature=oembed"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerPolicy="strict-origin-when-cross-origin"
+                                    allowFullScreen
+                                    src="https://www.youtube.com/embed/qERUHQ2kXlc?feature=oembed"
+                                    class=" lazyloaded"
+                                    data-load-mode="1"
+                                    name="fitvid1"
+                                ></iframe>
+                            </div>
+                            <h2>
+                                LEARN MORE ABOUT PFC’S PARTNERSHIP WITH THE 700
+                                CLUB
+                            </h2>
                         </div>
                     </div>
                 </div>

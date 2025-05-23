@@ -36,7 +36,25 @@ main#home {
         }
 
         #happening {
-            padding: 2rem 12rem;
+            padding: 3rem 12rem;
+
+            &>div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .inner {
+                text-align: center;
+
+                img {
+                    width: 20rem;
+                }
+
+                h2 {
+                    font-size: 1.1rem;
+                }
+            }
         }
     }
 }
