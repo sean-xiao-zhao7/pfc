@@ -1,5 +1,6 @@
 @use './hero_carousel';
 @use '../fonts'as fonts;
+@use '../colors'as colors;
 
 main#home {
     #after-carousel-contents-container {
@@ -91,6 +92,12 @@ main#home {
                     margin-right: 3rem;
                 }
             }
+        }
+
+        #sign-up {
+            padding: 2rem 12rem;
+            background-color: colors.$pfc-orange;
+            display: flex;
         }
     }
 }

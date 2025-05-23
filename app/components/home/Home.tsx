@@ -160,7 +160,33 @@ export default function Home() {
 
                 {/* SIGN UP TO STAY UP TO DATE */}
 
-                <div id="sign-up"></div>
+                <div id="sign-up">
+                    <h1>
+                        SIGN UP TO STAY UP TO DATE ON WHAT’S HAPPENING WITH
+                        PRISON FELLOWSHIP Canada
+                    </h1>
+                    <form>
+                        <input
+                            type="text"
+                            id="first-name"
+                            name="first-name"
+                            placeholder="First Name"
+                        />
+                        <input
+                            type="text"
+                            id="last-name"
+                            name="last-name"
+                            placeholder="Last Name"
+                        />
+                        <input
+                            type="text"
+                            id="email"
+                            name="email"
+                            placeholder="Email"
+                        />
+                        <button type="submit">Sign up</button>
+                    </form>
+                </div>
 
                 {/* triple columns */}
 
