@@ -9,10 +9,7 @@ export default function MainMenuContents() {
             <div id="main-menu-right-contents">
                 <ul className="nav">
                     <li className="hover-trigger-menu-item">
-                        <a
-                            href="https://prisonfellowship.ca/about-us/"
-                            className="hover-trigger-menu-item"
-                        >
+                        <a href="https://prisonfellowship.ca/about-us/">
                             About PFC
                         </a>
                         <ul className="sub-menu">
@@ -53,7 +50,7 @@ export default function MainMenuContents() {
                             </li>
                         </ul>
                     </li>
-                    <li id="menu-item-1847">
+                    <li className="hover-trigger-menu-item">
                         <a
                             href="https://prisonfellowship.ca/pfc-programs/"
                             className="hover-trigger-menu-item"
@@ -133,7 +130,7 @@ export default function MainMenuContents() {
                             </li>
                         </ul>
                     </li>
-                    <li id="menu-item-62">
+                    <li className="hover-trigger-menu-item">
                         <a
                             href="https://prisonfellowship.ca/resources/"
                             className="hover-trigger-menu-item"
@@ -173,7 +170,7 @@ export default function MainMenuContents() {
                     </li>
                 </ul>
                 <ul className="button-menu">
-                    <li>
+                    <li className="hover-trigger-menu-item">
                         <a
                             href="https://prisonfellowship.ca/get-involved/"
                             className="hover-trigger-menu-item"
@@ -215,7 +212,7 @@ export default function MainMenuContents() {
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <li className="hover-trigger-menu-item">
                         <a
                             href="https://prisonfellowship.ca/donate-online/"
                             className="hover-trigger-menu-item"

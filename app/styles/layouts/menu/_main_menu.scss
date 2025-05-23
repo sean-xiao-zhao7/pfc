@@ -36,13 +36,12 @@
         padding: 0;
 
         .sub-menu {
-            display: none;
+            overflow: hidden;
+            max-height: 0;
             position: absolute;
-            padding: 1.5rem;
             z-index: 100;
-            box-shadow: 1px 1px 1px whitesmoke;
-            border: solid 1px whitesmoke;
-            border-top: 0;
+            transition: max-height 0.15s ease-out;
+            display: block;
 
             li:not(:last-child) {
                 margin-bottom: 1rem;
@@ -54,11 +53,17 @@
                 }
             }
         }
+
+        li.hover-trigger-menu-item:hover .sub-menu {
+            max-height: 50rem;
+            transition: max-height 0.25s ease-in;
+            padding: 1.5rem;
+            box-shadow: 1px 1px 1px whitesmoke;
+            border: solid 1px whitesmoke;
+            border-top: 0;
+            display: block;
+        }
     }
 
-    .hover-trigger-menu-item:hover+.sub-menu {
-        display: block;
-    }
 
-    #main-menu-right-contents {}
 }
