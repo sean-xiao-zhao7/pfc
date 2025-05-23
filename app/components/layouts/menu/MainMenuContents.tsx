@@ -64,7 +64,7 @@ export default function MainMenuContents() {
                                 <a href="https://prisonfellowship.ca/our-programs/prisoners/in-prison-programs/">
                                     In Prison Programs
                                 </a>
-                                <ul className="sub-menu">
+                                <ul>
                                     <li id="menu-item-75">
                                         <a href="https://prisonfellowship.ca/our-programs/prisoners/in-prison-programs/faith-justice/">
                                             Faith &amp; Justice
@@ -81,7 +81,7 @@ export default function MainMenuContents() {
                                 <a href="https://prisonfellowship.ca/our-programs/restorative-justice/">
                                     Restorative Justice
                                 </a>
-                                <ul className="sub-menu">
+                                <ul>
                                     <li id="menu-item-1143">
                                         <a href="https://prisonfellowship.ca/our-programs/restorative-justice/sycamore-tree/">
                                             The Sycamore Tree
@@ -98,7 +98,7 @@ export default function MainMenuContents() {
                                 <a href="https://prisonfellowship.ca/our-programs/in-community-programs/">
                                     In Community Programs
                                 </a>
-                                <ul className="sub-menu">
+                                <ul>
                                     <li id="menu-item-79">
                                         <a href="https://prisonfellowship.ca/our-programs/in-community-programs/bridgecare/">
                                             Bridgecare
