@@ -216,7 +216,17 @@ export default function Home() {
 
                 {/* get involved */}
 
-                <div id="get-involved"></div>
+                <div id="get-involved">
+                    <h1>
+                        This ministry is made possible by the hard work of our
+                        volunteers and the generosity of our supporters. If you
+                        are interested in learning more about how you can get
+                        involved, click below.
+                    </h1>
+                    <PfcButton text="GET INVOLVED" color="orange" />
+                    <PfcButton text="DONATE HERE" color="blue" />
+                    <p>© 2025 Prison Fellowship Canada | All Rights Reserved</p>
+                </div>
             </div>
         </main>
     );
