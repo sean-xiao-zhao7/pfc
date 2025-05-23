@@ -161,8 +161,8 @@ export default function Home() {
 
                 <div id="sign-up">
                     <h1>
-                        SIGN UP TO STAY UP TO DATE ON WHAT’S HAPPENING WITH
-                        PRISON FELLOWSHIP Canada
+                        SIGN UP TO STAY UP TO DATE ON WHAT'S HAPPENING WITH
+                        PRISON FELLOWSHIP CANADA
                     </h1>
                     <form>
                         <input

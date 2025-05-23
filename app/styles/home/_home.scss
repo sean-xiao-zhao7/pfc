@@ -95,9 +95,31 @@ main#home {
         }
 
         #sign-up {
-            padding: 2rem 12rem;
-            background-color: colors.$pfc-orange;
+            padding: 4rem 12rem;
             display: flex;
+
+            &,
+            h1,
+            form {
+                background-color: colors.$pfc-orange;
+            }
+
+            h1 {
+                color: white;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+            }
+
+            input {
+                border: 0;
+                font-size: 1rem;
+                padding: 0.8rem;
+                margin-bottom: 1rem;
+                width: 25rem;
+            }
         }
 
         #triple-columns {
