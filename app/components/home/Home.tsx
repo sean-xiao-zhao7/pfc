@@ -1,3 +1,4 @@
+import MainButton from "../buttons/MainButton";
 import PfcButton from "../buttons/PfcButton";
 import HeroCarousel from "./HeroCarousel";
 
@@ -183,7 +184,11 @@ export default function Home() {
                             name="email"
                             placeholder="Email"
                         />
-                        <button type="submit">Sign up</button>
+                        <MainButton
+                            text="Sign up"
+                            color="black"
+                            type="submit"
+                        />
                     </form>
                 </div>
 
