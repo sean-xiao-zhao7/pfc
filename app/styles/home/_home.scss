@@ -37,7 +37,7 @@ main#home {
         }
 
         #happening {
-            padding: 2rem 12rem;
+            padding: 0rem 12rem;
 
             &>div {
                 display: flex;
@@ -59,7 +59,7 @@ main#home {
         }
 
         #programs {
-            padding: 2rem 12rem;
+            padding: 4rem 12rem;
 
             .inner {
                 display: grid;
@@ -73,7 +73,7 @@ main#home {
         }
 
         #testimony {
-            padding: 2rem 12rem;
+            padding: 4rem 12rem;
             display: grid;
             grid-template-columns: 30% 70%;
             justify-content: center;
@@ -124,18 +124,24 @@ main#home {
 
         #triple-columns {
             background-color: whitesmoke;
-            padding: 2rem 12rem;
+            padding: 4rem 12rem;
             display: grid;
             grid-template-columns: repeat(3, min-content);
             justify-content: space-between;
+            text-align: center;
 
             img {
                 width: 20rem;
             }
+
+            &>div,
+            & h2 {
+                background-color: transparent;
+            }
         }
 
         #get-involved {
-            padding: 2rem 12rem;
+            padding: 4rem 12rem;
         }
     }
 }
