@@ -18,3 +18,36 @@
 .blue-color-button {
     background-color: colors.$pfc-blue;
 }
+
+.black-color-button {
+    background-color: black;
+}
+
+.pfc-button {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    border: 0;
+    padding: 1rem 1.5rem;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: normal;
+
+    cursor: pointer;
+}
+
+.pfc-button-orange {
+    background-color: colors.$pfc-orange;
+}
+
+.pfc-button-blue {
+    background-color: colors.$pfc-blue;
+}
+
+.pfc-button-black {
+    background-image: url('/public/images/graphics/button-background-black.png');
+}

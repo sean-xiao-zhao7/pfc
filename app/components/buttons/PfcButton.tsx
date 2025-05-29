@@ -5,5 +5,5 @@ export default function PfcButton({
     color: string;
     text: string;
 }) {
-    return <button className={`pfc-button-${color}`}>{text}</button>;
+    return <button className={`pfc-button-${color} pfc-button`}>{text}</button>;
 }
