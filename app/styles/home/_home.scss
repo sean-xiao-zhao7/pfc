@@ -37,7 +37,7 @@ main#home {
         }
 
         #happening {
-            padding: 0rem 12rem;
+            padding: 2rem 12rem 0;
 
             &>div {
                 display: flex;
@@ -59,7 +59,7 @@ main#home {
         }
 
         #programs {
-            padding: 4rem 12rem;
+            padding: 3rem 12rem 4rem;
 
             .inner {
                 display: grid;
@@ -73,7 +73,7 @@ main#home {
         }
 
         #testimony {
-            padding: 4rem 12rem;
+            padding: 2rem 12rem 5rem;
             display: grid;
             grid-template-columns: 30% 70%;
             justify-content: center;
@@ -95,8 +95,9 @@ main#home {
         }
 
         #sign-up {
-            padding: 4rem 12rem;
+            padding: 2rem 12rem;
             display: flex;
+            align-items: center;
 
             &,
             h1,
@@ -106,6 +107,9 @@ main#home {
 
             h1 {
                 color: white;
+                font-size: 1.8rem;
+                text-align: center;
+                margin: 0 2rem 1rem;
             }
 
             form {
@@ -124,7 +128,7 @@ main#home {
 
         #triple-columns {
             background-color: whitesmoke;
-            padding: 4rem 12rem;
+            padding: 3rem 12rem 2rem;
             display: grid;
             grid-template-columns: repeat(3, min-content);
             justify-content: space-between;
@@ -141,7 +145,19 @@ main#home {
         }
 
         #get-involved {
-            padding: 4rem 12rem;
+            padding: 4rem 12rem 5rem;
+            text-align: center;
+
+            p {
+                font-size: 1.5rem;
+                font-weight: 300;
+                width: 60%;
+                margin: 0 auto 1.5rem;
+            }
+
+            .pfc-button-orange {
+                margin-right: 1rem;
+            }
         }
     }
 }

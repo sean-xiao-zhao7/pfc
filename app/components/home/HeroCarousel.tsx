@@ -18,7 +18,7 @@ export default function HeroCarousel() {
                         Help us send a prisoner’s child to an accredited
                         Christian day or overnight camp!
                     </p>
-                    <MainButton color="orange" text="READ MORE" />
+                    <MainButton color="orange" text="READ MORE" type="button" />
                 </div>
             </div>
         </div>

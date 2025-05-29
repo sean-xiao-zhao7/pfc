@@ -36,16 +36,17 @@
     background-repeat: no-repeat;
     background-position: center;
     background-blend-mode: normal;
+    background-color: transparent;
 
     cursor: pointer;
 }
 
 .pfc-button-orange {
-    background-color: colors.$pfc-orange;
+    background-image: url('/public/images/graphics/button-background-orange.png');
 }
 
 .pfc-button-blue {
-    background-color: colors.$pfc-blue;
+    background-image: url('/public/images/graphics/button-background-blue.png');
 }
 
 .pfc-button-black {

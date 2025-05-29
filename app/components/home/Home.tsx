@@ -35,7 +35,6 @@ export default function Home() {
                     <iframe
                         src="https://www.youtube.com/embed/CqjnuF1bU_Q"
                         title="Prison Fellowship Canada - Pathway to Change"
-                        frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerPolicy="strict-origin-when-cross-origin"
                         allowFullScreen
@@ -184,11 +183,7 @@ export default function Home() {
                             name="email"
                             placeholder="Email"
                         />
-                        <MainButton
-                            text="Sign up"
-                            color="black"
-                            type="submit"
-                        />
+                        <PfcButton text="Sign up" color="black" type="submit" />
                     </form>
                 </div>
 
@@ -221,12 +216,12 @@ export default function Home() {
                 {/* get involved */}
 
                 <div id="get-involved">
-                    <h1>
+                    <p>
                         This ministry is made possible by the hard work of our
                         volunteers and the generosity of our supporters. If you
                         are interested in learning more about how you can get
                         involved, click below.
-                    </h1>
+                    </p>
                     <PfcButton text="GET INVOLVED" color="orange" />
                     <PfcButton text="DONATE HERE" color="blue" />
                 </div>
