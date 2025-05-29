@@ -1,22 +1,30 @@
-$footer-text: rgb(105, 105, 105);
+@use '../fonts'as fonts;
+$footer-text: rgb(182, 182, 182);
 
 #footer {
     background-color: black;
-    padding: 5rem 12rem;
-    text-align: center;
+    padding: 3rem 12rem;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img,
+    h1 {
+        background-color: transparent;
+        width: 5rem;
+        font-size: 1.5rem;
+    }
 
     p {
         background-color: black;
         color: $footer-text;
         font-size: 1rem;
+        font-family: fonts.$pfc-menu-capital;
     }
 
     ul {
         padding: 0;
-        display: flex;
-        justify-content: center;
         background-color: inherit;
 
         li,
@@ -24,7 +32,18 @@ $footer-text: rgb(105, 105, 105);
         span {
             background-color: inherit;
             text-decoration: none;
-            color: $footer-text
+            color: $footer-text;
+            font-family: fonts.$pfc-menu-capital;
         }
+    }
+
+    .sub-menus-container {
+        padding: 1rem 0;
+        background-color: transparent;
+
+        display: grid;
+        grid-template-columns: repeat(4, max-content);
+        grid-column-gap: 2rem;
+        justify-content: space-evenly;
     }
 }

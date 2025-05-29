@@ -177,7 +177,11 @@ export default function MainMenuContents() {
                             href="https://prisonfellowship.ca/get-involved/"
                             className="hover-trigger-menu-item"
                         >
-                            <MainButton text="Get Involved" color="orange" />
+                            <MainButton
+                                text="Get Involved"
+                                color="orange"
+                                type="button"
+                            />
                         </a>
                         <ul className="sub-menu">
                             <li id="menu-item-37352">

@@ -30,7 +30,11 @@ export default function Home() {
                             We welcome you to join us in seeing lives
                             transformed… those whose whom we serve… and our own…
                         </p>
-                        <PfcButton color="black" text="LEARN MORE" />
+                        <PfcButton
+                            color="black"
+                            text="LEARN MORE"
+                            type="button"
+                        />
                     </div>
                     <iframe
                         src="https://www.youtube.com/embed/CqjnuF1bU_Q"
