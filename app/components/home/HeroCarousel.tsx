@@ -1,12 +1,30 @@
+import { useEffect, useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-
 import MainButton from "../buttons/MainButton";
 import PfcButton from "../buttons/PfcButton";
 
 export default function HeroCarousel() {
+    const itemsSize = 2;
+    const [items, setItems] = useState(["", "shown"]);
+    let currenItemIdx = 0;
+
+    useEffect(() => {
+        setInterval(() => {
+            setItems((items) => {
+                const newItems = [...items];
+                newItems[currenItemIdx] = "";
+                currenItemIdx++;
+                if (currenItemIdx === itemsSize) currenItemIdx = 0;
+                newItems[currenItemIdx] = "shown";
+                console.log(newItems);
+                return newItems;
+            });
+        }, 3000);
+    }, []);
+
     return (
         <div id="hero-carousel-container">
-            <div className="single-carousel-item-container">
+            <div className={"single-carousel-item-container " + items[0]}>
                 <div className="carousel-control left">
                     <FaChevronLeft />
                 </div>
@@ -27,7 +45,7 @@ export default function HeroCarousel() {
                     <MainButton color="orange" text="READ MORE" type="button" />
                 </div>
             </div>
-            <div className="single-carousel-item-container shown">
+            <div className={"single-carousel-item-container " + items[1]}>
                 <div className="carousel-control left">
                     <FaChevronLeft />
                 </div>
