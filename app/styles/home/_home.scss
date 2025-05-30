@@ -37,12 +37,12 @@ main#home {
         }
 
         #happening {
-            padding: 8rem 12rem;
+            padding: 6rem 12rem 9rem;
             background-image: url(/public/images/graphics/button-background-green.png);
             background-repeat: no-repeat;
             background-position-x: center;
             background-position-y: center;
-            background-size: 107% auto;
+            background-size: 95rem auto;
 
             &>div {
                 display: grid;
@@ -55,7 +55,8 @@ main#home {
                 text-transform: uppercase;
                 font-size: 1.5rem;
                 background-color: transparent;
-                color: white
+                color: white;
+                margin-top: 0;
             }
 
             .inner {
@@ -128,14 +129,14 @@ main#home {
         }
 
         #sign-up {
-            padding: 5rem 12rem;
+            padding: 8rem 12rem;
             display: flex;
             align-items: center;
 
             background-image: url(/public/images/graphics/button-background-orange.png);
             background-repeat: no-repeat;
             background-position-x: center;
-            background-size: 100% auto;
+            background-size: 100rem auto;
 
             &,
             h1,
@@ -165,8 +166,12 @@ main#home {
         }
 
         #triple-columns {
-            background-color: whitesmoke;
-            padding: 3rem 12rem 2rem;
+            background-image: url(/public/images/graphics/button-background-blue.png);
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-size: 120rem auto;
+
+            padding: 6rem 12rem 8rem;
             display: grid;
             grid-template-columns: repeat(3, min-content);
             justify-content: space-between;
@@ -179,11 +184,12 @@ main#home {
             &>div,
             & h2 {
                 background-color: transparent;
+                color: white
             }
         }
 
         #get-involved {
-            padding: 3rem 12rem 4rem;
+            padding: 0rem 12rem 4rem;
             text-align: center;
 
             p {
