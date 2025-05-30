@@ -37,11 +37,12 @@ main#home {
         }
 
         #happening {
-            padding: 4rem 12rem 5rem;
-            background-image: url(/public/images/graphics/button-background-black.png);
+            padding: 8rem 12rem;
+            background-image: url(/public/images/graphics/button-background-green.png);
             background-repeat: no-repeat;
             background-position-x: center;
-            background-size: 200rem auto;
+            background-position-y: center;
+            background-size: 107% auto;
 
             &>div {
                 display: grid;
@@ -127,14 +128,19 @@ main#home {
         }
 
         #sign-up {
-            padding: 2rem 12rem;
+            padding: 5rem 12rem;
             display: flex;
             align-items: center;
+
+            background-image: url(/public/images/graphics/button-background-orange.png);
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-size: 100% auto;
 
             &,
             h1,
             form {
-                background-color: colors.$pfc-orange;
+                background-color: transparent;
             }
 
             h1 {
