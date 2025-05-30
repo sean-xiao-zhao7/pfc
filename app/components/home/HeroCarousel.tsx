@@ -22,20 +22,47 @@ export default function HeroCarousel() {
 
                 return { items: newItems, currenItemIdx: newItemIdx };
             });
-        }, 5000);
+        }, 10000);
 
         return () => {
             clearInterval(timer);
         };
     }, []);
 
+    const changeItemHandler = (direction: string) => {
+        setItems((items) => {
+            const newItems = [...items.items];
+
+            newItems[items.currenItemIdx] = "";
+
+            let newItemIdx;
+            if (direction === "next") {
+                newItemIdx = items.currenItemIdx + 1;
+                if (newItemIdx === itemsSize) newItemIdx = 0;
+            } else {
+                newItemIdx = items.currenItemIdx - 1;
+                if (newItemIdx === -1) newItemIdx = itemsSize - 1;
+            }
+
+            newItems[newItemIdx] = "shown";
+
+            return { items: newItems, currenItemIdx: newItemIdx };
+        });
+    };
+
     return (
         <div id="hero-carousel-container">
             <div className={"single-carousel-item-container " + items.items[0]}>
-                <div className="carousel-control left">
+                <div
+                    className="carousel-control left"
+                    onClick={() => changeItemHandler("prev")}
+                >
                     <FaChevronLeft />
                 </div>
-                <div className="carousel-control right">
+                <div
+                    className="carousel-control right"
+                    onClick={() => changeItemHandler("next")}
+                >
                     <FaChevronRight />
                 </div>
                 <img src="/images/home/hero/item-1-kid.png" alt="angel tree" />
@@ -53,10 +80,16 @@ export default function HeroCarousel() {
                 </div>
             </div>
             <div className={"single-carousel-item-container " + items.items[1]}>
-                <div className="carousel-control left">
+                <div
+                    className="carousel-control left"
+                    onClick={() => changeItemHandler("prev")}
+                >
                     <FaChevronLeft />
                 </div>
-                <div className="carousel-control right">
+                <div
+                    className="carousel-control right"
+                    onClick={() => changeItemHandler("next")}
+                >
                     <FaChevronRight />
                 </div>
                 <img src="/images/home/hero/item-2-prison.jpg" alt="prisoner" />
