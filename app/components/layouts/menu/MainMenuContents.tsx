@@ -223,7 +223,11 @@ export default function MainMenuContents() {
                             href="https://prisonfellowship.ca/donate-online/"
                             className="hover-trigger-menu-item"
                         >
-                            <MainButton text="Donate" color="blue" />
+                            <MainButton
+                                text="Donate"
+                                color="blue"
+                                type="button"
+                            />
                         </a>
                         <ul className="sub-menu two-cols one-row">
                             <li id="menu-item-1264">

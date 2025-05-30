@@ -30,11 +30,17 @@ export default function Home() {
                             We welcome you to join us in seeing lives
                             transformed… those whose whom we serve… and our own…
                         </p>
-                        <PfcButton
-                            color="black"
-                            text="LEARN MORE"
-                            type="button"
-                        />
+                        <a
+                            href="https://prisonfellowship.ca/facilitating-transformation/"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <PfcButton
+                                color="black"
+                                text="LEARN MORE"
+                                type="button"
+                            />
+                        </a>
                     </div>
                     <iframe
                         src="https://www.youtube.com/embed/CqjnuF1bU_Q"
@@ -50,13 +56,21 @@ export default function Home() {
                 <div id="happening">
                     <h1>Happening Now at PFC</h1>
                     <div>
-                        <div className="inner">
-                            <img
-                                src="/images/home/hero/item-1-kid.png"
-                                alt="angel tree camping"
-                            />
-                            <h2>The 2025 Angel Tree Camping Season is here!</h2>
-                        </div>
+                        <a
+                            href="https://prisonfellowship.ca/our-programs/in-community-programs/angel-tree/angel-tree-camping/"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            <div className="inner">
+                                <img
+                                    src="/images/home/hero/item-1-kid.png"
+                                    alt="angel tree camping"
+                                />
+                                <h2>
+                                    The 2025 Angel Tree Camping Season is here!
+                                </h2>
+                            </div>
+                        </a>
                         <div className="inner">
                             <div className="fluid-width-video-wrapper">
                                 <iframe
@@ -95,7 +109,13 @@ export default function Home() {
                                 individuals through a variety of programs we
                                 offer.
                             </p>
-                            <PfcButton text="Learn more" color="black" />
+                            <a href="https://prisonfellowship.ca/our-programs/prisoners/in-prison-programs/">
+                                <PfcButton
+                                    text="Learn more"
+                                    color="black"
+                                    type="button"
+                                />
+                            </a>
                         </div>
                         <div>
                             <img
@@ -109,7 +129,13 @@ export default function Home() {
                                 reintegration. PFC’s Bridgcare program is
                                 designed to provide this essential support.
                             </p>
-                            <PfcButton text="Learn more" color="black" />
+                            <a href="https://prisonfellowship.ca/our-programs/in-community-programs/bridgecare/">
+                                <PfcButton
+                                    text="Learn more"
+                                    color="black"
+                                    type="button"
+                                />
+                            </a>
                         </div>
                         <div>
                             <img
@@ -123,7 +149,13 @@ export default function Home() {
                                 parents and community while also helping to
                                 reduce their anxiety.
                             </p>
-                            <PfcButton text="Learn more" color="black" />
+                            <a href="https://prisonfellowship.ca/our-programs/in-community-programs/angel-tree/">
+                                <PfcButton
+                                    text="Learn more"
+                                    color="black"
+                                    type="button"
+                                />
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -156,7 +188,13 @@ export default function Home() {
                                 justice and we offer multiple programs that help
                                 heal all those affected by crime.
                             </p>
-                            <PfcButton text="Learn more" color="black" />
+                            <a href="https://prisonfellowship.ca/our-programs/restorative-justice/">
+                                <PfcButton
+                                    text="Learn more"
+                                    color="black"
+                                    type="button"
+                                />
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -174,18 +212,21 @@ export default function Home() {
                             id="first-name"
                             name="first-name"
                             placeholder="First Name"
+                            required
                         />
                         <input
                             type="text"
                             id="last-name"
                             name="last-name"
                             placeholder="Last Name"
+                            required
                         />
                         <input
                             type="text"
                             id="email"
                             name="email"
                             placeholder="Email"
+                            required
                         />
                         <PfcButton text="Sign up" color="black" type="submit" />
                     </form>
@@ -195,25 +236,31 @@ export default function Home() {
 
                 <div id="triple-columns">
                     <div>
-                        <img
-                            src="/images/home/photos/prayer-calendar.png"
-                            alt="in cell study"
-                        />
-                        <h2>PRAYER CALENDAR</h2>
+                        <a href="https://prisonfellowship.ca/get-involved/prayer-partners/">
+                            <img
+                                src="/images/home/photos/prayer-calendar.png"
+                                alt="in cell study"
+                            />
+                            <h2>PRAYER CALENDAR</h2>
+                        </a>
                     </div>
                     <div>
-                        <img
-                            src="/images/home/photos/annual-reports.jpg"
-                            alt="in cell study"
-                        />
-                        <h2>ANNUAL REPORTS</h2>
+                        <a href="https://prisonfellowship.ca/about-us/our-financials/">
+                            <img
+                                src="/images/home/photos/annual-reports.jpg"
+                                alt="in cell study"
+                            />
+                            <h2>ANNUAL REPORTS</h2>
+                        </a>
                     </div>
                     <div>
-                        <img
-                            src="/images/home/photos/recommended-reading.jpg"
-                            alt="in cell study"
-                        />
-                        <h2>RECOMMENDED READING</h2>
+                        <a href="https://prisonfellowship.ca/resources/books/">
+                            <img
+                                src="/images/home/photos/recommended-reading.jpg"
+                                alt="in cell study"
+                            />
+                            <h2>RECOMMENDED READING</h2>
+                        </a>
                     </div>
                 </div>
 
@@ -226,8 +273,20 @@ export default function Home() {
                         are interested in learning more about how you can get
                         involved, click below.
                     </p>
-                    <PfcButton text="GET INVOLVED" color="orange" />
-                    <PfcButton text="DONATE HERE" color="blue" />
+                    <a href="https://prisonfellowship.ca/get-involved/">
+                        <PfcButton
+                            text="GET INVOLVED"
+                            color="orange"
+                            type="button"
+                        />
+                    </a>
+                    <a href="https://prisonfellowship.ca/donate-online/">
+                        <PfcButton
+                            text="DONATE HERE"
+                            color="blue"
+                            type="button"
+                        />
+                    </a>
                 </div>
             </div>
         </main>

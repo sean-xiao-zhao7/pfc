@@ -75,7 +75,12 @@ main#home {
                     font-weight: 500;
                     color: white;
                     background-color: transparent;
+                    text-transform: uppercase;
                 }
+            }
+
+            a {
+                text-decoration: none;
             }
         }
 
@@ -187,6 +192,17 @@ main#home {
                 background-color: transparent;
                 color: white
             }
+
+            a {
+                text-decoration: none;
+                transition: color .2s;
+
+                &:hover {
+                    h2 {
+                        color: colors.$pfc-orange;
+                    }
+                }
+            }
         }
 
         #get-involved {
@@ -203,6 +219,10 @@ main#home {
 
             .pfc-button-orange {
                 margin-right: 1rem;
+            }
+
+            button {
+                font-size: 1.2rem;
             }
         }
     }

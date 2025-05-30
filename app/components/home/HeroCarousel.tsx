@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import MainButton from "../buttons/MainButton";
 import PfcButton from "../buttons/PfcButton";
 
 export default function HeroCarousel() {
@@ -76,7 +75,17 @@ export default function HeroCarousel() {
                         Help us send a prisoner’s child to an accredited
                         Christian day or overnight camp!
                     </p>
-                    <MainButton color="orange" text="READ MORE" type="button" />
+                    <a
+                        href="https://prisonfellowship.ca/our-programs/in-community-programs/angel-tree/angel-tree-camping"
+                        target="blank"
+                        rel="noopener"
+                    >
+                        <PfcButton
+                            color="orange"
+                            text="READ MORE"
+                            type="button"
+                        />
+                    </a>
                 </div>
             </div>
             <div className={"single-carousel-item-container " + items.items[1]}>
@@ -99,7 +108,17 @@ export default function HeroCarousel() {
                         to end up in prison.
                     </h1>
                     <p>What if you could help change that?</p>
-                    <PfcButton color="orange" text="GIVE NOW" type="button" />
+                    <a
+                        href="https://give.prisonfellowship.ca/open-arms/"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <PfcButton
+                            color="orange"
+                            text="GIVE NOW"
+                            type="button"
+                        />
+                    </a>
                 </div>
             </div>
         </div>
