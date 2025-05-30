@@ -1,3 +1,5 @@
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+
 import MainButton from "../buttons/MainButton";
 import PfcButton from "../buttons/PfcButton";
 
@@ -5,6 +7,12 @@ export default function HeroCarousel() {
     return (
         <div id="hero-carousel-container">
             <div className="single-carousel-item-container">
+                <div className="carousel-control left">
+                    <FaChevronLeft />
+                </div>
+                <div className="carousel-control right">
+                    <FaChevronRight />
+                </div>
                 <img src="/images/home/hero/item-1-kid.png" alt="angel tree" />
                 <div className="single-carousel-inner">
                     <img
@@ -20,6 +28,12 @@ export default function HeroCarousel() {
                 </div>
             </div>
             <div className="single-carousel-item-container shown">
+                <div className="carousel-control left">
+                    <FaChevronLeft />
+                </div>
+                <div className="carousel-control right">
+                    <FaChevronRight />
+                </div>
                 <img src="/images/home/hero/item-2-prison.jpg" alt="prisoner" />
                 <div className="single-carousel-inner right no-image">
                     <h1>
