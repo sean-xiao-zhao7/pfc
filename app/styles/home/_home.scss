@@ -37,21 +37,29 @@ main#home {
         }
 
         #happening {
-            padding: 2rem 12rem 0;
+            padding: 4rem 12rem 5rem;
+            background-image: url(/public/images/graphics/button-background-black.png);
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-size: 200rem auto;
 
             &>div {
                 display: grid;
                 grid-template-columns: repeat(2, calc(50% - 1rem));
                 grid-column-gap: 2rem;
+                background-color: transparent;
             }
 
             h1 {
                 text-transform: uppercase;
                 font-size: 1.5rem;
+                background-color: transparent;
+                color: white
             }
 
             .inner {
                 text-align: center;
+                background-color: transparent;
 
                 img,
                 iframe {
@@ -63,6 +71,8 @@ main#home {
                 h2 {
                     font-size: 1.2rem;
                     font-weight: 500;
+                    color: white;
+                    background-color: transparent;
                 }
             }
         }
