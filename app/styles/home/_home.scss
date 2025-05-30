@@ -37,7 +37,7 @@ main#home {
         }
 
         #happening {
-            padding: 6rem 12rem 9rem;
+            padding: 10rem 12rem 9rem;
             background-image: url(/public/images/graphics/button-background-green.png);
             background-repeat: no-repeat;
             background-position-x: center;
@@ -169,16 +169,17 @@ main#home {
             background-image: url(/public/images/graphics/button-background-blue.png);
             background-repeat: no-repeat;
             background-position-x: center;
-            background-size: 120rem auto;
+            background-size: 110rem auto;
 
-            padding: 6rem 12rem 8rem;
+            padding: 7rem 12rem 7rem;
             display: grid;
             grid-template-columns: repeat(3, min-content);
             justify-content: space-between;
             text-align: center;
 
             img {
-                width: 20rem;
+                width: 15rem;
+                border-radius: 100%;
             }
 
             &>div,
@@ -193,9 +194,10 @@ main#home {
             text-align: center;
 
             p {
-                font-size: 1.5rem;
+                font-size: 1.6rem;
+                font-family: fonts.$pfc-menu-capital;
                 font-weight: 300;
-                width: 60%;
+                width: 70%;
                 margin: 0 auto 1.5rem;
             }
 
