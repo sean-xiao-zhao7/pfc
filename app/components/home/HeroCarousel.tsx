@@ -5,26 +5,33 @@ import PfcButton from "../buttons/PfcButton";
 
 export default function HeroCarousel() {
     const itemsSize = 2;
-    const [items, setItems] = useState(["", "shown"]);
-    let currenItemIdx = 0;
+    const [items, setItems] = useState({
+        items: ["shown", ""],
+        currenItemIdx: 0,
+    });
 
     useEffect(() => {
-        setInterval(() => {
+        const timer = setInterval(() => {
             setItems((items) => {
-                const newItems = [...items];
-                newItems[currenItemIdx] = "";
-                currenItemIdx++;
-                if (currenItemIdx === itemsSize) currenItemIdx = 0;
-                newItems[currenItemIdx] = "shown";
-                console.log(newItems);
-                return newItems;
+                const newItems = [...items.items];
+
+                newItems[items.currenItemIdx] = "";
+                let newItemIdx = items.currenItemIdx + 1;
+                if (newItemIdx === itemsSize) newItemIdx = 0;
+                newItems[newItemIdx] = "shown";
+
+                return { items: newItems, currenItemIdx: newItemIdx };
             });
-        }, 3000);
+        }, 5000);
+
+        return () => {
+            clearInterval(timer);
+        };
     }, []);
 
     return (
         <div id="hero-carousel-container">
-            <div className={"single-carousel-item-container " + items[0]}>
+            <div className={"single-carousel-item-container " + items.items[0]}>
                 <div className="carousel-control left">
                     <FaChevronLeft />
                 </div>
@@ -45,7 +52,7 @@ export default function HeroCarousel() {
                     <MainButton color="orange" text="READ MORE" type="button" />
                 </div>
             </div>
-            <div className={"single-carousel-item-container " + items[1]}>
+            <div className={"single-carousel-item-container " + items.items[1]}>
                 <div className="carousel-control left">
                     <FaChevronLeft />
                 </div>
