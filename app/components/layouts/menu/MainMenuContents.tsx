@@ -1,14 +1,37 @@
 import MainButton from "~/components/buttons/MainButton";
 import { FaSearch } from "react-icons/fa";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import { useEffect, useState } from "react";
 
 export default function MainMenuContents() {
+    const [shrunk, setShrunk] = useState("");
+
+    useEffect(() => {
+        const handler = () => {
+            if (
+                document.body.scrollTop > 200 ||
+                document.documentElement.scrollTop > 200
+            ) {
+                setShrunk("shrunk");
+            } else {
+                setShrunk("");
+            }
+        };
+
+        window.addEventListener("scroll", handler);
+        return () => window.removeEventListener("scroll", handler);
+    }, []);
+
     return (
         <div id="main-menu-contents-container">
             <div id="main-menu-logo">
-                <img src="/images/icons/main_square.png" alt="PFC logo" />
+                <img
+                    src="/images/icons/main_square.png"
+                    alt="PFC logo"
+                    className={"" + shrunk}
+                />
             </div>
-            <div id="main-menu-right-contents">
+            <div id="main-menu-right-contents" className={"" + shrunk}>
                 <ul className="nav">
                     <li className="hover-trigger-menu-item">
                         <a href="https://prisonfellowship.ca/about-us/">
