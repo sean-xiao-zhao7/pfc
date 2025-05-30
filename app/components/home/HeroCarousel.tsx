@@ -1,14 +1,12 @@
 import MainButton from "../buttons/MainButton";
+import PfcButton from "../buttons/PfcButton";
 
 export default function HeroCarousel() {
     return (
         <div id="hero-carousel-container">
             <div className="single-carousel-item-container">
-                <img
-                    src="/images/home/hero/item-1-kid.png"
-                    alt="hero first image"
-                />
-                <div className="single-carousel-inner" id="carousel-angel-tree">
+                <img src="/images/home/hero/item-1-kid.png" alt="angel tree" />
+                <div className="single-carousel-inner">
                     <img
                         src="/images/home/hero/angel-tree.png"
                         alt="angel tree"
@@ -19,6 +17,17 @@ export default function HeroCarousel() {
                         Christian day or overnight camp!
                     </p>
                     <MainButton color="orange" text="READ MORE" type="button" />
+                </div>
+            </div>
+            <div className="single-carousel-item-container shown">
+                <img src="/images/home/hero/item-2-prison.jpg" alt="prisoner" />
+                <div className="single-carousel-inner right no-image">
+                    <h1>
+                        Children from fatherless homes are 20 times more likely
+                        to end up in prison.
+                    </h1>
+                    <p>What if you could help change that?</p>
+                    <PfcButton color="orange" text="GIVE NOW" type="button" />
                 </div>
             </div>
         </div>
