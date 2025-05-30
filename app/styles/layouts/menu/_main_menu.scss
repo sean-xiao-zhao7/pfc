@@ -76,6 +76,14 @@
             justify-content: space-evenly;
             align-content: center;
 
+            &.two-cols {
+                grid-template-columns: repeat(2, max-content);
+            }
+
+            &.one-row {
+                grid-template-rows: repeat(1, max-content);
+            }
+
             li {
                 a {
                     text-transform: uppercase;

@@ -59,7 +59,7 @@ export default function MainMenuContents() {
                         >
                             Our Programs <MdKeyboardArrowDown />
                         </a>
-                        <ul className="sub-menu">
+                        <ul className="sub-menu one-row">
                             <li id="menu-item-830">
                                 <a href="https://prisonfellowship.ca/our-programs/prisoners/in-prison-programs/">
                                     In Prison Programs
@@ -225,7 +225,7 @@ export default function MainMenuContents() {
                         >
                             <MainButton text="Donate" color="blue" />
                         </a>
-                        <ul className="sub-menu">
+                        <ul className="sub-menu two-cols one-row">
                             <li id="menu-item-1264">
                                 <a href="https://prisonfellowship.ca/donate-online/pathway-partners/">
                                     Pathway Partners

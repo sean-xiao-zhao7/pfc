@@ -8,7 +8,6 @@
     .single-carousel-item-container {
         position: relative;
         display: none;
-        height: 720px;
 
         &>img {
             width: 100%;
@@ -82,6 +81,10 @@
         &>svg {
             height: 3rem;
             width: 3rem;
+        }
+
+        &:hover {
+            background-color: #ffffff20;
         }
     }
 }
