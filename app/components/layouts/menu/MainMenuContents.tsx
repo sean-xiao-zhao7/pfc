@@ -5,13 +5,10 @@ import { useEffect, useState } from "react";
 
 export default function MainMenuContents() {
     const [shrunk, setShrunk] = useState("");
-
+    console.log(shrunk);
     useEffect(() => {
         const handler = () => {
-            if (
-                document.body.scrollTop > 200 ||
-                document.documentElement.scrollTop > 200
-            ) {
+            if (window.pageYOffset > 200) {
                 setShrunk("shrunk");
             } else {
                 setShrunk("");
