@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 
 export default function MainMenuContents() {
     const [shrunk, setShrunk] = useState("");
-    console.log(shrunk);
     useEffect(() => {
         const handler = () => {
             if (window.pageYOffset > 200) {

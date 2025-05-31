@@ -16,6 +16,8 @@ export default function TopLinks() {
                         info@prisonfellowship.ca
                     </a>
                 </li>
+            </ul>
+            <ul>
                 <li className="et-social-icon et-social-facebook">
                     <a
                         href="https://www.facebook.com/PrisonFellowshipCanada/"
