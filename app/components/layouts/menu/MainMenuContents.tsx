@@ -29,7 +29,7 @@ export default function MainMenuContents() {
                 <div id="main-menu-right-contents-mobile">
                     <ul className="nav">
                         <li className="hover-trigger-menu-item">
-                            <a href="https://prisonfellowship.ca/about-us/">
+                            <a href="#">
                                 About PFC <MdKeyboardArrowDown />
                             </a>
                             <ul className="sub-menu">
@@ -71,11 +71,8 @@ export default function MainMenuContents() {
                             </ul>
                         </li>
                         <li className="hover-trigger-menu-item">
-                            <a
-                                href="https://prisonfellowship.ca/pfc-programs/"
-                                className="hover-trigger-menu-item"
-                            >
-                                Our Programs <MdKeyboardArrowDown />
+                            <a href="#" className="hover-trigger-menu-item">
+                                Programs <MdKeyboardArrowDown />
                             </a>
                             <ul className="sub-menu one-row">
                                 <li id="menu-item-830">
@@ -151,10 +148,7 @@ export default function MainMenuContents() {
                             </ul>
                         </li>
                         <li className="hover-trigger-menu-item">
-                            <a
-                                href="https://prisonfellowship.ca/resources/"
-                                className="hover-trigger-menu-item"
-                            >
+                            <a href="#" className="hover-trigger-menu-item">
                                 Resources <MdKeyboardArrowDown />
                             </a>
                             <ul className="sub-menu">
@@ -189,81 +183,79 @@ export default function MainMenuContents() {
                             </ul>
                         </li>
                     </ul>
-                    <ul className="button-menu">
-                        <li className="hover-trigger-menu-item">
-                            <a
-                                href="https://prisonfellowship.ca/get-involved/"
-                                className="hover-trigger-menu-item"
-                            >
-                                <MainButton
-                                    text="Get Involved"
-                                    color="orange"
-                                    type="button"
-                                />
-                            </a>
-                            <ul className="sub-menu">
-                                <li id="menu-item-37352">
-                                    <a href="https://prisonfellowship.ca/calendar/category/pfcevents/">
-                                        PFC Events
-                                    </a>
-                                </li>
-                                <li id="menu-item-107">
-                                    <a href="https://prisonfellowship.ca/get-involved/volunteer/">
-                                        Volunteer
-                                    </a>
-                                </li>
-                                <li id="menu-item-108">
-                                    <a href="https://prisonfellowship.ca/resources/institutional-chaplains/">
-                                        Institutional Chaplains
-                                    </a>
-                                </li>
-                                <li id="menu-item-82">
-                                    <a href="https://prisonfellowship.ca/get-involved/prayer-partners/">
-                                        Prayer Partners
-                                    </a>
-                                    <ul className="sub-menu">
-                                        <li id="menu-item-37358">
-                                            <a href="https://prisonfellowship.ca/calendar/category/prayer-calendar/">
-                                                Prayer Calendar
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li id="menu-item-83">
-                                    <a href="https://prisonfellowship.ca/get-involved/raise-awareness/">
-                                        Raise awareness
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li className="hover-trigger-menu-item">
-                            <a
-                                href="https://prisonfellowship.ca/donate-online/"
-                                className="hover-trigger-menu-item"
-                            >
-                                <MainButton
-                                    text="Donate"
-                                    color="blue"
-                                    type="button"
-                                />
-                            </a>
-                            <ul className="sub-menu two-cols one-row">
-                                <li id="menu-item-1264">
-                                    <a href="https://prisonfellowship.ca/donate-online/pathway-partners/">
-                                        Pathway Partners
-                                    </a>
-                                </li>
-                                <li id="menu-item-398">
-                                    <a href="https://prisonfellowship.ca/donate-online/ways-to-donate/">
-                                        Ways to Donate
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                    <FaSearch />
                 </div>
+                <ul className="button-menu mobile">
+                    <li className="hover-trigger-menu-item">
+                        <a
+                            href="https://prisonfellowship.ca/get-involved/"
+                            className="hover-trigger-menu-item"
+                        >
+                            <MainButton
+                                text="Get Involved"
+                                color="orange"
+                                type="button"
+                            />
+                        </a>
+                        <ul className="sub-menu">
+                            <li id="menu-item-37352">
+                                <a href="https://prisonfellowship.ca/calendar/category/pfcevents/">
+                                    PFC Events
+                                </a>
+                            </li>
+                            <li id="menu-item-107">
+                                <a href="https://prisonfellowship.ca/get-involved/volunteer/">
+                                    Volunteer
+                                </a>
+                            </li>
+                            <li id="menu-item-108">
+                                <a href="https://prisonfellowship.ca/resources/institutional-chaplains/">
+                                    Institutional Chaplains
+                                </a>
+                            </li>
+                            <li id="menu-item-82">
+                                <a href="https://prisonfellowship.ca/get-involved/prayer-partners/">
+                                    Prayer Partners
+                                </a>
+                                <ul className="sub-menu">
+                                    <li id="menu-item-37358">
+                                        <a href="https://prisonfellowship.ca/calendar/category/prayer-calendar/">
+                                            Prayer Calendar
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li id="menu-item-83">
+                                <a href="https://prisonfellowship.ca/get-involved/raise-awareness/">
+                                    Raise awareness
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li className="hover-trigger-menu-item">
+                        <a
+                            href="https://prisonfellowship.ca/donate-online/"
+                            className="hover-trigger-menu-item"
+                        >
+                            <MainButton
+                                text="Donate"
+                                color="blue"
+                                type="button"
+                            />
+                        </a>
+                        <ul className="sub-menu two-cols one-row">
+                            <li id="menu-item-1264">
+                                <a href="https://prisonfellowship.ca/donate-online/pathway-partners/">
+                                    Pathway Partners
+                                </a>
+                            </li>
+                            <li id="menu-item-398">
+                                <a href="https://prisonfellowship.ca/donate-online/ways-to-donate/">
+                                    Ways to Donate
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
             <div id="main-menu-right-contents" className={"" + shrunk}>
                 <ul className="nav">
