@@ -186,10 +186,7 @@ export default function MainMenuContents() {
                 </div>
                 <ul className="button-menu mobile">
                     <li className="hover-trigger-menu-item">
-                        <a
-                            href="https://prisonfellowship.ca/get-involved/"
-                            className="hover-trigger-menu-item"
-                        >
+                        <a href="#" className="hover-trigger-menu-item">
                             <MainButton
                                 text="Get Involved"
                                 color="orange"
@@ -232,10 +229,7 @@ export default function MainMenuContents() {
                         </ul>
                     </li>
                     <li className="hover-trigger-menu-item">
-                        <a
-                            href="https://prisonfellowship.ca/donate-online/"
-                            className="hover-trigger-menu-item"
-                        >
+                        <a href="#" className="hover-trigger-menu-item">
                             <MainButton
                                 text="Donate"
                                 color="blue"
