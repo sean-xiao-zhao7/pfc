@@ -9,6 +9,10 @@ $footer-text: rgb(182, 182, 182);
     justify-content: center;
     align-items: center;
 
+    @media only screen and (max-width: 600px) {
+        padding: 2rem;
+    }
+
     img,
     h1 {
         background-color: transparent;
@@ -45,5 +49,10 @@ $footer-text: rgb(182, 182, 182);
         grid-template-columns: repeat(4, max-content);
         grid-column-gap: 2rem;
         justify-content: space-evenly;
+
+        @media only screen and (max-width: 600px) {
+            padding: 0;
+            display: block;
+        }
     }
 }
