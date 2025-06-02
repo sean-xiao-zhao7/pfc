@@ -54,11 +54,20 @@ main#home {
             background-position-y: center;
             background-size: 95rem auto;
 
+            @media only screen and (max-width: 600px) {
+                padding: 6rem 2rem;
+                background-size: auto 60rem;
+            }
+
             &>div {
                 display: grid;
                 grid-template-columns: repeat(2, calc(50% - 1rem));
                 grid-column-gap: 2rem;
                 background-color: transparent;
+
+                @media only screen and (max-width: 600px) {
+                    display: block;
+                }
             }
 
             h1 {
