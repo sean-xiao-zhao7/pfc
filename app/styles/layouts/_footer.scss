@@ -53,6 +53,12 @@ $footer-text: rgb(182, 182, 182);
         @media only screen and (max-width: 600px) {
             padding: 0;
             display: block;
+
+            .sub-menu {
+                a {
+                    font-size: 1.2rem;
+                }
+            }
         }
     }
 }
