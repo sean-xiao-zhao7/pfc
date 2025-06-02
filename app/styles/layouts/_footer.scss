@@ -11,6 +11,15 @@ $footer-text: rgb(182, 182, 182);
 
     @media only screen and (max-width: 600px) {
         padding: 2rem;
+
+        #top-links-container {
+            padding: 0;
+
+            a,
+            li {
+                font-size: 1.1rem;
+            }
+        }
     }
 
     img,
@@ -25,6 +34,10 @@ $footer-text: rgb(182, 182, 182);
         color: $footer-text;
         font-size: 1rem;
         font-family: fonts.$pfc-menu-capital;
+
+        @media only screen and (max-width: 600px) {
+            text-align: center;
+        }
     }
 
     ul {
@@ -56,7 +69,7 @@ $footer-text: rgb(182, 182, 182);
 
             .sub-menu {
                 a {
-                    font-size: 1.2rem;
+                    font-size: 1.1rem;
                 }
             }
         }

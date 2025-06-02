@@ -88,6 +88,10 @@
         @media only screen and (max-width: 600px) {
             display: none;
         }
+
+        &.shrunk {
+            height: 70px;
+        }
     }
 
     #main-menu-right-contents-mobile {
