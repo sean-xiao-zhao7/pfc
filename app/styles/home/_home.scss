@@ -9,6 +9,11 @@ main#home {
             display: flex;
             align-items: center;
 
+            @media only screen and (max-width: 600px) {
+                padding: 1rem 2rem;
+                flex-direction: column;
+            }
+
             .info {
                 h1 {
                     font-family: fonts.$pfc-cursive;
@@ -33,6 +38,11 @@ main#home {
                 border: solid 1px whitesmoke;
                 box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
                 margin-left: 2rem;
+
+                @media only screen and (max-width: 600px) {
+                    width: 100%;
+                    margin: 2rem 0 0 0;
+                }
             }
         }
 
