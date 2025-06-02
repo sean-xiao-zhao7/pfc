@@ -74,7 +74,7 @@ export default function MainMenuContents() {
                             <a href="#" className="hover-trigger-menu-item">
                                 Programs <MdKeyboardArrowDown />
                             </a>
-                            <ul className="sub-menu one-row">
+                            <ul className="sub-menu large">
                                 <li id="menu-item-830">
                                     <a href="https://prisonfellowship.ca/our-programs/prisoners/in-prison-programs/">
                                         In Prison Programs
@@ -130,7 +130,7 @@ export default function MainMenuContents() {
                                             <a href="https://prisonfellowship.ca/our-programs/in-community-programs/angel-tree/">
                                                 Angel Tree
                                             </a>
-                                            <ul className="sub-menu">
+                                            <ul>
                                                 <li id="menu-item-89">
                                                     <a href="https://prisonfellowship.ca/our-programs/in-community-programs/angel-tree/angel-tree-camping/">
                                                         Angel Tree Camping
@@ -364,7 +364,7 @@ export default function MainMenuContents() {
                                         <a href="https://prisonfellowship.ca/our-programs/in-community-programs/angel-tree/">
                                             Angel Tree
                                         </a>
-                                        <ul className="sub-menu">
+                                        <ul>
                                             <li id="menu-item-89">
                                                 <a href="https://prisonfellowship.ca/our-programs/in-community-programs/angel-tree/angel-tree-camping/">
                                                     Angel Tree Camping

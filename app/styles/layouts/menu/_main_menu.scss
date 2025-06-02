@@ -134,7 +134,7 @@
             @media only screen and (max-width:600px) {
                 margin: 0;
                 padding: 1rem;
-                grid-template-columns: repeat(2, max-content);
+                grid-template-columns: repeat(1, max-content);
                 grid-row-gap: 1rem;
                 grid-column-gap: .5rem;
             }
@@ -177,7 +177,15 @@
             visibility: visible;
             background-color: white;
 
+            @media only screen and (max-width: 600px) {
+                max-height: 20rem;
+                height: 15rem;
 
+                &.large {
+                    max-height: 25rem;
+                    height: 25rem;
+                }
+            }
         }
     }
 
