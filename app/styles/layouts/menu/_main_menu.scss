@@ -41,6 +41,22 @@
             img {
                 height: 90px;
             }
+
+            &.shrunk {
+                height: 60px;
+
+                a {
+                    font-size: 1rem;
+                }
+
+                .button-menu {
+                    height: auto;
+
+                    button {
+                        font-size: .8rem;
+                    }
+                }
+            }
         }
     }
 
@@ -72,10 +88,6 @@
         @media only screen and (max-width: 600px) {
             display: none;
         }
-
-        &.shrunk {
-            height: 70px;
-        }
     }
 
     #main-menu-right-contents-mobile {
@@ -87,6 +99,10 @@
             height: auto;
             justify-content: center;
             align-items: flex-start;
+
+            &.shrunk {
+                height: 70px;
+            }
         }
     }
 

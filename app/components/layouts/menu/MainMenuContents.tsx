@@ -20,16 +20,19 @@ export default function MainMenuContents() {
 
     return (
         <div id="main-menu-contents-container">
-            <div id="main-menu-logo">
+            <div id="main-menu-logo" className={"" + shrunk}>
                 <img
                     src="/images/icons/main_square.png"
                     alt="PFC logo"
                     className={"" + shrunk}
                 />
-                <div id="main-menu-right-contents-mobile">
+                <div
+                    id="main-menu-right-contents-mobile"
+                    className={"" + shrunk}
+                >
                     <ul className="nav">
                         <li className="hover-trigger-menu-item">
-                            <a href="#">
+                            <a>
                                 About PFC <MdKeyboardArrowDown />
                             </a>
                             <ul className="sub-menu">
@@ -71,7 +74,7 @@ export default function MainMenuContents() {
                             </ul>
                         </li>
                         <li className="hover-trigger-menu-item">
-                            <a href="#" className="hover-trigger-menu-item">
+                            <a>
                                 Programs <MdKeyboardArrowDown />
                             </a>
                             <ul className="sub-menu large">
@@ -148,7 +151,7 @@ export default function MainMenuContents() {
                             </ul>
                         </li>
                         <li className="hover-trigger-menu-item">
-                            <a href="#" className="hover-trigger-menu-item">
+                            <a>
                                 Resources <MdKeyboardArrowDown />
                             </a>
                             <ul className="sub-menu">
@@ -186,7 +189,7 @@ export default function MainMenuContents() {
                 </div>
                 <ul className="button-menu mobile">
                     <li className="hover-trigger-menu-item">
-                        <a href="#" className="hover-trigger-menu-item">
+                        <a>
                             <MainButton
                                 text="Get Involved"
                                 color="orange"
@@ -229,7 +232,7 @@ export default function MainMenuContents() {
                         </ul>
                     </li>
                     <li className="hover-trigger-menu-item">
-                        <a href="#" className="hover-trigger-menu-item">
+                        <a>
                             <MainButton
                                 text="Donate"
                                 color="blue"
