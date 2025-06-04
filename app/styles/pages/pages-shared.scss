@@ -3,6 +3,7 @@
 // pages
 @use './regional-offices';
 @use './facilitating-transformation';
+@use './pfc-team';
 
 .page-container {
     .slogan {
@@ -10,14 +11,19 @@
         background-repeat: no-repeat;
         background-position-x: center;
         background-position-y: center;
-        background-size: 110% auto;
-        padding: 2rem 0;
+        background-size: 120% auto;
+        padding: 3rem 0 2rem;
 
         color: white;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
+        h1 {
+            font-family: fonts.$pfc-cursive;
+            font-size: 2.2rem;
+        }
     }
 
     .pfc-logo {
@@ -31,6 +37,10 @@
             font-family: fonts.$pfc-cursive;
             font-size: 2rem;
         }
+    }
+
+    .center {
+        text-align: center;
     }
 
     .three-col-boxes-container {
@@ -78,6 +88,19 @@
         display: grid;
         grid-template-columns: repeat(2, auto);
         grid-column-gap: 2rem;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .four-cols {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
         justify-content: center;
         align-items: center;
 

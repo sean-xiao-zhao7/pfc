@@ -1,0 +1,28 @@
+#pfc-team {
+    .box {
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+
+        &:hover {
+            .hover-contents {
+                top: 0;
+            }
+        }
+
+        .hover-contents {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: top 0.2s;
+
+            background-image: linear-gradient(#0000ffd5, #008080d5);
+            color: white;
+        }
+    }
+}
