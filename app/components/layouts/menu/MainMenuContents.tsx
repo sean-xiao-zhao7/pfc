@@ -1,16 +1,44 @@
 import MainButton from "~/components/buttons/MainButton";
 import { FaSearch } from "react-icons/fa";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 export default function MainMenuContents() {
-    const [shrunk, setShrunk] = useState("");
     useEffect(() => {
         const handler = () => {
-            if (window.pageYOffset > 200) {
-                setShrunk("shrunk");
-            } else {
-                setShrunk("");
+            if (window.pageYOffset > 300) {
+                if (
+                    !document
+                        .querySelector("#main-logo")
+                        ?.classList.contains("shrunk")
+                ) {
+                    document
+                        .querySelector("#main-logo")
+                        .classList.add("shrunk");
+                    document
+                        .querySelector("#main-menu-right-contents")
+                        .classList.add("shrunk");
+                }
+            } else if (window.pageYOffset < 200) {
+                console.log(
+                    window.pageYOffset,
+                    "unshrinking",
+                    document
+                        .querySelector("#main-logo")
+                        ?.classList.contains("shrunk")
+                );
+                if (
+                    document
+                        .querySelector("#main-logo")
+                        ?.classList.contains("shrunk")
+                ) {
+                    document
+                        .querySelector("#main-logo")
+                        .classList.remove("shrunk");
+                    document
+                        .querySelector("#main-menu-right-contents")
+                        .classList.remove("shrunk");
+                }
             }
         };
 
@@ -20,18 +48,15 @@ export default function MainMenuContents() {
 
     return (
         <div id="main-menu-contents-container">
-            <div id="main-menu-logo" className={"" + shrunk}>
+            <div id="main-menu-logo">
                 <a href="/">
                     <img
                         src="/images/icons/main_square.png"
                         alt="PFC logo"
-                        className={"" + shrunk}
+                        id="main-logo"
                     />
                 </a>
-                <div
-                    id="main-menu-right-contents-mobile"
-                    className={"" + shrunk}
-                >
+                <div id="main-menu-right-contents-mobile">
                     <ul className="nav">
                         <li className="hover-trigger-menu-item">
                             <a>
@@ -250,7 +275,7 @@ export default function MainMenuContents() {
                     </li>
                 </ul>
             </div>
-            <div id="main-menu-right-contents" className={"" + shrunk}>
+            <div id="main-menu-right-contents">
                 <ul className="nav">
                     <li className="hover-trigger-menu-item">
                         <a href="/about-us/">
