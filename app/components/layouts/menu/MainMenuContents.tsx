@@ -21,11 +21,13 @@ export default function MainMenuContents() {
     return (
         <div id="main-menu-contents-container">
             <div id="main-menu-logo" className={"" + shrunk}>
-                <img
-                    src="/images/icons/main_square.png"
-                    alt="PFC logo"
-                    className={"" + shrunk}
-                />
+                <a href="/">
+                    <img
+                        src="/images/icons/main_square.png"
+                        alt="PFC logo"
+                        className={"" + shrunk}
+                    />
+                </a>
                 <div
                     id="main-menu-right-contents-mobile"
                     className={"" + shrunk}

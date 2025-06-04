@@ -1,0 +1,67 @@
+@use '../fonts'as fonts;
+
+.page-container {
+    .slogan {
+        background-image: url(/images/graphics/button-background-black.png);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+        background-size: 110% auto;
+        padding: 2rem 0;
+
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pfc-logo {
+        width: 7rem;
+    }
+
+    .body {
+        padding: 0 12rem;
+    }
+
+    .three-col-boxes-container {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-column-gap: 1rem;
+
+        .box {
+            background-color: black;
+            color: white;
+            padding: 1rem;
+            margin-bottom: 1rem;
+
+            h3 {
+                margin: 0;
+                font-family: fonts.$pfc-cursive;
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+    .two-col-green-boxes-container {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-column-gap: 1rem;
+
+        .box {
+            background-image: url(/images/graphics/button-background-green.png);
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-position-y: center;
+            background-size: 100% auto;
+            padding: 1rem;
+
+            text-align: center;
+
+            h3,
+            p {
+                color: white
+            }
+        }
+    }
+}
