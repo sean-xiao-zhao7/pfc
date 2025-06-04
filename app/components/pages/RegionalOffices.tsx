@@ -1,6 +1,6 @@
 export default function RegionalOffices() {
     return (
-        <div className="page-container" id="who-we-are">
+        <div className="page-container" id="regional-offices">
             <div className="slogan">
                 <img
                     src="/images/home/cropped-favicon.png"

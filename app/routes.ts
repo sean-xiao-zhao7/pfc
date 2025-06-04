@@ -7,4 +7,8 @@ export default [
         "about-us/regional-offices",
         "./components/pages/RegionalOffices.tsx"
     ),
+    route(
+        "facilitating-transformation",
+        "./components/pages/FacilitatingTransformation.tsx"
+    ),
 ] satisfies RouteConfig;

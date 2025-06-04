@@ -1,0 +1,43 @@
+@use '../fonts'as fonts;
+
+#facilitating-transformation {
+    .slogan:nth-child(1) {
+        background-image: url(/images/pages/facilitating-transformation/facilitating-transformation-slogan-background.png);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+        background-size: auto 100%;
+        padding: 9rem 0;
+
+        h1 {
+            font-size: 4rem;
+            font-family: fonts.$pfc-cursive;
+            margin: 0 0 0 20rem;
+        }
+    }
+
+    .body {
+        .center {
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.1rem;
+
+            &.cursive {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .slogan {
+        text-align: center;
+        background-size: auto 110%;
+        margin-bottom: 2rem;
+
+        p {
+            font-size: 1.1rem;
+            padding: 0 12rem;
+        }
+    }
+}
