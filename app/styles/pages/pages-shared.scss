@@ -1,5 +1,8 @@
 @use '../fonts'as fonts;
 
+// pages
+@use './regional-offices';
+
 .page-container {
     .slogan {
         background-image: url(/images/graphics/button-background-black.png);
