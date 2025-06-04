@@ -1,9 +1,22 @@
 import TopLinks from "./menu/TopLinks";
+import PfcButton from "../buttons/PfcButton";
 
 export default function Footer() {
     return (
         <div id="footer">
             <img src="/images/home/cropped-favicon.png" alt="PFC logo" />
+            <div className="donate-container">
+                <a href="https://prisonfellowship.ca/get-involved/">
+                    <PfcButton
+                        text="GET INVOLVED"
+                        color="orange"
+                        type="button"
+                    />
+                </a>
+                <a href="https://prisonfellowship.ca/donate-online/">
+                    <PfcButton text="DONATE HERE" color="blue" type="button" />
+                </a>
+            </div>
             <div className="sub-menus-container">
                 <ul className="sub-menu">
                     <li id="menu-item-37352">
