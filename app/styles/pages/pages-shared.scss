@@ -4,6 +4,7 @@
 @use './regional-offices';
 @use './facilitating-transformation';
 @use './pfc-team';
+@use './our_board';
 
 .page-container {
     .slogan {
@@ -106,6 +107,26 @@
 
         img {
             width: 100%;
+        }
+    }
+
+    .five-cols {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .box {
+            height: 800px;
         }
     }
 }

@@ -1,0 +1,30 @@
+#our-board {
+    .box {
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+
+        &:hover {
+            .hover-contents {
+                opacity: 100;
+            }
+        }
+
+        .hover-contents {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            top: 0;
+            transition: opacity 0.2s;
+
+            background-image: linear-gradient(#0000ffd5, #008080d5);
+            color: white;
+        }
+    }
+}

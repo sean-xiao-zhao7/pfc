@@ -12,4 +12,5 @@ export default [
         "./components/pages/FacilitatingTransformation.tsx"
     ),
     route("about-us/pfc-team", "./components/pages/PFCTeam.tsx"),
+    route("about-us/our-board", "./components/pages/OurBoard.tsx"),
 ] satisfies RouteConfig;
