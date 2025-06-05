@@ -91,6 +91,10 @@
 
         &.shrunk {
             height: 70px;
+
+            .sub-menu {
+                height: 120px;
+            }
         }
     }
 
