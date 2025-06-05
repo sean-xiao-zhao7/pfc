@@ -13,5 +13,6 @@ export default [
     ),
     route("about-us/pfc-team", "./components/pages/PFCTeam.tsx"),
     route("about-us/our-board", "./components/pages/OurBoard.tsx"),
+    route("about-us/our-financials", "./components/pages/OurFinancials.tsx"),
     route("*", "./components/pages/NotFound.tsx"),
 ] satisfies RouteConfig;
