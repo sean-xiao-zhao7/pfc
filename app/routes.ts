@@ -33,6 +33,10 @@ export default [
         "our-programs/prisoners/in-prison-programs/faith-justice",
         "./components/pages/our_programs/FaithAndJustice.tsx"
     ),
+    route(
+        "our-programs/prisoners/in-prison-programs/pf-by-phone/",
+        "./components/pages/our_programs/PFCByPhone.tsx"
+    ),
 
     // 404
     route("*", "./components/pages/about_pfc/NotFound.tsx"),
