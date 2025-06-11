@@ -32,7 +32,20 @@
         }
 
         &.image-background.road {
-            background-image: url(/images/pages/facilitating-transformation/facilitating-transformation-slogan-background.png);
+            background-image: url(/images/shared/facilitating-transformation-slogan-background.png);
+            padding: 6rem 0;
+
+            h1 {
+                font-size: 4rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+        }
+
+        &.image-background.flower {
+            background-image: url(/images/shared/iStock-1206800966-e1646343901675.jpg);
             padding: 6rem 0;
 
             h1 {
@@ -67,6 +80,10 @@
         .cursive {
             font-family: fonts.$pfc-cursive;
             font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.2rem;
         }
     }
 

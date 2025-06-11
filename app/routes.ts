@@ -41,6 +41,10 @@ export default [
         "our-programs/restorative-justice",
         "./components/pages/our_programs/RestorativeJustice.tsx"
     ),
+    route(
+        "our-programs/restorative-justice/restorative-prison",
+        "./components/pages/our_programs/RestorativePrison.tsx"
+    ),
 
     // 404
     route("*", "./components/pages/about_pfc/NotFound.tsx"),

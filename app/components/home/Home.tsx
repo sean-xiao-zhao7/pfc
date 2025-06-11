@@ -98,7 +98,7 @@ export default function Home() {
                     <div className="inner">
                         <div>
                             <img
-                                src="/images/home/photos/in-cell-study.png"
+                                src="/images/shared/in-cell-study.png"
                                 alt="in cell study"
                             />
                             <h2>prisoners</h2>
