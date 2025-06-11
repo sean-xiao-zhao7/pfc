@@ -1,12 +1,24 @@
 .pfc-block {
     color: white;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: auto;
+    padding: 4rem 0;
 
     &.orange {
         background-image: url(/images/graphics/button-background-orange.png);
-        background-repeat: no-repeat;
-        background-position-x: center;
-        background-position-y: center;
-        background-size: auto;
-        padding: 4rem 0;
+    }
+
+    &.black {
+        background-image: url(/images/graphics/button-background-black.png);
+    }
+
+    &.blue {
+        background-image: url(/images/graphics/button-background-black.png);
+    }
+
+    &.green {
+        background-image: url(/images/graphics/button-background-black.png);
     }
 }
