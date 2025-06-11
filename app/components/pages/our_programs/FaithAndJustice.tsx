@@ -4,7 +4,7 @@ import PfcButton from "~/components/buttons/PfcButton";
 export default function FaithAndJustice() {
     return (
         <div className="page-container" id="faith-and-justice">
-            <div className="center">
+            <div className="center simple-slogan">
                 <img
                     src="/images/pages/shared/100102p_FaithJustice.png"
                     alt="Faith & Justice"

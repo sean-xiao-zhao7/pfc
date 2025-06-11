@@ -1,10 +1,7 @@
-import PfcBlock from "~/components/blocks/PfcBlock";
-import PfcButton from "~/components/buttons/PfcButton";
-
 export default function PFCByPhone() {
     return (
         <div className="page-container" id="PFC-by-phone">
-            <div className="center">
+            <div className="center simple-slogan">
                 <img
                     src="/images/pages/shared/PFC-By-Phone3.png"
                     alt="PFC by phone"
