@@ -10,6 +10,7 @@
 
 // our programs
 @use './our_programs/in_prison_programs';
+@use './our_programs/sycamore-tree';
 
 .page-container {
     .slogan {
@@ -56,6 +57,22 @@
                 font-size: 1.2rem;
             }
         }
+
+        &.image-background.tree {
+            background-image: url(/images/pages/sycamore-tree/Annual-Report-2021-Images-File-1_Page_05-scaled-e1646337735938.jpg);
+            padding: 6rem 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            h1 {
+                font-size: 4rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+        }
     }
 
     .simple-slogan {
@@ -89,6 +106,7 @@
 
     .center {
         text-align: center;
+        margin: 1rem 0;
     }
 
     .box-shadow {
@@ -167,6 +185,12 @@
             width: 100%;
             object-fit: cover;
             height: 20rem;
+        }
+
+        .box {
+            h2 {
+                margin: 0;
+            }
         }
     }
 
