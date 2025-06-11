@@ -6,8 +6,11 @@
 @use "layouts/menu/main_menu";
 @use "layouts/footer";
 
+// blocks
+@use "blocks/pfc-block";
+
 // buttons
-@use "buttons/main-button.scss";
+@use "buttons/main-button";
 
 // pages
 @use "home/home";

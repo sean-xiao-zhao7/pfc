@@ -2,6 +2,8 @@ import { type RouteConfig, index, route } from "@react-router/dev/routes";
 
 export default [
     index("./components/home/Home.tsx"),
+
+    // About PFC
     route("about-us/who-we-are", "./components/pages/about_pfc/WhoWeAre.tsx"),
     route(
         "about-us/regional-offices",
@@ -21,5 +23,13 @@ export default [
         "about-us/statement-of-faith",
         "./components/pages/about_pfc/StatementOfFaith.tsx"
     ),
+
+    // Our Programs
+    route(
+        "our-programs/prisoners/in-prison-programs",
+        "./components/pages/our_programs/InPrisonPrograms.tsx"
+    ),
+
+    // 404
     route("*", "./components/pages/about_pfc/NotFound.tsx"),
 ] satisfies RouteConfig;

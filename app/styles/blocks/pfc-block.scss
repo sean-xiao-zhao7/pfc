@@ -1,0 +1,12 @@
+.pfc-block {
+    color: white;
+
+    &.orange {
+        background-image: url(/images/graphics/button-background-orange.png);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+        background-size: auto;
+        padding: 4rem 0;
+    }
+}

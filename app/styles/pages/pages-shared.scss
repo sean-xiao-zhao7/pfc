@@ -1,12 +1,15 @@
 @use '../fonts'as fonts;
 
-// pages
-@use './regional-offices';
-@use './facilitating-transformation';
-@use './pfc-team';
-@use './our_board';
-@use './our_financials';
-@use './statement_of_faith';
+// about PFC
+@use './about_pfc/regional-offices';
+@use './about_pfc/facilitating-transformation';
+@use './about_pfc/pfc-team';
+@use './about_pfc/our_board';
+@use './about_pfc/our_financials';
+@use './about_pfc/statement_of_faith';
+
+// our programs
+@use './our_programs/in_prison_programs';
 
 .page-container {
     .slogan {

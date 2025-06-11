@@ -1,0 +1,102 @@
+#in-prison-programs {
+    p {
+        font-size: 1.2rem;
+    }
+
+    .slogan {
+        background-image: url(/images/pages/in-prison-programs/jagged-edged-inprison-banner.jpg);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+        background-size: 120% auto;
+        padding: 7rem 0;
+
+        h1 {
+            font-size: 5rem;
+            margin: 0;
+        }
+
+        p {
+            font-size: 1.4rem;
+            text-shadow: 1px 1px 1px rgb(89, 89, 89);
+        }
+    }
+
+    .two-cols {
+        align-items: flex-start;
+        margin-bottom: 2rem;
+
+        .box {
+            text-align: center;
+
+            img:first-child {
+                width: auto;
+                height: 20rem;
+                object-fit: cover;
+            }
+
+            img:nth-child(2) {
+                width: auto;
+                height: auto;
+            }
+        }
+    }
+
+    #testimony {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        justify-content: center;
+        margin-bottom: 2rem;
+
+        @media only screen and (max-width: 600px) {
+            padding: 2rem;
+            display: block;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 1.2rem;
+        }
+
+        .left {
+            border-right: solid 1px rgba(140, 198, 63, 0.84);
+            padding-right: 3rem;
+            margin-right: 3rem;
+            text-align: center;
+
+            @media only screen and (max-width: 600px) {
+                padding: 0 0 2rem 0;
+                margin: 0 0 2rem 0;
+                border-right: 0;
+                border-bottom: solid 1px rgba(140, 198, 63, 0.84);
+                ;
+            }
+        }
+
+        .right {
+            display: flex;
+
+            @media only screen and (max-width: 600px) {
+                display: block;
+            }
+
+            img {
+                width: 100%;
+                object-fit: cover;
+                margin-right: 3rem;
+
+                @media only screen and (max-width: 600px) {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .pfc-block {
+        margin-bottom: 2rem;
+
+        p {
+            font-size: 1.4rem;
+        }
+    }
+}
