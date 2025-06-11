@@ -6,7 +6,7 @@ export default function FaithAndJustice() {
         <div className="page-container" id="faith-and-justice">
             <div className="center simple-slogan">
                 <img
-                    src="/images/pages/shared/100102p_FaithJustice.png"
+                    src="/images/shared/100102p_FaithJustice.png"
                     alt="Faith & Justice"
                 />
                 <div className="center">

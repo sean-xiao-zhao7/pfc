@@ -40,7 +40,7 @@ export default function InPrisonPrograms() {
                             alt="Hand on shoulder"
                         />
                         <img
-                            src="/images/pages/shared/100102p_FaithJustice.png"
+                            src="/images/shared/100102p_FaithJustice.png"
                             alt="faith & justice"
                         />
                         <div className="center">
@@ -60,11 +60,11 @@ export default function InPrisonPrograms() {
                     </div>
                     <div className="box">
                         <img
-                            src="/images/pages/shared/Annual-Report-2021-Images-File-1_Page_34-980x654.jpg"
+                            src="/images/shared/Annual-Report-2021-Images-File-1_Page_34-980x654.jpg"
                             alt="Calling prisoner"
                         />
                         <img
-                            src="/images/pages/shared
+                            src="/images/shared
                             /PFC-By-Phone3.png"
                             alt="PFC by phone"
                         />
@@ -85,7 +85,7 @@ export default function InPrisonPrograms() {
                     </div>
                 </div>
 
-                <div id="testimony">
+                <div className="testimony">
                     <div className="left">
                         <h1>Testimony</h1>
                         <p>

@@ -118,7 +118,7 @@ export default function Home() {
                         </div>
                         <div>
                             <img
-                                src="/images/home/photos/group-study.jpg"
+                                src="/images/shared/group-study.jpg"
                                 alt="in cell study"
                             />
                             <h2>ex-prisoners</h2>

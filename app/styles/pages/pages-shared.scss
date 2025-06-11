@@ -30,6 +30,19 @@
             font-family: fonts.$pfc-cursive;
             font-size: 2.2rem;
         }
+
+        &.image-background.road {
+            background-image: url(/images/pages/facilitating-transformation/facilitating-transformation-slogan-background.png);
+            padding: 6rem 0;
+
+            h1 {
+                font-size: 4rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+        }
     }
 
     .simple-slogan {
@@ -64,6 +77,23 @@
     .box-shadow {
         border: solid 1px whitesmoke;
         box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+    }
+
+    .cursive {
+        font-family: fonts.$pfc-cursive;
+    }
+
+    iframe {
+        width: 250rem;
+        height: 20rem;
+        border: solid 1px whitesmoke;
+        box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+        margin-left: 2rem;
+
+        @media only screen and (max-width: 600px) {
+            width: 100%;
+            margin: 2rem 0 0 0;
+        }
     }
 
     .three-col-boxes-container {
@@ -153,6 +183,56 @@
 
         .box {
             height: 800px;
+        }
+    }
+
+    .testimony {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        justify-content: center;
+        margin-bottom: 2rem;
+
+        @media only screen and (max-width: 600px) {
+            padding: 2rem;
+            display: block;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 1.2rem;
+        }
+
+        .left {
+            border-right: solid 1px rgba(140, 198, 63, 0.84);
+            padding-right: 3rem;
+            margin-right: 3rem;
+            text-align: center;
+
+            @media only screen and (max-width: 600px) {
+                padding: 0 0 2rem 0;
+                margin: 0 0 2rem 0;
+                border-right: 0;
+                border-bottom: solid 1px rgba(140, 198, 63, 0.84);
+                ;
+            }
+        }
+
+        .right {
+            display: flex;
+
+            @media only screen and (max-width: 600px) {
+                display: block;
+            }
+
+            img {
+                width: 100%;
+                object-fit: cover;
+                margin-right: 3rem;
+
+                @media only screen and (max-width: 600px) {
+                    margin: 0;
+                }
+            }
         }
     }
 }

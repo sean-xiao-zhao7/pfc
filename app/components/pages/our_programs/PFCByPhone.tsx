@@ -3,7 +3,7 @@ export default function PFCByPhone() {
         <div className="page-container" id="PFC-by-phone">
             <div className="center simple-slogan">
                 <img
-                    src="/images/pages/shared/PFC-By-Phone3.png"
+                    src="/images/shared/PFC-By-Phone3.png"
                     alt="PFC by phone"
                 />
                 <div className="center">
@@ -33,7 +33,7 @@ export default function PFCByPhone() {
                 </div>
                 <div className="box">
                     <img
-                        src="/images/pages/shared/Annual-Report-2021-Images-File-1_Page_34-980x654.jpg"
+                        src="/images/shared/Annual-Report-2021-Images-File-1_Page_34-980x654.jpg"
                         alt="Calling prison"
                     />
                     <div className="center">
