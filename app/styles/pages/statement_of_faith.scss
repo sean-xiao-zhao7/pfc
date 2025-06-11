@@ -1,0 +1,16 @@
+@use '../fonts'as fonts;
+
+#statement-of-faith {
+    .body {
+        h1 {
+            font-family: fonts.$pfc-cursive;
+            font-size: 3rem;
+        }
+
+        br {
+            display: block;
+            margin: 1rem;
+            content: " ";
+        }
+    }
+}
