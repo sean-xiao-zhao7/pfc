@@ -49,6 +49,10 @@ export default [
         "our-programs/restorative-justice/sycamore-tree",
         "./components/pages/our_programs/SycamoreTree.tsx"
     ),
+    route(
+        "our-programs/in-community-programs",
+        "./components/pages/our_programs/InCommunityPrograms.tsx"
+    ),
 
     // 404
     route("*", "./components/pages/about_pfc/NotFound.tsx"),

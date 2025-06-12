@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 export default function SycamoreTree() {
     return (
         <div className="page-container" id="sycamore-tree">
@@ -80,11 +82,13 @@ export default function SycamoreTree() {
                             </a>
                         </div>
                         <div className="box">
-                            <img
-                                src="/images/shared/group-chat-150x150.jpg"
-                                alt="in community programs"
-                            />
-                            <h2>IN COMMUNITY</h2>
+                            <Link to="/our-programs/in-community-programs">
+                                <img
+                                    src="/images/shared/group-chat-150x150.jpg"
+                                    alt="in community programs"
+                                />
+                                <h2>IN COMMUNITY</h2>
+                            </Link>
                         </div>
                     </div>
                 </div>

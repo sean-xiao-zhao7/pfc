@@ -21,24 +21,4 @@
             text-shadow: 1px 1px 1px rgb(89, 89, 89);
         }
     }
-
-    .two-cols {
-        align-items: flex-start;
-        margin-bottom: 2rem;
-
-        .box {
-            text-align: center;
-
-            img:first-child {
-                width: auto;
-                height: 20rem;
-                object-fit: cover;
-            }
-
-            img:nth-child(2) {
-                width: auto;
-                height: auto;
-            }
-        }
-    }
 }

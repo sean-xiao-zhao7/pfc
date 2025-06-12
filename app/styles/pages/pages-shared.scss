@@ -73,6 +73,23 @@
                 font-size: 1.2rem;
             }
         }
+
+        &.image-background.reading {
+            background-image: url(/images/pages/in-community-programs/dude-writing-a-letter.png);
+            background-position: 50% 100%;
+            padding: 6rem 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            h1 {
+                font-size: 4rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+        }
     }
 
     .simple-slogan {
@@ -181,7 +198,7 @@
         justify-content: center;
         align-items: flex-start;
 
-        img {
+        >img {
             width: 100%;
             object-fit: cover;
             height: 20rem;
@@ -190,6 +207,26 @@
         .box {
             h2 {
                 margin: 0;
+            }
+        }
+
+        &.two-image-rows {
+            align-items: flex-start;
+            margin-bottom: 2rem;
+
+            .box {
+                text-align: center;
+
+                img:first-child {
+                    width: auto;
+                    height: 20rem;
+                    object-fit: cover;
+                }
+
+                img:nth-child(2) {
+                    width: auto;
+                    height: auto;
+                }
             }
         }
     }
