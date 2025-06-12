@@ -94,6 +94,7 @@ export default function InCommunityPrograms() {
                         <img
                             src="/images/shared/100102p_AngelTree.png"
                             alt="angel tree"
+                            className="non-child"
                         />
                         <p>
                             There are over 357,000 children affected by parental
