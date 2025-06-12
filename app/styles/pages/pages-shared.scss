@@ -137,7 +137,7 @@
     }
 
     iframe {
-        width: 250rem;
+        width: 100%;
         height: 20rem;
         border: solid 1px whitesmoke;
         box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
@@ -193,11 +193,15 @@
 
     .two-cols {
         display: grid;
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: repeat(2, calc(50% - 2rem));
         grid-column-gap: 2rem;
         grid-row-gap: 2rem;
         justify-content: center;
         align-items: flex-start;
+
+        &.bigger-text {
+            grid-template-columns: 30% calc(70% - 2rem);
+        }
 
         img {
             width: 100%;

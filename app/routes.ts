@@ -53,6 +53,10 @@ export default [
         "our-programs/in-community-programs",
         "./components/pages/our_programs/InCommunityPrograms.tsx"
     ),
+    route(
+        "our-programs/in-community-programs/bridgecare",
+        "./components/pages/our_programs/BridgeCare.tsx"
+    ),
 
     // 404
     route("*", "./components/pages/about_pfc/NotFound.tsx"),

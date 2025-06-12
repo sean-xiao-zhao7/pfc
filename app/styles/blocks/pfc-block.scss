@@ -20,10 +20,13 @@
     }
 
     &.blue {
-        background-image: url(/images/graphics/button-background-black.png);
+        background-image: url(/images/graphics/button-background-blue.png);
+        background-size: 90% auto;
+        padding: 7rem 15rem;
+
     }
 
     &.green {
-        background-image: url(/images/graphics/button-background-black.png);
+        background-image: url(/images/graphics/button-background-green.png);
     }
 }
