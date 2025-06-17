@@ -57,6 +57,10 @@ export default [
         "our-programs/in-community-programs/bridgecare",
         "./components/pages/our_programs/BridgeCare.tsx"
     ),
+    route(
+        "our-programs/in-community-programs/angel-tree",
+        "./components/pages/our_programs/AngelTree.tsx"
+    ),
 
     // 404
     route("*", "./components/pages/about_pfc/NotFound.tsx"),
