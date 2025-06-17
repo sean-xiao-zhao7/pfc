@@ -23,6 +23,11 @@
     background-color: black;
 }
 
+.green-color-button {
+    background-color: colors.$pfc-green;
+}
+
+
 .pfc-button {
     color: white;
     font-size: 1rem;
@@ -51,4 +56,8 @@
 
 .pfc-button-black {
     background-image: url('/images/graphics/button-background-black.png');
+}
+
+.pfc-button-green {
+    background-image: url('/images/graphics/button-background-green.png');
 }

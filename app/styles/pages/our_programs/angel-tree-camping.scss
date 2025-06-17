@@ -1,0 +1,40 @@
+@use '../../colors'as colors;
+
+#angel-tree-camping {
+    .simple-slogan {
+        padding: 0;
+
+        img {
+            padding: 0 12rem;
+            width: calc(100% - 24rem);
+        }
+    }
+
+    .button-bottom-right {
+        position: relative;
+
+        button {
+            position: absolute;
+            right: 0;
+        }
+    }
+
+    .two-cols {
+        align-items: center;
+    }
+
+    .three-cols {
+        justify-content: space-between;
+
+        h3 {
+            font-size: 3rem;
+            margin: 0;
+            color: colors.$pfc-green;
+        }
+
+        img {
+            width: auto;
+            height: 15rem;
+        }
+    }
+}

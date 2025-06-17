@@ -61,6 +61,10 @@ export default [
         "our-programs/in-community-programs/angel-tree",
         "./components/pages/our_programs/AngelTree.tsx"
     ),
+    route(
+        "our-programs/in-community-programs/angel-tree/angel-tree-camping",
+        "./components/pages/our_programs/AngelTreeCamping.tsx"
+    ),
 
     // 404
     route("*", "./components/pages/about_pfc/NotFound.tsx"),

@@ -13,6 +13,8 @@
 @use './our_programs/sycamore-tree';
 @use './our_programs/in-community-programs';
 @use './our_programs/angel-tree';
+@use './our_programs/angel-tree-camping';
+
 
 .page-container {
     .slogan {
@@ -239,6 +241,19 @@
                     height: auto;
                 }
             }
+        }
+    }
+
+    .three-cols {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
         }
     }
 

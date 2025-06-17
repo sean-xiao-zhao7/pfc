@@ -17,6 +17,8 @@
 
     &.black {
         background-image: url(/images/graphics/button-background-black.png);
+        background-size: 100% 20rem;
+        padding: 5rem;
     }
 
     &.blue {
@@ -28,7 +30,7 @@
 
     &.green {
         background-image: url(/images/graphics/button-background-green.png);
-        background-size: 90% auto;
-        padding: 7rem 15rem;
+        background-size: 100% 20rem;
+        padding: 5rem;
     }
 }
