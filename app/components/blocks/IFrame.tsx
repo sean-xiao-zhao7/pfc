@@ -1,4 +1,10 @@
-export default function IFrame({ url }: { url: string }) {
+export default function IFrame({
+    url,
+    className,
+}: {
+    url: string;
+    className: string;
+}) {
     return (
         <iframe
             src={url}
@@ -6,6 +12,7 @@ export default function IFrame({ url }: { url: string }) {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
+            className={className}
         ></iframe>
     );
 }

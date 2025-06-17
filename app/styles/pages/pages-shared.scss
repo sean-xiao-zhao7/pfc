@@ -14,6 +14,7 @@
 @use './our_programs/in-community-programs';
 @use './our_programs/angel-tree';
 @use './our_programs/angel-tree-camping';
+@use './our_programs/angel-tree-christmas';
 
 
 .page-container {
@@ -123,6 +124,10 @@
         p {
             font-size: 1.2rem;
         }
+
+        img {
+            max-width: 100%;
+        }
     }
 
     .center {
@@ -145,6 +150,11 @@
         border: solid 1px whitesmoke;
         box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
         margin-left: 2rem;
+
+        &.full-width {
+            margin-left: 0;
+            height: 30rem;
+        }
 
         @media only screen and (max-width: 600px) {
             width: 100%;

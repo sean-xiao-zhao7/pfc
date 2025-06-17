@@ -31,7 +31,10 @@ export default function AngelTreeCamping() {
                             type="button"
                         />
                     </div>
-                    <IFrame url={"https://www.youtube.com/embed/GpMoAmLx110"} />
+                    <IFrame
+                        url={"https://www.youtube.com/embed/GpMoAmLx110"}
+                        className=""
+                    />
                 </div>
                 <SpaceDivider />
                 <div className="three-cols">
