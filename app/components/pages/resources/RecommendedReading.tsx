@@ -3,11 +3,22 @@ import SpaceDivider from "~/components/blocks/SpaceDivider";
 import { books } from "~/data/books";
 
 export default function RecommendedReading() {
-    const [currentCat, setCurrentCat] = useState("addiction");
+    const [cat, setCat] = useState({
+        id: 0,
+        highlights: new Array(16).fill(true, 0, 1).fill(false, 1),
+    });
 
-    const tabClickHandler = (cat: string) => {
-        setCurrentCat(cat);
-    };
+    function tabClickHandler(newId: number) {
+        setCat((currentCat) => {
+            const newCat = {
+                id: newId,
+                highlights: new Array(16)
+                    .fill(false, 0)
+                    .fill(true, newId, newId + 1),
+            };
+            return newCat;
+        });
+    }
 
     return (
         <div className="page-container" id="recommended-reading">
@@ -18,17 +29,22 @@ export default function RecommendedReading() {
             <div className="body">
                 <div className="resources-tabs">
                     <div className="headings">
-                        <span onClick={() => tabClickHandler("addiction")}>
+                        <span
+                            onClick={() => tabClickHandler(0)}
+                            className={cat.highlights[0] ? "current" : ""}
+                        >
                             Addiction
                         </span>
                         <span
-                            onClick={() =>
-                                tabClickHandler("aftercarAndRecidivism")
-                            }
+                            onClick={() => tabClickHandler(1)}
+                            className={cat.highlights[1] ? "current" : ""}
                         >
                             Aftercare and Recidivism
                         </span>
-                        <span onClick={() => tabClickHandler("boundaries")}>
+                        <span
+                            onClick={() => tabClickHandler(2)}
+                            className={cat.highlights[2] ? "current" : ""}
+                        >
                             Boundaries
                         </span>
                         <span>Devotionals</span>
@@ -47,7 +63,7 @@ export default function RecommendedReading() {
                     </div>
                     <SpaceDivider />
                     <div className="contents">
-                        {books[currentCat].map((currentBook) => (
+                        {books[cat.id].map((currentBook) => (
                             <div className="book-container">
                                 <img src={currentBook.imgUrl} alt="book" />
                                 <div className="book-info">

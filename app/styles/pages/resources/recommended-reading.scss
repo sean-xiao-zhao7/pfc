@@ -23,7 +23,8 @@
                 font-family: fonts.$pfc-menu-capital;
                 font-size: 1.2rem;
 
-                &:hover {
+                &:hover,
+                &.current {
                     background-color: colors.$pfc-green;
                     color: white
                 }
