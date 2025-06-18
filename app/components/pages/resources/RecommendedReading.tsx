@@ -64,7 +64,10 @@ export default function RecommendedReading() {
                     <SpaceDivider />
                     <div className="contents">
                         {books[cat.id].map((currentBook) => (
-                            <div className="book-container">
+                            <div
+                                className="book-container"
+                                key={currentBook.title}
+                            >
                                 <img src={currentBook.imgUrl} alt="book" />
                                 <div className="book-info">
                                     <h2>{currentBook.title}</h2>

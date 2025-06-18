@@ -4,6 +4,7 @@ export default [
     index("./components/home/Home.tsx"),
 
     // About PFC
+    route("about-us", "./components/pages/about_pfc/AboutUs.tsx"),
     route("about-us/who-we-are", "./components/pages/about_pfc/WhoWeAre.tsx"),
     route(
         "about-us/regional-offices",
@@ -77,5 +78,5 @@ export default [
     ),
 
     // 404
-    route("*", "./components/pages/about_pfc/NotFound.tsx"),
+    route("*", "./components/pages/NotFound.tsx"),
 ] satisfies RouteConfig;
