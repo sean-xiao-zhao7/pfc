@@ -1,0 +1,35 @@
+@use '../../fonts'as fonts;
+@use '../../colors'as colors;
+
+#recommended-reading {
+    .resources-tabs {
+        max-width: 100%;
+
+        .headings {
+            display: grid;
+            grid-template-columns: repeat(6, auto);
+            grid-row-gap: .5rem;
+            grid-column-gap: .5rem;
+            justify-content: center;
+
+            span {
+                cursor: pointer;
+                background-color: whitesmoke;
+                padding: 1rem .5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                font-family: fonts.$pfc-menu-capital;
+                font-size: 1.2rem;
+
+                &:hover {
+                    background-color: colors.$pfc-green;
+                    color: white
+                }
+            }
+        }
+
+        .contents {}
+    }
+}

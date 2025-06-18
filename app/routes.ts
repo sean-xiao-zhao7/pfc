@@ -70,6 +70,12 @@ export default [
         "./components/pages/our_programs/AngelTreeChristmas.tsx"
     ),
 
+    // resources
+    route(
+        "resources/books",
+        "./components/pages/resources/RecommendedReading.tsx"
+    ),
+
     // 404
     route("*", "./components/pages/about_pfc/NotFound.tsx"),
 ] satisfies RouteConfig;

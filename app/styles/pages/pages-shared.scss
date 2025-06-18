@@ -16,6 +16,9 @@
 @use './our_programs/angel-tree-camping';
 @use './our_programs/angel-tree-christmas';
 
+// resources
+@use './resources/recommended-reading';
+
 
 .page-container {
     .slogan {
@@ -82,6 +85,23 @@
         &.image-background.reading {
             background-image: url(/images/pages/in-community-programs/dude-writing-a-letter.png);
             background-position: 50% 100%;
+            padding: 6rem 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            h1 {
+                font-size: 4rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+        }
+
+        &.image-background.books {
+            background-image: url(/images/pages/resources/recommended-reading/WEB-IMAGES-2_Page_43-scaled.jpg);
+            background-position: 50% 50%;
             padding: 6rem 0;
             display: flex;
             flex-direction: row;
