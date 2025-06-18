@@ -30,6 +30,13 @@
             }
         }
 
-        .contents {}
+        .contents {
+            .book-container {
+                display: grid;
+                grid-template-columns: 10% 90%;
+                grid-column-gap: 2rem;
+                align-items: center;
+            }
+        }
     }
 }

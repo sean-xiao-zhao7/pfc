@@ -1,6 +1,10 @@
+import { useState } from "react";
 import SpaceDivider from "~/components/blocks/SpaceDivider";
+import { books } from "~/data/books";
 
 export default function RecommendedReading() {
+    const [currentCat, setCurrentCat] = useState("addiction");
+
     return (
         <div className="page-container" id="recommended-reading">
             <div className="slogan image-background books">
@@ -27,7 +31,18 @@ export default function RecommendedReading() {
                         <span>Restorative Justice</span>
                         <span>Others</span>
                     </div>
-                    <div className="contents"></div>
+                    <SpaceDivider />
+                    <div className="contents">
+                        {books[currentCat].map((currentBook) => (
+                            <div className="book-container">
+                                <img src={currentBook.imgUrl} alt="book" />
+                                <div className="book-info">
+                                    <h2>{currentBook.title}</h2>
+                                    <p>{currentBook.intro}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
             <SpaceDivider />
