@@ -27,4 +27,19 @@ export const books: { [category: string]: Book[] } = {
                 "Addiction-and-Pastoral-Care-Sonia-E.-Waters-and-John-Swinton-200x300.jpg",
         },
     ],
+    aftercarAndRecidivism: [
+        {
+            title: "Homeward – Life in the Year After Prison – Bruce Western",
+            intro: "Quantitative and qualitative evidence-based research drives a better understanding of what works and what doesn’t in successful ex-offender community reintegration. This 2018 re-entry study was conducted in Boston, Massachusetts.",
+            imgUrl:
+                imgUrlBase + "HomewardLifeintheYearAfterPrisonBruceWestern.jpg",
+        },
+    ],
+    boundaries: [
+        {
+            title: "Boundaries – Dr. Henry Cloud and Dr. John Townsend",
+            intro: "This book offers biblically-based answers to tough questions (E.g. Can I set limits and still be a loving person? What are legitimate boundaries? What if someone is upset or hurt by my boundaries?Aren’t boundaries selfish?). Through insights and stories, the authors demonstrate how to set healthy boundaries with our parents, spouses, children, friends, co-workers, and even ourselves.",
+            imgUrl: imgUrlBase + "boundries-194x300.jpg",
+        },
+    ],
 };

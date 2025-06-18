@@ -5,6 +5,10 @@ import { books } from "~/data/books";
 export default function RecommendedReading() {
     const [currentCat, setCurrentCat] = useState("addiction");
 
+    const tabClickHandler = (cat: string) => {
+        setCurrentCat(cat);
+    };
+
     return (
         <div className="page-container" id="recommended-reading">
             <div className="slogan image-background books">
@@ -14,9 +18,19 @@ export default function RecommendedReading() {
             <div className="body">
                 <div className="resources-tabs">
                     <div className="headings">
-                        <span>Addiction</span>
-                        <span>Aftercare and Recidivism</span>
-                        <span>Boundaries</span>
+                        <span onClick={() => tabClickHandler("addiction")}>
+                            Addiction
+                        </span>
+                        <span
+                            onClick={() =>
+                                tabClickHandler("aftercarAndRecidivism")
+                            }
+                        >
+                            Aftercare and Recidivism
+                        </span>
+                        <span onClick={() => tabClickHandler("boundaries")}>
+                            Boundaries
+                        </span>
                         <span>Devotionals</span>
                         <span>Grace</span>
                         <span>Indigenous</span>
