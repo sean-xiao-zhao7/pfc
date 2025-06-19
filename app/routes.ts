@@ -82,6 +82,10 @@ export default [
         "resources/churches-volunteers/volunteer-resources",
         "./components/pages/resources/VolunteerResources.tsx"
     ),
+    route(
+        "resources/institutional-chaplains-partners",
+        "./components/pages/resources/InstitutionalChaplainsPartners.tsx"
+    ),
 
     // 404
     route("*", "./components/pages/NotFound.tsx"),

@@ -1,6 +1,5 @@
 import { useState } from "react";
 import PFCLogo from "~/components/blocks/PFCLogo";
-import SpaceDivider from "~/components/blocks/SpaceDivider";
 
 export default function VolunteerResources() {
     const [accordionStates, setAccordionStates] = useState(

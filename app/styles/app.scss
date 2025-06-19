@@ -38,3 +38,7 @@ h2,
 h3 {
     font-family: fonts.$pfc-menu-capital;
 }
+
+h2, h3 {
+    text-transform: uppercase;
+}
