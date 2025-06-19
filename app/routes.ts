@@ -78,6 +78,10 @@ export default [
         "resources/books",
         "./components/pages/resources/RecommendedReading.tsx"
     ),
+    route(
+        "resources/churches-volunteers/volunteer-resources",
+        "./components/pages/resources/VolunteerResources.tsx"
+    ),
 
     // 404
     route("*", "./components/pages/NotFound.tsx"),
