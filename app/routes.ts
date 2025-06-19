@@ -93,6 +93,10 @@ export default [
 
     // get involved
     route("get-involved", "./components/pages/get-involved/GetInvolved.tsx"),
+    route(
+        "calendar/category/pfcevents",
+        "./components/pages/get-involved/PFCEventsCalendar.tsx"
+    ),
 
     // 404
     route("*", "./components/pages/NotFound.tsx"),
