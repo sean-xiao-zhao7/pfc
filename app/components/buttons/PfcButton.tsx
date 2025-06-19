@@ -7,6 +7,10 @@ export default function PfcButton({
     text: string;
     type: string;
 }) {
+    if (!color) color = "black";
+    if (!text) text = "Learn more";
+    if (!type) type = "button";
+
     return (
         <button
             className={`pfc-button-${color} pfc-button`}

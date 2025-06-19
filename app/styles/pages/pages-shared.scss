@@ -21,6 +21,18 @@
 
 
 .page-container {
+    p {
+        font-size: 1.2rem;
+    }
+
+    img {
+        object-fit: cover;
+
+        &.smaller {
+            height: 20rem;
+        }
+    }
+
     .slogan {
         background-image: url(/images/graphics/button-background-black.png);
         background-repeat: no-repeat;
@@ -37,7 +49,7 @@
 
         h1 {
             font-family: fonts.$pfc-cursive;
-            font-size: 2.2rem;
+            font-size: 2.6rem;
         }
 
         &.image-background.road {
@@ -383,6 +395,67 @@
         .right {
             display: flex;
 
+            @media only screen and (max-width: 600px) {
+                display: block;
+            }
+
+            &.with-text {
+                align-items: center;
+            }
+
+            img {
+                width: 100%;
+                object-fit: cover;
+                margin-right: 3rem;
+
+                @media only screen and (max-width: 600px) {
+                    margin: 0;
+                }
+
+                &.with-text {
+                    max-width: 20rem;
+                    height: 20rem;
+                }
+            }
+        }
+    }
+
+    .green-divided {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-column-gap: 2rem;
+        justify-content: center;
+        margin-bottom: 2rem;
+
+        @media only screen and (max-width: 600px) {
+            padding: 2rem;
+            display: block;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 1.2rem;
+        }
+
+        .left {
+            border-right: solid 1px rgba(140, 198, 63, 0.84);
+            padding-right: 3rem;
+            margin-right: 3rem;
+            text-align: center;
+
+            @media only screen and (max-width: 600px) {
+                padding: 0 0 2rem 0;
+                margin: 0 0 2rem 0;
+                border-right: 0;
+                border-bottom: solid 1px rgba(140, 198, 63, 0.84);
+            }
+
+            img {
+                max-width: 20rem;
+            }
+        }
+
+        .right {
             @media only screen and (max-width: 600px) {
                 display: block;
             }

@@ -73,6 +73,7 @@ export default [
     ),
 
     // resources
+    route("resources/", "./components/pages/resources/Resources.tsx"),
     route(
         "resources/books",
         "./components/pages/resources/RecommendedReading.tsx"

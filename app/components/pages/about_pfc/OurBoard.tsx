@@ -1,3 +1,5 @@
+import SpaceDivider from "~/components/blocks/SpaceDivider";
+
 export default function OurBoard() {
     return (
         <div className="page-container" id="our-board">
@@ -9,12 +11,15 @@ export default function OurBoard() {
                 />
                 <h1>Our Board of Directors</h1>
             </div>
-            <div>
+            <div className="body">
                 <p className="center">
                     The PFC Board of Directors consists of passionate
                     individuals with diverse skills and backgrounds, who are
                     eager to serve the ministry with sincerity.
                 </p>
+            </div>
+            <SpaceDivider />
+            <div>
                 <div className="five-cols">
                     <div className="box">
                         <img
