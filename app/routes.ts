@@ -91,6 +91,9 @@ export default [
         "./components/pages/resources/ChurchResources.tsx"
     ),
 
+    // get involved
+    route("get-involved", "./components/pages/get-involved/GetInvolved.tsx"),
+
     // 404
     route("*", "./components/pages/NotFound.tsx"),
 ] satisfies RouteConfig;
