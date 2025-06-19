@@ -35,6 +35,14 @@
         }
     }
 
+    input {
+        &.full-width {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1.2rem;
+        }
+    }
+
     .slogan {
         background-image: url(/images/graphics/button-background-black.png);
         background-repeat: no-repeat;
