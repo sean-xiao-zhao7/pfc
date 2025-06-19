@@ -26,6 +26,7 @@ export default [
     ),
 
     // Our Programs
+    route("pfc-programs/", "./components/pages/our_programs/OurPrograms.tsx"),
     route(
         "our-programs/prisoners/in-prison-programs",
         "./components/pages/our_programs/InPrisonPrograms.tsx"

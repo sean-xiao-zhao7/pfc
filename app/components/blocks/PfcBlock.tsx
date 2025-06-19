@@ -7,5 +7,7 @@ export default function PfcBlock({
     color: string;
     children: ReactNode;
 }) {
-    return <div className={"pfc-block " + color}>{children}</div>;
+    return (
+        <div className={"pfc-block large-text more " + color}>{children}</div>
+    );
 }

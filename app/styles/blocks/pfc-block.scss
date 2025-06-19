@@ -1,3 +1,5 @@
+@use '../fonts'as fonts;
+
 .pfc-block {
     color: white;
     background-repeat: no-repeat;
@@ -7,8 +9,10 @@
     padding: 4rem 0;
     margin-bottom: 2rem;
 
-    p {
+    &.large-text.more p {
         font-size: 1.4rem;
+        font-family: fonts.$pfc-menu-capital;
+
     }
 
     &.orange {

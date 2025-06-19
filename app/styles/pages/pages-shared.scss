@@ -115,6 +115,24 @@
                 font-size: 1.2rem;
             }
         }
+
+        &.image-background.lake {
+            background-image: url(/images/pages/our-programs/program-banner.jpg);
+            background-position: 50% 50%;
+            padding: 6rem 0;
+            display: flex;
+            justify-content: space-evenly;
+
+            h1 {
+                font-size: 4rem;
+                text-shadow: 1px 1px 10px black;
+            }
+
+            p {
+                font-size: 1.4rem;
+                text-shadow: 1px 1px 2px black;
+            }
+        }
     }
 
     .simple-slogan {
@@ -369,6 +387,10 @@
                 display: block;
             }
 
+            &.with-text {
+                align-items: center;
+            }
+
             img {
                 width: 100%;
                 object-fit: cover;
@@ -376,6 +398,11 @@
 
                 @media only screen and (max-width: 600px) {
                     margin: 0;
+                }
+
+                &.with-text {
+                    max-width: 20rem;
+                    height: 20rem;
                 }
             }
         }
