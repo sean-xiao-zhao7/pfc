@@ -9,12 +9,25 @@ export default function PFCEventsCalendar() {
     });
 
     let calendarGrid = [];
+    let weekCounter = 0;
     for (let dayOfMonth = 1; dayOfMonth < 31; dayOfMonth++) {
+        let className = "day-box ";
+        if (dayOfMonth <= 7) {
+            className += "firstRow ";
+        }
+        if (weekCounter === 6 || dayOfMonth === 30) {
+            className += "lastBox ";
+        }
         const dayBox = (
-            <div className="day-box">
+            <div className={className}>
                 <span>{dayOfMonth}</span>
             </div>
         );
+        if (weekCounter === 6) {
+            weekCounter = 0;
+        } else {
+            weekCounter++;
+        }
         calendarGrid.push(dayBox);
     }
 
