@@ -5,21 +5,31 @@ import PFCLogo from "~/components/blocks/PFCLogo";
 import SpaceDivider from "~/components/blocks/SpaceDivider";
 
 export default function PFCEventsCalendar() {
+    // calc initial month and year based on Now
     const dateNow = new Date();
-    const monthYear = dateNow.toLocaleDateString(undefined, {
+    const monthNow = dateNow.toLocaleDateString(undefined, {
+        month: "numeric",
+    });
+    const yearNow = dateNow.toLocaleDateString(undefined, {
+        year: "numeric",
+    });
+
+    // set up dynamic month and data
+    const [month, setMonth] = useState(+monthNow);
+    const currentMonthDate = new Date(+yearNow, month, 0);
+    const totalDays = currentMonthDate.getDate();
+    const monthString = currentMonthDate.toLocaleDateString(undefined, {
         month: "long",
     });
 
-    const [month, setMonth] = useState(monthYear);
-
     let calendarGrid = [];
     let weekCounter = 0;
-    for (let dayOfMonth = 1; dayOfMonth < 31; dayOfMonth++) {
+    for (let dayOfMonth = 1; dayOfMonth < totalDays + 1; dayOfMonth++) {
         let className = "day-box ";
         if (dayOfMonth <= 7) {
             className += "firstRow ";
         }
-        if (weekCounter === 6 || dayOfMonth === 30) {
+        if (weekCounter === 6 || dayOfMonth === totalDays) {
             className += "lastBox ";
         }
         const dayBox = (
@@ -36,7 +46,15 @@ export default function PFCEventsCalendar() {
     }
 
     const changeMonthHandler = (changeVal: number) => {
-        setMonth((currentMonth) => currentMonth + changeVal);
+        setMonth((currentMonth) => {
+            const newMonth = currentMonth + changeVal;
+            if (newMonth === 13) {
+                return 1;
+            } else if (newMonth === 0) {
+                return 12;
+            }
+            return newMonth;
+        });
     };
 
     return (
@@ -54,14 +72,12 @@ export default function PFCEventsCalendar() {
                         >
                             <BiSolidLeftArrow />
                         </div>
-                        <h2>{month}</h2>
+                        <h2>{monthString + " " + yearNow}</h2>
                         <div
                             className="control"
-                            onClick={() => changeMonthHandler(-1)}
+                            onClick={() => changeMonthHandler(1)}
                         >
-                            <BiSolidRightArrow
-                                onClick={() => changeMonthHandler(1)}
-                            />
+                            <BiSolidRightArrow />
                         </div>
                     </div>
                     <div className="calendar-day-grid">

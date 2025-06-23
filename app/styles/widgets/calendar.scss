@@ -16,6 +16,7 @@
         h2 {
             text-align: center;
             margin: 0;
+            font-size: 1.6rem;
         }
 
         .control {
@@ -27,6 +28,10 @@
             &:hover {
                 cursor: pointer;
                 color: colors.$pfc-green;
+            }
+
+            svg {
+                font-size: 1.4rem;
             }
         }
     }
