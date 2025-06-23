@@ -1,0 +1,21 @@
+.calendar-container {
+    border: solid 1px whitesmoke;
+    padding: 1rem;
+
+    .calendar-heading {
+        h2 {
+            margin: 0
+        }
+    }
+
+    .calendar-day-grid {
+        display: grid;
+        grid-template-columns: repeat(7, auto);
+        align-items: center;
+
+        .day-box {
+            border: solid .5px gray;
+            padding: 1rem;
+        }
+    }
+}

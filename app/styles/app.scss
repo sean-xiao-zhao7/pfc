@@ -18,6 +18,9 @@
 @use "home/home";
 @use "pages/pages-shared";
 
+//widgets
+@use 'widgets/calendar';
+
 html,
 body {
     background-color: white;
@@ -39,6 +42,7 @@ h3 {
     font-family: fonts.$pfc-menu-capital;
 }
 
-h2, h3 {
+h2,
+h3 {
     text-transform: uppercase;
 }

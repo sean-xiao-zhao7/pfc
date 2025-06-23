@@ -1,4 +1,5 @@
 import PFCLogo from "~/components/blocks/PFCLogo";
+import SpaceDivider from "~/components/blocks/SpaceDivider";
 
 export default function PFCEventsCalendar() {
     const dateNow = new Date();
@@ -6,6 +7,16 @@ export default function PFCEventsCalendar() {
         month: "long",
         year: "numeric",
     });
+
+    let calendarGrid = [];
+    for (let dayOfMonth = 1; dayOfMonth < 31; dayOfMonth++) {
+        const dayBox = (
+            <div className="day-box">
+                <span>{dayOfMonth}</span>
+            </div>
+        );
+        calendarGrid.push(dayBox);
+    }
 
     return (
         <div className="page-container">
@@ -18,7 +29,7 @@ export default function PFCEventsCalendar() {
                     <div className="calendar-heading">
                         <h2>{monthYear}</h2>
                     </div>
-                    <div className="days-of-week-heading">
+                    <div className="calendar-day-grid">
                         <span>MON</span>
                         <span>TUE</span>
                         <span>WED</span>
@@ -26,10 +37,11 @@ export default function PFCEventsCalendar() {
                         <span>FRI</span>
                         <span>SAT</span>
                         <span>SUN</span>
+                        {calendarGrid}
                     </div>
-                    <div className="days-grid"></div>
                 </div>
             </div>
+            <SpaceDivider />
         </div>
     );
 }
