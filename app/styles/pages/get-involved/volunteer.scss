@@ -1,0 +1,13 @@
+@use '../../colors'as colors;
+
+#volunteer {
+    h3 {
+        color: colors.$pfc-orange;
+    }
+
+    li {
+        list-style: initial;
+        font-size: 1.2rem;
+        margin-bottom: .5rem;
+    }
+}

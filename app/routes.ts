@@ -97,6 +97,10 @@ export default [
         "calendar/category/pfcevents",
         "./components/pages/get-involved/PFCEventsCalendar.tsx"
     ),
+    route(
+        "get-involved/volunteer",
+        "./components/pages/get-involved/Volunteer.tsx"
+    ),
 
     // 404
     route("*", "./components/pages/NotFound.tsx"),
