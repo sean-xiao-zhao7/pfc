@@ -1,3 +1,6 @@
+import { useState } from "react";
+import { BiSolidLeftArrow, BiSolidRightArrow } from "react-icons/bi";
+
 import PFCLogo from "~/components/blocks/PFCLogo";
 import SpaceDivider from "~/components/blocks/SpaceDivider";
 
@@ -5,8 +8,9 @@ export default function PFCEventsCalendar() {
     const dateNow = new Date();
     const monthYear = dateNow.toLocaleDateString(undefined, {
         month: "long",
-        year: "numeric",
     });
+
+    const [month, setMonth] = useState(monthYear);
 
     let calendarGrid = [];
     let weekCounter = 0;
@@ -31,6 +35,10 @@ export default function PFCEventsCalendar() {
         calendarGrid.push(dayBox);
     }
 
+    const changeMonthHandler = (changeVal: number) => {
+        setMonth((currentMonth) => currentMonth + changeVal);
+    };
+
     return (
         <div className="page-container">
             <div className="slogan">
@@ -40,7 +48,21 @@ export default function PFCEventsCalendar() {
             <div className="body">
                 <div className="calendar-container">
                     <div className="calendar-heading">
-                        <h2>{monthYear}</h2>
+                        <div
+                            className="control"
+                            onClick={() => changeMonthHandler(-1)}
+                        >
+                            <BiSolidLeftArrow />
+                        </div>
+                        <h2>{month}</h2>
+                        <div
+                            className="control"
+                            onClick={() => changeMonthHandler(-1)}
+                        >
+                            <BiSolidRightArrow
+                                onClick={() => changeMonthHandler(1)}
+                            />
+                        </div>
                     </div>
                     <div className="calendar-day-grid">
                         <span className="heading">MON</span>
