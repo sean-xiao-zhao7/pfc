@@ -101,6 +101,10 @@ export default [
         "get-involved/volunteer",
         "./components/pages/get-involved/Volunteer.tsx"
     ),
+    route(
+        "resources/institutional-chaplains/",
+        "./components/pages/get-involved/InstitutionalChaplains.tsx"
+    ),
 
     // 404
     route("*", "./components/pages/NotFound.tsx"),

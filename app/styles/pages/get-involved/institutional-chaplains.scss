@@ -1,0 +1,27 @@
+@use '../../colors'as colors;
+
+#institutional-chaplains {
+    h2 {
+        text-transform: capitalize;
+        margin: 0;
+    }
+
+    h3 {
+        color: colors.$pfc-orange;
+        margin: 0;
+    }
+
+    li {
+        list-style: initial;
+        font-size: 1.2rem;
+    }
+
+    .two-cols {
+        grid-template-columns: 40% 60%;
+        margin-bottom: 2rem;
+
+        img {
+            height: 100%;
+        }
+    }
+}
