@@ -30,13 +30,13 @@ export default function PFCEventsCalendar() {
                         <h2>{monthYear}</h2>
                     </div>
                     <div className="calendar-day-grid">
-                        <span>MON</span>
-                        <span>TUE</span>
-                        <span>WED</span>
-                        <span>THU</span>
-                        <span>FRI</span>
-                        <span>SAT</span>
-                        <span>SUN</span>
+                        <span className="heading">MON</span>
+                        <span className="heading">TUE</span>
+                        <span className="heading">WED</span>
+                        <span className="heading">THU</span>
+                        <span className="heading">FRI</span>
+                        <span className="heading">SAT</span>
+                        <span className="heading">SUN</span>
                         {calendarGrid}
                     </div>
                 </div>
