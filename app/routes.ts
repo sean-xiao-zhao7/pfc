@@ -116,6 +116,10 @@ export default [
 
     // Donate
     route("donate-online", "./components/pages/donate/Donate.tsx"),
+    route(
+        "donate-online/pathway-partners",
+        "./components/pages/donate/PathwayPartners.tsx"
+    ),
 
     // 404
     route("*", "./components/pages/NotFound.tsx"),
