@@ -4,7 +4,7 @@ import SpaceDivider from "~/components/blocks/SpaceDivider";
 export default function RaisingAwareness() {
     return (
         <div className="page-container" id="raising-awareness">
-            <div className="slogan">
+            <div className="slogan contain-text">
                 <PFCLogo />
                 <h1>Raising Awareness</h1>
                 <p className="center">

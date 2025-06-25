@@ -1,11 +1,12 @@
 import PFCLogo from "~/components/blocks/PFCLogo";
 import SpaceDivider from "~/components/blocks/SpaceDivider";
+import MainButton from "~/components/buttons/MainButton";
 import PfcButton from "~/components/buttons/PfcButton";
 
 export default function PrayerPartners() {
     return (
         <div className="page-container" id="prayer-partners">
-            <div className="slogan">
+            <div className="slogan contain-text">
                 <PFCLogo />
                 <h1>Prayer Partners</h1>
                 <p className="center">
@@ -48,6 +49,18 @@ export default function PrayerPartners() {
                     </div>
                 </div>
                 <SpaceDivider />
+            </div>
+            <div className="body full-width orange center">
+                <div className="center">
+                    SIGN UP TO RECEIVE THE MONTHLY PRAYER CALENDAR
+                </div>
+                <a
+                    href="https://prisonfellowship.us3.list-manage.com/subscribe?u=4a6eb310ab75ce3622e93d2ac&id=47bdc1849c"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    <MainButton color="blue" text="SIGN UP" type="button" />
+                </a>
             </div>
         </div>
     );
