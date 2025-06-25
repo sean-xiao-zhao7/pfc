@@ -26,7 +26,7 @@ export default [
     ),
 
     // Our Programs
-    route("pfc-programs/", "./components/pages/our_programs/OurPrograms.tsx"),
+    route("pfc-programs", "./components/pages/our_programs/OurPrograms.tsx"),
     route(
         "our-programs/prisoners/in-prison-programs",
         "./components/pages/our_programs/InPrisonPrograms.tsx"
@@ -73,7 +73,7 @@ export default [
     ),
 
     // resources
-    route("resources/", "./components/pages/resources/Resources.tsx"),
+    route("resources", "./components/pages/resources/Resources.tsx"),
     route(
         "resources/books",
         "./components/pages/resources/RecommendedReading.tsx"
@@ -102,8 +102,16 @@ export default [
         "./components/pages/get-involved/Volunteer.tsx"
     ),
     route(
-        "resources/institutional-chaplains/",
+        "resources/institutional-chaplains",
         "./components/pages/get-involved/InstitutionalChaplains.tsx"
+    ),
+    route(
+        "get-involved/prayer-partners",
+        "./components/pages/get-involved/PrayerPartners.tsx"
+    ),
+    route(
+        "get-involved/raise-awareness",
+        "./components/pages/get-involved/RaisingAwareness.tsx"
     ),
 
     // 404
