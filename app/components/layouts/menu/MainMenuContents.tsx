@@ -502,8 +502,6 @@ export default function MainMenuContents() {
                         </ul>
                     </li>
                 </ul>
-
-                <FaSearch />
             </div>
         </div>
     );
