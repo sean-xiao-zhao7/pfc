@@ -114,6 +114,9 @@ export default [
         "./components/pages/get-involved/RaisingAwareness.tsx"
     ),
 
+    // Donate
+    route("donate-online", "./components/pages/donate/Donate.tsx"),
+
     // 404
     route("*", "./components/pages/NotFound.tsx"),
 ] satisfies RouteConfig;
