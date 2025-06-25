@@ -348,6 +348,10 @@
         img {
             width: 100%;
         }
+
+        &.align-baseline {
+            align-items: baseline;
+        }
     }
 
     .four-cols {

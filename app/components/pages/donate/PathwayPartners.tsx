@@ -1,5 +1,4 @@
 import PFCLogo from "~/components/blocks/PFCLogo";
-import MainButton from "~/components/buttons/MainButton";
 
 export default function PathwayPartners() {
     return (
