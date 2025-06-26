@@ -59,7 +59,7 @@ export default function MainMenuContents() {
                 <div id="main-menu-right-contents-mobile">
                     <ul className="nav">
                         <li className="hover-trigger-menu-item">
-                            <Link>
+                            <Link to="/about-us/">
                                 About PFC <MdKeyboardArrowDown />
                             </Link>
                             <ul className="sub-menu">
@@ -101,7 +101,7 @@ export default function MainMenuContents() {
                             </ul>
                         </li>
                         <li className="hover-trigger-menu-item">
-                            <Link>
+                            <Link to="/pfc-programs/">
                                 Programs <MdKeyboardArrowDown />
                             </Link>
                             <ul className="sub-menu large">
@@ -178,7 +178,7 @@ export default function MainMenuContents() {
                             </ul>
                         </li>
                         <li className="hover-trigger-menu-item">
-                            <Link>
+                            <Link to="/resources/">
                                 Resources <MdKeyboardArrowDown />
                             </Link>
                             <ul className="sub-menu">
@@ -216,7 +216,7 @@ export default function MainMenuContents() {
                 </div>
                 <ul className="button-menu mobile">
                     <li className="hover-trigger-menu-item">
-                        <Link>
+                        <Link to="/get-involved/">
                             <MainButton
                                 text="Get Involved"
                                 color="orange"
@@ -259,7 +259,7 @@ export default function MainMenuContents() {
                         </ul>
                     </li>
                     <li className="hover-trigger-menu-item">
-                        <Link>
+                        <Link to="/donate-online/">
                             <MainButton
                                 text="Donate"
                                 color="blue"
