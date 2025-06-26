@@ -21,6 +21,9 @@
 //widgets
 @use 'widgets/calendar';
 
+// form
+@use 'form/pfc-input';
+
 html,
 body {
     background-color: white;

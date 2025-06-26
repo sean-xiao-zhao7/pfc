@@ -50,9 +50,7 @@ export default function TopLinks() {
                     </a>
                 </li>
                 <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-37108">
-                    <a href="https://prisonfellowship.ca/contact-us/">
-                        CONTACT US
-                    </a>
+                    <a href="/contact-us/">CONTACT US</a>
                 </li>
             </ul>
         </div>

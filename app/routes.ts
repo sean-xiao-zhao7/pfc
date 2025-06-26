@@ -125,6 +125,9 @@ export default [
         "./components/pages/donate/WaysToDonate.tsx"
     ),
 
+    // contact us
+    route("contact-us", "./components/pages/contact-us/ContactUs.tsx"),
+
     // 404
     route("*", "./components/pages/NotFound.tsx"),
 ] satisfies RouteConfig;
