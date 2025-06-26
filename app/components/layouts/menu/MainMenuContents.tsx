@@ -1,7 +1,7 @@
 import MainButton from "~/components/buttons/MainButton";
-import { FaSearch } from "react-icons/fa";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { useEffect } from "react";
+import { Link } from "react-router";
 
 export default function MainMenuContents() {
     useEffect(() => {
@@ -49,123 +49,127 @@ export default function MainMenuContents() {
     return (
         <div id="main-menu-contents-container">
             <div id="main-menu-logo">
-                <a href="/">
+                <Link to="/">
                     <img
                         src="/images/icons/main_square.png"
                         alt="PFC logo"
                         id="main-logo"
                     />
-                </a>
+                </Link>
                 <div id="main-menu-right-contents-mobile">
                     <ul className="nav">
                         <li className="hover-trigger-menu-item">
-                            <a>
+                            <Link>
                                 About PFC <MdKeyboardArrowDown />
-                            </a>
+                            </Link>
                             <ul className="sub-menu">
                                 <li id="menu-item-68">
-                                    <a href="/about-us/who-we-are/">
+                                    <Link to="/about-us/who-we-are/">
                                         Who We Are
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li id="menu-item-35931">
-                                    <a href="/facilitating-transformation/">
+                                    <Link to="/facilitating-transformation/">
                                         Facilitating Transformation
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li id="menu-item-102">
-                                    <a href="/about-us/pfc-team/">PFC Team</a>
+                                    <Link to="/about-us/pfc-team/">
+                                        PFC Team
+                                    </Link>
                                 </li>
                                 <li id="menu-item-105">
-                                    <a href="/about-us/our-board/">Our Board</a>
+                                    <Link to="/about-us/our-board/">
+                                        Our Board
+                                    </Link>
                                 </li>
                                 <li id="menu-item-850">
-                                    <a href="/about-us/regional-offices/">
+                                    <Link to="/about-us/regional-offices/">
                                         Regional Offices
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li id="menu-item-98">
-                                    <a href="/about-us/our-financials/">
+                                    <Link to="/about-us/our-financials/">
                                         Our Financials
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li id="menu-item-851">
-                                    <a href="/about-us/statement-of-faith/">
+                                    <Link to="/about-us/statement-of-faith/">
                                         Statement of Faith
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </li>
                         <li className="hover-trigger-menu-item">
-                            <a>
+                            <Link>
                                 Programs <MdKeyboardArrowDown />
-                            </a>
+                            </Link>
                             <ul className="sub-menu large">
                                 <li id="menu-item-830">
-                                    <a href="/our-programs/prisoners/in-prison-programs/">
+                                    <Link to="/our-programs/prisoners/in-prison-programs/">
                                         In Prison Programs
-                                    </a>
+                                    </Link>
                                     <ul>
                                         <li id="menu-item-75">
-                                            <a href="/our-programs/prisoners/in-prison-programs/faith-justice/">
+                                            <Link to="/our-programs/prisoners/in-prison-programs/faith-justice/">
                                                 Faith &amp; Justice
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li id="menu-item-76">
-                                            <a href="/our-programs/prisoners/in-prison-programs/pf-by-phone/">
+                                            <Link to="/our-programs/prisoners/in-prison-programs/pf-by-phone/">
                                                 PFC By Phone
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </li>
                                 <li id="menu-item-77">
-                                    <a href="/our-programs/restorative-justice/">
+                                    <Link to="/our-programs/restorative-justice/">
                                         Restorative Justice
-                                    </a>
+                                    </Link>
                                     <ul>
                                         <li id="menu-item-1143">
-                                            <a href="/our-programs/restorative-justice/sycamore-tree/">
+                                            <Link to="/our-programs/restorative-justice/sycamore-tree/">
                                                 The Sycamore Tree
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li id="menu-item-766">
-                                            <a href="/our-programs/restorative-justice/restorative-prison/">
+                                            <Link to="/our-programs/restorative-justice/restorative-prison/">
                                                 Restorative Prison
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </li>
                                 <li id="menu-item-80">
-                                    <a href="/our-programs/in-community-programs/">
+                                    <Link to="/our-programs/in-community-programs/">
                                         In Community Programs
-                                    </a>
+                                    </Link>
                                     <ul>
                                         <li id="menu-item-79">
-                                            <a href="/our-programs/in-community-programs/bridgecare/">
+                                            <Link to="/our-programs/in-community-programs/bridgecare/">
                                                 Bridgecare
-                                            </a>
+                                            </Link>
                                             <ul className="sub-menu">
                                                 <li id="menu-item-1257">
-                                                    <a href="/our-programs/in-community-programs/bridgecare/1life/">
+                                                    <Link to="/our-programs/in-community-programs/bridgecare/1life/">
                                                         1Life
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li id="menu-item-771">
-                                            <a href="/our-programs/in-community-programs/angel-tree/">
+                                            <Link to="/our-programs/in-community-programs/angel-tree/">
                                                 Angel Tree
-                                            </a>
+                                            </Link>
                                             <ul>
                                                 <li id="menu-item-89">
-                                                    <a href="/our-programs/in-community-programs/angel-tree/angel-tree-camping/">
+                                                    <Link to="/our-programs/in-community-programs/angel-tree/angel-tree-camping/">
                                                         Angel Tree Camping
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li id="menu-item-90">
-                                                    <a href="/our-programs/in-community-programs/angel-tree/angel-tree-christmas/">
+                                                    <Link to="/our-programs/in-community-programs/angel-tree/angel-tree-christmas/">
                                                         Angel Tree Christmas
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </li>
@@ -174,37 +178,37 @@ export default function MainMenuContents() {
                             </ul>
                         </li>
                         <li className="hover-trigger-menu-item">
-                            <a>
+                            <Link>
                                 Resources <MdKeyboardArrowDown />
-                            </a>
+                            </Link>
                             <ul className="sub-menu">
                                 <li id="menu-item-64">
-                                    <a href="/resources/books/">
+                                    <Link to="/resources/books/">
                                         Recommend Readings
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li id="menu-item-1714">
-                                    <a href="/resources/institutional-chaplains-partners/">
+                                    <Link to="/resources/institutional-chaplains-partners/">
                                         Institutional Chaplain Partners
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li id="menu-item-100">
-                                    <a href="/resources/churches-volunteers/church-resources/">
+                                    <Link to="/resources/churches-volunteers/church-resources/">
                                         Church Resources
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li id="menu-item-101">
-                                    <a href="/resources/churches-volunteers/volunteer-resources/">
+                                    <Link to="/resources/churches-volunteers/volunteer-resources/">
                                         Volunteer Resources
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li id="menu-item-772">
-                                    <a
+                                    <Link
                                         target="_blank"
-                                        href="https://prisonfellowshipbridgecare.ca/"
+                                        to="https://prisonfellowshipbridgecare.ca/"
                                     >
                                         Ex-Prisoner Resources
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </li>
@@ -212,64 +216,66 @@ export default function MainMenuContents() {
                 </div>
                 <ul className="button-menu mobile">
                     <li className="hover-trigger-menu-item">
-                        <a>
+                        <Link>
                             <MainButton
                                 text="Get Involved"
                                 color="orange"
                                 type="button"
                             />
-                        </a>
+                        </Link>
                         <ul className="sub-menu">
                             <li id="menu-item-37352">
-                                <a href="/calendar/category/pfcevents/">
+                                <Link to="/calendar/category/pfcevents/">
                                     PFC Events
-                                </a>
+                                </Link>
                             </li>
                             <li id="menu-item-107">
-                                <a href="/get-involved/volunteer/">Volunteer</a>
+                                <Link to="/get-involved/volunteer/">
+                                    Volunteer
+                                </Link>
                             </li>
                             <li id="menu-item-108">
-                                <a href="/resources/institutional-chaplains/">
+                                <Link to="/resources/institutional-chaplains/">
                                     Institutional Chaplains
-                                </a>
+                                </Link>
                             </li>
                             <li id="menu-item-82">
-                                <a href="/get-involved/prayer-partners/">
+                                <Link to="/get-involved/prayer-partners/">
                                     Prayer Partners
-                                </a>
+                                </Link>
                                 <ul className="sub-menu">
                                     <li id="menu-item-37358">
-                                        <a href="/calendar/category/prayer-calendar/">
+                                        <Link to="/calendar/category/prayer-calendar/">
                                             Prayer Calendar
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </li>
                             <li id="menu-item-83">
-                                <a href="/get-involved/raise-awareness/">
+                                <Link to="/get-involved/raise-awareness/">
                                     Raise awareness
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </li>
                     <li className="hover-trigger-menu-item">
-                        <a>
+                        <Link>
                             <MainButton
                                 text="Donate"
                                 color="blue"
                                 type="button"
                             />
-                        </a>
+                        </Link>
                         <ul className="sub-menu two-cols one-row">
                             <li id="menu-item-1264">
-                                <a href="/donate-online/pathway-partners/">
+                                <Link to="/donate-online/pathway-partners/">
                                     Pathway Partners
-                                </a>
+                                </Link>
                             </li>
                             <li id="menu-item-398">
-                                <a href="/donate-online/ways-to-donate/">
+                                <Link to="/donate-online/ways-to-donate/">
                                     Ways to Donate
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </li>
@@ -278,114 +284,116 @@ export default function MainMenuContents() {
             <div id="main-menu-right-contents">
                 <ul className="nav">
                     <li className="hover-trigger-menu-item">
-                        <a href="/about-us/">
+                        <Link to="/about-us/">
                             About PFC <MdKeyboardArrowDown />
-                        </a>
+                        </Link>
                         <ul className="sub-menu">
                             <li id="menu-item-68">
-                                <a href="/about-us/who-we-are/">Who We Are</a>
+                                <Link to="/about-us/who-we-are/">
+                                    Who We Are
+                                </Link>
                             </li>
                             <li id="menu-item-35931">
-                                <a href="/facilitating-transformation/">
+                                <Link to="/facilitating-transformation/">
                                     Facilitating Transformation
-                                </a>
+                                </Link>
                             </li>
                             <li id="menu-item-102">
-                                <a href="/about-us/pfc-team/">PFC Team</a>
+                                <Link to="/about-us/pfc-team/">PFC Team</Link>
                             </li>
                             <li id="menu-item-105">
-                                <a href="/about-us/our-board/">Our Board</a>
+                                <Link to="/about-us/our-board/">Our Board</Link>
                             </li>
                             <li id="menu-item-850">
-                                <a href="/about-us/regional-offices/">
+                                <Link to="/about-us/regional-offices/">
                                     Regional Offices
-                                </a>
+                                </Link>
                             </li>
                             <li id="menu-item-98">
-                                <a href="/about-us/our-financials/">
+                                <Link to="/about-us/our-financials/">
                                     Our Financials
-                                </a>
+                                </Link>
                             </li>
                             <li id="menu-item-851">
-                                <a href="/about-us/statement-of-faith/">
+                                <Link to="/about-us/statement-of-faith/">
                                     Statement of Faith
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </li>
                     <li className="hover-trigger-menu-item">
-                        <a
-                            href="/pfc-programs/"
+                        <Link
+                            to="/pfc-programs/"
                             className="hover-trigger-menu-item"
                         >
                             Our Programs <MdKeyboardArrowDown />
-                        </a>
+                        </Link>
                         <ul className="sub-menu one-row">
                             <li id="menu-item-830">
-                                <a href="/our-programs/prisoners/in-prison-programs/">
+                                <Link to="/our-programs/prisoners/in-prison-programs/">
                                     In Prison Programs
-                                </a>
+                                </Link>
                                 <ul>
                                     <li id="menu-item-75">
-                                        <a href="/our-programs/prisoners/in-prison-programs/faith-justice/">
+                                        <Link to="/our-programs/prisoners/in-prison-programs/faith-justice/">
                                             Faith &amp; Justice
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li id="menu-item-76">
-                                        <a href="/our-programs/prisoners/in-prison-programs/pf-by-phone/">
+                                        <Link to="/our-programs/prisoners/in-prison-programs/pf-by-phone/">
                                             PFC By Phone
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </li>
                             <li id="menu-item-77">
-                                <a href="/our-programs/restorative-justice/">
+                                <Link to="/our-programs/restorative-justice/">
                                     Restorative Justice
-                                </a>
+                                </Link>
                                 <ul>
                                     <li id="menu-item-1143">
-                                        <a href="/our-programs/restorative-justice/sycamore-tree/">
+                                        <Link to="/our-programs/restorative-justice/sycamore-tree/">
                                             The Sycamore Tree
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li id="menu-item-766">
-                                        <a href="/our-programs/restorative-justice/restorative-prison/">
+                                        <Link to="/our-programs/restorative-justice/restorative-prison/">
                                             Restorative Prison
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </li>
                             <li id="menu-item-80">
-                                <a href="/our-programs/in-community-programs/">
+                                <Link to="/our-programs/in-community-programs/">
                                     In Community Programs
-                                </a>
+                                </Link>
                                 <ul>
                                     <li id="menu-item-79">
-                                        <a href="/our-programs/in-community-programs/bridgecare/">
+                                        <Link to="/our-programs/in-community-programs/bridgecare/">
                                             Bridgecare
-                                        </a>
+                                        </Link>
                                         <ul className="sub-menu">
                                             <li id="menu-item-1257">
-                                                <a href="/our-programs/in-community-programs/bridgecare/1life/">
+                                                <Link to="/our-programs/in-community-programs/bridgecare/1life/">
                                                     1Life
-                                                </a>
+                                                </Link>
                                             </li>
                                         </ul>
                                     </li>
                                     <li id="menu-item-771">
-                                        <a href="/our-programs/in-community-programs/angel-tree/">
+                                        <Link to="/our-programs/in-community-programs/angel-tree/">
                                             Angel Tree
-                                        </a>
+                                        </Link>
                                         <ul>
                                             <li id="menu-item-89">
-                                                <a href="/our-programs/in-community-programs/angel-tree/angel-tree-camping/">
+                                                <Link to="/our-programs/in-community-programs/angel-tree/angel-tree-camping/">
                                                     Angel Tree Camping
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li id="menu-item-90">
-                                                <a href="/our-programs/in-community-programs/angel-tree/angel-tree-christmas/">
+                                                <Link to="/our-programs/in-community-programs/angel-tree/angel-tree-christmas/">
                                                     Angel Tree Christmas
-                                                </a>
+                                                </Link>
                                             </li>
                                         </ul>
                                     </li>
@@ -394,48 +402,48 @@ export default function MainMenuContents() {
                         </ul>
                     </li>
                     <li className="hover-trigger-menu-item">
-                        <a
-                            href="/resources/"
+                        <Link
+                            to="/resources/"
                             className="hover-trigger-menu-item"
                         >
                             Resources <MdKeyboardArrowDown />
-                        </a>
+                        </Link>
                         <ul className="sub-menu">
                             <li id="menu-item-64">
-                                <a href="/resources/books/">
+                                <Link to="/resources/books/">
                                     Recommend Readings
-                                </a>
+                                </Link>
                             </li>
                             <li id="menu-item-1714">
-                                <a href="/resources/institutional-chaplains-partners/">
+                                <Link to="/resources/institutional-chaplains-partners/">
                                     Institutional Chaplain Partners
-                                </a>
+                                </Link>
                             </li>
                             <li id="menu-item-100">
-                                <a href="/resources/churches-volunteers/church-resources/">
+                                <Link to="/resources/churches-volunteers/church-resources/">
                                     Church Resources
-                                </a>
+                                </Link>
                             </li>
                             <li id="menu-item-101">
-                                <a href="/resources/churches-volunteers/volunteer-resources/">
+                                <Link to="/resources/churches-volunteers/volunteer-resources/">
                                     Volunteer Resources
-                                </a>
+                                </Link>
                             </li>
                             <li id="menu-item-772">
-                                <a
+                                <Link
                                     target="_blank"
-                                    href="https://prisonfellowshipbridgecare.ca/"
+                                    to="https://prisonfellowshipbridgecare.ca/"
                                 >
                                     Ex-Prisoner Resources
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </li>
                 </ul>
                 <ul className="button-menu">
                     <li className="hover-trigger-menu-item">
-                        <a
-                            href="/get-involved/"
+                        <Link
+                            to="/get-involved/"
                             className="hover-trigger-menu-item"
                         >
                             <MainButton
@@ -443,43 +451,45 @@ export default function MainMenuContents() {
                                 color="orange"
                                 type="button"
                             />
-                        </a>
+                        </Link>
                         <ul className="sub-menu">
                             <li id="menu-item-37352">
-                                <a href="/calendar/category/pfcevents/">
+                                <Link to="/calendar/category/pfcevents/">
                                     PFC Events
-                                </a>
+                                </Link>
                             </li>
                             <li id="menu-item-107">
-                                <a href="/get-involved/volunteer/">Volunteer</a>
+                                <Link to="/get-involved/volunteer/">
+                                    Volunteer
+                                </Link>
                             </li>
                             <li id="menu-item-108">
-                                <a href="/resources/institutional-chaplains/">
+                                <Link to="/resources/institutional-chaplains/">
                                     Institutional Chaplains
-                                </a>
+                                </Link>
                             </li>
                             <li id="menu-item-82">
-                                <a href="/get-involved/prayer-partners/">
+                                <Link to="/get-involved/prayer-partners/">
                                     Prayer Partners
-                                </a>
+                                </Link>
                                 <ul className="sub-menu">
                                     <li id="menu-item-37358">
-                                        <a href="/calendar/category/prayer-calendar/">
+                                        <Link to="/calendar/category/prayer-calendar/">
                                             Prayer Calendar
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </li>
                             <li id="menu-item-83">
-                                <a href="/get-involved/raise-awareness/">
+                                <Link to="/get-involved/raise-awareness/">
                                     Raise awareness
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </li>
                     <li className="hover-trigger-menu-item">
-                        <a
-                            href="/donate-online/"
+                        <Link
+                            to="/donate-online/"
                             className="hover-trigger-menu-item"
                         >
                             <MainButton
@@ -487,17 +497,17 @@ export default function MainMenuContents() {
                                 color="blue"
                                 type="button"
                             />
-                        </a>
+                        </Link>
                         <ul className="sub-menu two-cols one-row">
                             <li id="menu-item-1264">
-                                <a href="/donate-online/pathway-partners/">
+                                <Link to="/donate-online/pathway-partners/">
                                     Pathway Partners
-                                </a>
+                                </Link>
                             </li>
                             <li id="menu-item-398">
-                                <a href="/donate-online/ways-to-donate/">
+                                <Link to="/donate-online/ways-to-donate/">
                                     Ways to Donate
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </li>

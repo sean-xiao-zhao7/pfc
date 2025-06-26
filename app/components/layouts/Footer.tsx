@@ -1,125 +1,124 @@
 import TopLinks from "./menu/TopLinks";
 import PfcButton from "../buttons/PfcButton";
+import { Link } from "react-router";
 
 export default function Footer() {
     return (
         <div id="footer">
             <img src="/images/home/cropped-favicon.png" alt="PFC logo" />
             <div className="donate-container">
-                <a href="https://prisonfellowship.ca/get-involved/">
+                <Link to="/get-involved/">
                     <PfcButton
                         text="GET INVOLVED"
                         color="orange"
                         type="button"
                     />
-                </a>
-                <a href="https://prisonfellowship.ca/donate-online/">
+                </Link>
+                <Link to="/donate-online/">
                     <PfcButton text="DONATE HERE" color="blue" type="button" />
-                </a>
+                </Link>
             </div>
             <div className="sub-menus-container">
                 <ul className="sub-menu">
                     <li id="menu-item-37352">
-                        <a href="https://prisonfellowship.ca/calendar/category/pfcevents/">
+                        <Link to="/calendar/category/pfcevents/">
                             PFC Events
-                        </a>
+                        </Link>
                     </li>
                     <li id="menu-item-107">
-                        <a href="https://prisonfellowship.ca/get-involved/volunteer/">
-                            Volunteer
-                        </a>
+                        <Link to="/get-involved/volunteer/">Volunteer</Link>
                     </li>
                     <li id="menu-item-108">
-                        <a href="https://prisonfellowship.ca/resources/institutional-chaplains/">
+                        <Link to="/resources/institutional-chaplains/">
                             Institutional Chaplains
-                        </a>
+                        </Link>
                     </li>
                     <li id="menu-item-82">
-                        <a href="https://prisonfellowship.ca/get-involved/prayer-partners/">
+                        <Link to="/get-involved/prayer-partners/">
                             Prayer Partners
-                        </a>
+                        </Link>
                         <ul className="sub-menu">
                             <li id="menu-item-37358">
-                                <a href="https://prisonfellowship.ca/calendar/category/prayer-calendar/">
+                                <Link to="/calendar/category/prayer-calendar/">
                                     Prayer Calendar
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </li>
                     <li id="menu-item-83">
-                        <a href="https://prisonfellowship.ca/get-involved/raise-awareness/">
+                        <Link to="/get-involved/raise-awareness/">
                             Raise awareness
-                        </a>
+                        </Link>
                     </li>
                 </ul>
                 <ul className="sub-menu">
                     <li id="menu-item-830">
-                        <a href="https://prisonfellowship.ca/our-programs/prisoners/in-prison-programs/">
+                        <Link to="/our-programs/prisoners/in-prison-programs/">
                             In Prison Programs
-                        </a>
+                        </Link>
                         <ul>
                             <li id="menu-item-75">
-                                <a href="https://prisonfellowship.ca/our-programs/prisoners/in-prison-programs/faith-justice/">
+                                <Link to="/our-programs/prisoners/in-prison-programs/faith-justice/">
                                     Faith &amp; Justice
-                                </a>
+                                </Link>
                             </li>
                             <li id="menu-item-76">
-                                <a href="https://prisonfellowship.ca/our-programs/prisoners/in-prison-programs/pf-by-phone/">
+                                <Link to="/our-programs/prisoners/in-prison-programs/pf-by-phone/">
                                     PFC By Phone
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </li>
                     <li id="menu-item-77">
-                        <a href="https://prisonfellowship.ca/our-programs/restorative-justice/">
+                        <Link to="/our-programs/restorative-justice/">
                             Restorative Justice
-                        </a>
+                        </Link>
                         <ul>
                             <li id="menu-item-1143">
-                                <a href="https://prisonfellowship.ca/our-programs/restorative-justice/sycamore-tree/">
+                                <Link to="/our-programs/restorative-justice/sycamore-tree/">
                                     The Sycamore Tree
-                                </a>
+                                </Link>
                             </li>
                             <li id="menu-item-766">
-                                <a href="https://prisonfellowship.ca/our-programs/restorative-justice/restorative-prison/">
+                                <Link to="/our-programs/restorative-justice/restorative-prison/">
                                     Restorative Prison
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </li>
                 </ul>
                 <ul className="sub-menu">
                     <li id="menu-item-80">
-                        <a href="https://prisonfellowship.ca/our-programs/in-community-programs/">
+                        <Link to="/our-programs/in-community-programs/">
                             In Community Programs
-                        </a>
+                        </Link>
                         <ul>
                             <li id="menu-item-79">
-                                <a href="https://prisonfellowship.ca/our-programs/in-community-programs/bridgecare/">
+                                <Link to="/our-programs/in-community-programs/bridgecare/">
                                     Bridgecare
-                                </a>
+                                </Link>
                                 <ul className="sub-menu">
                                     <li id="menu-item-1257">
-                                        <a href="https://prisonfellowship.ca/our-programs/in-community-programs/bridgecare/1life/">
+                                        <Link to="/our-programs/in-community-programs/bridgecare/1life/">
                                             1Life
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </li>
                             <li id="menu-item-771">
-                                <a href="https://prisonfellowship.ca/our-programs/in-community-programs/angel-tree/">
+                                <Link to="/our-programs/in-community-programs/angel-tree/">
                                     Angel Tree
-                                </a>
+                                </Link>
                                 <ul className="sub-menu">
                                     <li id="menu-item-89">
-                                        <a href="https://prisonfellowship.ca/our-programs/in-community-programs/angel-tree/angel-tree-camping/">
+                                        <Link to="/our-programs/in-community-programs/angel-tree/angel-tree-camping/">
                                             Angel Tree Camping
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li id="menu-item-90">
-                                        <a href="https://prisonfellowship.ca/our-programs/in-community-programs/angel-tree/angel-tree-christmas/">
+                                        <Link to="/our-programs/in-community-programs/angel-tree/angel-tree-christmas/">
                                             Angel Tree Christmas
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </li>
@@ -128,32 +127,30 @@ export default function Footer() {
                 </ul>
                 <ul className="sub-menu">
                     <li id="menu-item-64">
-                        <a href="https://prisonfellowship.ca/resources/books/">
-                            Recommend Readings
-                        </a>
+                        <Link to="/resources/books/">Recommend Readings</Link>
                     </li>
                     <li id="menu-item-1714">
-                        <a href="https://prisonfellowship.ca/resources/institutional-chaplains-partners/">
+                        <Link to="/resources/institutional-chaplains-partners/">
                             Institutional Chaplain Partners
-                        </a>
+                        </Link>
                     </li>
                     <li id="menu-item-100">
-                        <a href="https://prisonfellowship.ca/resources/churches-volunteers/church-resources/">
+                        <Link to="/resources/churches-volunteers/church-resources/">
                             Church Resources
-                        </a>
+                        </Link>
                     </li>
                     <li id="menu-item-101">
-                        <a href="https://prisonfellowship.ca/resources/churches-volunteers/volunteer-resources/">
+                        <Link to="/resources/churches-volunteers/volunteer-resources/">
                             Volunteer Resources
-                        </a>
+                        </Link>
                     </li>
                     <li id="menu-item-772">
-                        <a
+                        <Link
                             target="_blank"
-                            href="https://prisonfellowshipbridgecare.ca/"
+                            to="https://prisonfellowshipbridgecare.ca/"
                         >
                             Ex-Prisoner Resources
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </div>

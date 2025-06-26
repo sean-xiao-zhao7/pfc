@@ -288,7 +288,7 @@
         grid-template-columns: repeat(2, calc(50% - 2rem));
         grid-column-gap: 2rem;
         grid-row-gap: 2rem;
-        justify-content: center;
+        justify-content: space-between;
         align-items: flex-start;
 
         &.bigger-text {
