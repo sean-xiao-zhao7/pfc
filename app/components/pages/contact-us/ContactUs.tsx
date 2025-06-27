@@ -60,13 +60,13 @@ export default function ContactUs() {
                 <SpaceDivider />
                 <div className="map-container">
                     <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2885.13109690416!2d-79.61253112382146!3d43.68703787110054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3976df7701a9%3A0x25b0eb4fecede5cb!2sPrison%20Fellowship%20Canada!5e0!3m2!1sen!2sca!4v1751048609681!5m2!1sen!2sca"
                         width="600"
                         height="450"
+                        allowFullScreen
                         loading="lazy"
-                        allowfullscreen
-                        referrerpolicy="no-referrer-when-downgrade"
-                        src="https://www.google.com/maps/embed/v1/place?key=API_KEY
-    &q=Space+Needle,Seattle+WA"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        className="full-width"
                     ></iframe>
                 </div>
                 <SpaceDivider />
