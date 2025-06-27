@@ -11,6 +11,10 @@ export default [
         "./components/pages/about_pfc/RegionalOffices.tsx"
     ),
     route(
+        "about-us/regional-offices/bc-northern-canada",
+        "./components/pages/about_pfc/BCNorthernRegions.tsx"
+    ),
+    route(
         "facilitating-transformation",
         "./components/pages/about_pfc/FacilitatingTransformation.tsx"
     ),

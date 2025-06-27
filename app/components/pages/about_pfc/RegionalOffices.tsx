@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 export default function RegionalOffices() {
     return (
         <div className="page-container" id="regional-offices">
@@ -19,10 +21,12 @@ export default function RegionalOffices() {
                     <div className="col">
                         <div className="box">
                             <h3>BC/Northern Canada</h3>
-                            <img
-                                src="/images/pages/regional-offices/bc.jpg"
-                                alt="BC region"
-                            />
+                            <Link to="bc-northern-canada">
+                                <img
+                                    src="/images/pages/regional-offices/bc.jpg"
+                                    alt="BC region"
+                                />
+                            </Link>
                         </div>
                         <div className="box">
                             <h3>Alberta</h3>
