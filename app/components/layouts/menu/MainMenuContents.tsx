@@ -20,13 +20,6 @@ export default function MainMenuContents() {
                         .classList.add("shrunk");
                 }
             } else if (window.pageYOffset < 200) {
-                console.log(
-                    window.pageYOffset,
-                    "unshrinking",
-                    document
-                        .querySelector("#main-logo")
-                        ?.classList.contains("shrunk")
-                );
                 if (
                     document
                         .querySelector("#main-logo")

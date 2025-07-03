@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import PfcButton from "../buttons/PfcButton";
+import { Link } from "react-router";
 
 export default function HeroCarousel() {
     const itemsSize = 2;
@@ -75,17 +76,13 @@ export default function HeroCarousel() {
                         Help us send a prisoner’s child to an accredited
                         Christian day or overnight camp!
                     </p>
-                    <a
-                        href="https://prisonfellowship.ca/our-programs/in-community-programs/angel-tree/angel-tree-camping"
-                        target="blank"
-                        rel="noopener"
-                    >
+                    <Link to="/our-programs/in-community-programs/angel-tree/angel-tree-camping">
                         <PfcButton
                             color="orange"
                             text="READ MORE"
                             type="button"
                         />
-                    </a>
+                    </Link>
                 </div>
             </div>
             <div className={"single-carousel-item-container " + items.items[1]}>

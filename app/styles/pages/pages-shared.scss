@@ -24,9 +24,6 @@
 @use './get-involved/volunteer';
 @use './get-involved/institutional-chaplains';
 
-// components
-@use './accordion';
-
 .page-container {
     p {
         font-size: 1.2rem;
@@ -72,105 +69,91 @@
         align-items: center;
         justify-content: center;
 
+        @media only screen and (max-width: 600px) {
+            background-size: auto;
+            padding: 1rem;
+        }
+
         h1 {
             font-family: fonts.$pfc-cursive;
             font-size: 2.6rem;
+
+            @media only screen and (max-width: 600px) {
+                font-size: 1.6rem;
+                margin-bottom: 0.5rem;
+            }
         }
 
         &.contain-text {
             background-size: auto 27rem;
         }
 
-        &.image-background.road {
-            background-image: url(/images/shared/facilitating-transformation-slogan-background.png);
+        &.image-background {
             padding: 6rem 0;
+
+            @media only screen and (max-width: 600px) {
+                padding: 1rem 0;
+            }
 
             h1 {
                 font-size: 4rem;
+
+                @media only screen and (max-width: 600px) {
+                    font-size: 1.6rem;
+                }
             }
 
             p {
                 font-size: 1.2rem;
+
+                @media only screen and (max-width: 600px) {
+                    font-size: 1rem;
+                }
             }
+        }
+
+        &.image-background.road {
+            background-image: url(/images/shared/facilitating-transformation-slogan-background.png);
         }
 
         &.image-background.flower {
             background-image: url(/images/shared/iStock-1206800966-e1646343901675.jpg);
-            padding: 6rem 0;
-
-            h1 {
-                font-size: 4rem;
-            }
-
-            p {
-                font-size: 1.2rem;
-            }
         }
 
         &.image-background.tree {
             background-image: url(/images/pages/sycamore-tree/Annual-Report-2021-Images-File-1_Page_05-scaled-e1646337735938.jpg);
-            padding: 6rem 0;
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
-
-            h1 {
-                font-size: 4rem;
-            }
-
-            p {
-                font-size: 1.2rem;
-            }
         }
 
         &.image-background.reading {
             background-image: url(/images/pages/in-community-programs/dude-writing-a-letter.png);
             background-position: 50% 100%;
-            padding: 6rem 0;
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
-
-            h1 {
-                font-size: 4rem;
-            }
-
-            p {
-                font-size: 1.2rem;
-            }
         }
 
         &.image-background.books {
             background-image: url(/images/pages/resources/recommended-reading/WEB-IMAGES-2_Page_43-scaled.jpg);
             background-position: 50% 50%;
-            padding: 6rem 0;
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
-
-            h1 {
-                font-size: 4rem;
-            }
-
-            p {
-                font-size: 1.2rem;
-            }
         }
 
         &.image-background.lake {
             background-image: url(/images/pages/our-programs/program-banner.jpg);
             background-position: 50% 50%;
-            padding: 6rem 0;
             display: flex;
             justify-content: space-evenly;
 
             h1 {
-                font-size: 4rem;
                 text-shadow: 1px 1px 10px black;
             }
 
             p {
-                font-size: 1.4rem;
                 text-shadow: 1px 1px 2px black;
             }
         }
@@ -188,12 +171,12 @@
         }
     }
 
-    .pfc-logo {
-        width: 7rem;
-    }
-
     .body {
         padding: 0 12rem;
+
+        @media only screen and (max-width: 600px) {
+            padding: 1rem;
+        }
 
         .cursive {
             font-family: fonts.$pfc-cursive;
