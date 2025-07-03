@@ -1,11 +1,12 @@
 import TopLinks from "./menu/TopLinks";
 import PfcButton from "../buttons/PfcButton";
 import { Link } from "react-router";
+import PFCLogo from "../blocks/PFCLogo";
 
 export default function Footer() {
     return (
         <div id="footer">
-            <img src="/images/home/cropped-favicon.png" alt="PFC logo" />
+            <PFCLogo />
             <div className="donate-container">
                 <Link to="/get-involved/">
                     <PfcButton
