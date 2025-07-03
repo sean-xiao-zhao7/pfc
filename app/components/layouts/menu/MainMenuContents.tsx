@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router";
-import { MdKeyboardArrowDown } from "react-icons/md";
+import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 
 import MainButton from "~/components/buttons/MainButton";
 
@@ -63,7 +63,12 @@ export default function MainMenuContents() {
                                 to="/about-us/"
                                 onClick={() => menuClickHandler(0)}
                             >
-                                About PFC <MdKeyboardArrowDown />
+                                About PFC{" "}
+                                {menuShown === 0 ? (
+                                    <MdKeyboardArrowUp />
+                                ) : (
+                                    <MdKeyboardArrowDown />
+                                )}
                             </Link>
                             <ul
                                 className={
@@ -113,7 +118,12 @@ export default function MainMenuContents() {
                                 to="/pfc-programs/"
                                 onClick={() => menuClickHandler(1)}
                             >
-                                Programs <MdKeyboardArrowDown />
+                                Programs{" "}
+                                {menuShown === 1 ? (
+                                    <MdKeyboardArrowUp />
+                                ) : (
+                                    <MdKeyboardArrowDown />
+                                )}
                             </Link>
                             <ul
                                 className={
@@ -198,7 +208,12 @@ export default function MainMenuContents() {
                                 to="/resources/"
                                 onClick={() => menuClickHandler(2)}
                             >
-                                Resources <MdKeyboardArrowDown />
+                                Resources{" "}
+                                {menuShown === 2 ? (
+                                    <MdKeyboardArrowUp />
+                                ) : (
+                                    <MdKeyboardArrowDown />
+                                )}
                             </Link>
                             <ul
                                 className={
