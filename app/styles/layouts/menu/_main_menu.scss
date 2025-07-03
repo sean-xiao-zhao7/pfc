@@ -112,6 +112,14 @@
                 height: 70px;
             }
         }
+
+        .sub-menu {
+            visibility: hidden;
+
+            &.visible {
+                visibility: visible;
+            }
+        }
     }
 
     ul {

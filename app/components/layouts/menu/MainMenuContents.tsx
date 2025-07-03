@@ -1,9 +1,12 @@
-import MainButton from "~/components/buttons/MainButton";
-import { MdKeyboardArrowDown } from "react-icons/md";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router";
+import { MdKeyboardArrowDown } from "react-icons/md";
+
+import MainButton from "~/components/buttons/MainButton";
 
 export default function MainMenuContents() {
+    const [menuShown, setMenuShown] = useState(-1);
+
     useEffect(() => {
         const handler = () => {
             if (window.pageYOffset > 300) {
@@ -39,6 +42,10 @@ export default function MainMenuContents() {
         return () => window.removeEventListener("scroll", handler);
     }, []);
 
+    const menuClickHandler = (id: number) => {
+        setMenuShown((current) => (id === current ? -1 : id));
+    };
+
     return (
         <div id="main-menu-contents-container">
             <div id="main-menu-logo">
@@ -52,10 +59,18 @@ export default function MainMenuContents() {
                 <div id="main-menu-right-contents-mobile">
                     <ul className="nav">
                         <li className="hover-trigger-menu-item">
-                            <Link to="/about-us/">
+                            <Link
+                                to="/about-us/"
+                                onClick={() => menuClickHandler(0)}
+                            >
                                 About PFC <MdKeyboardArrowDown />
                             </Link>
-                            <ul className="sub-menu">
+                            <ul
+                                className={
+                                    "sub-menu" +
+                                    (menuShown == 0 ? " visible" : "")
+                                }
+                            >
                                 <li id="menu-item-68">
                                     <Link to="/about-us/who-we-are/">
                                         Who We Are
@@ -94,10 +109,18 @@ export default function MainMenuContents() {
                             </ul>
                         </li>
                         <li className="hover-trigger-menu-item">
-                            <Link to="/pfc-programs/">
+                            <Link
+                                to="/pfc-programs/"
+                                onClick={() => menuClickHandler(1)}
+                            >
                                 Programs <MdKeyboardArrowDown />
                             </Link>
-                            <ul className="sub-menu large">
+                            <ul
+                                className={
+                                    "sub-menu large" +
+                                    (menuShown == 1 ? " visible" : "")
+                                }
+                            >
                                 <li id="menu-item-830">
                                     <Link to="/our-programs/prisoners/in-prison-programs/">
                                         In Prison Programs
@@ -171,10 +194,18 @@ export default function MainMenuContents() {
                             </ul>
                         </li>
                         <li className="hover-trigger-menu-item">
-                            <Link to="/resources/">
+                            <Link
+                                to="/resources/"
+                                onClick={() => menuClickHandler(2)}
+                            >
                                 Resources <MdKeyboardArrowDown />
                             </Link>
-                            <ul className="sub-menu">
+                            <ul
+                                className={
+                                    "sub-menu" +
+                                    (menuShown == 2 ? " visible" : "")
+                                }
+                            >
                                 <li id="menu-item-64">
                                     <Link to="/resources/books/">
                                         Recommend Readings
