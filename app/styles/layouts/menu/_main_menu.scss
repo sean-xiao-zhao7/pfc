@@ -77,6 +77,47 @@
                 }
             }
         }
+
+
+        #main-menu-left-contents-mobile {
+            display: none;
+
+            @media only screen and (max-width: 600px) {
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                justify-content: center;
+                align-items: flex-start;
+
+                &.shrunk {
+                    height: 70px;
+                }
+            }
+
+            // .sub-menu {
+            //     visibility: hidden;
+
+            //     &.visible {
+            //         visibility: visible;
+            //     }
+            // }
+            li.hover-trigger-menu-item:hover .sub-menu {
+                max-height: 10rem;
+                transition: max-height 0.25s ease-in;
+                visibility: visible;
+                background-color: white;
+
+                @media only screen and (max-width: 600px) {
+                    max-height: 20rem;
+                    height: 15rem;
+
+                    &.large {
+                        max-height: 25rem;
+                        height: 25rem;
+                    }
+                }
+            }
+        }
     }
 
     #main-menu-right-contents {
@@ -94,30 +135,6 @@
 
             .sub-menu {
                 height: 120px;
-            }
-        }
-    }
-
-    #main-menu-right-contents-mobile {
-        display: none;
-
-        @media only screen and (max-width: 600px) {
-            display: flex;
-            flex-direction: column;
-            height: auto;
-            justify-content: center;
-            align-items: flex-start;
-
-            &.shrunk {
-                height: 70px;
-            }
-        }
-
-        .sub-menu {
-            visibility: hidden;
-
-            &.visible {
-                visibility: visible;
             }
         }
     }
@@ -203,7 +220,7 @@
             }
         }
 
-        li.hover-trigger-menu-item:hover .sub-menu {
+        &#main-menu-right-contents li.hover-trigger-menu-item:hover .sub-menu {
             max-height: 10rem;
             transition: max-height 0.25s ease-in;
             visibility: visible;

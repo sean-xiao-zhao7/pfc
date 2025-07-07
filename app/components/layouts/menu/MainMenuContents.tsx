@@ -57,7 +57,7 @@ export default function MainMenuContents() {
                         id="main-logo"
                     />
                 </Link>
-                <div id="main-menu-right-contents-mobile">
+                <div id="main-menu-left-contents-mobile">
                     <ul className="nav">
                         <li className="hover-trigger-menu-item">
                             <Link
