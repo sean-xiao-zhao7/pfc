@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, type MouseEvent } from "react";
 import { Link } from "react-router";
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 
@@ -42,13 +42,14 @@ export default function MainMenuContents() {
         return () => window.removeEventListener("scroll", handler);
     }, []);
 
-    const menuClickHandler = (id: number) => {
+    const menuClickHandler = (e: MouseEvent<HTMLAnchorElement>, id: number) => {
+        e.preventDefault();
         setMenuShown((current) => (id === current ? -1 : id));
     };
 
     return (
         <div id="main-menu-contents-container">
-            <div id="main-menu-logo">
+            <div id="main-menu-left-contents">
                 <Link to="/">
                     <img
                         src="/images/icons/main_square.png"
@@ -61,7 +62,9 @@ export default function MainMenuContents() {
                         <li className="hover-trigger-menu-item">
                             <Link
                                 to="/about-us/"
-                                onClick={() => menuClickHandler(0)}
+                                onClick={(e: MouseEvent<HTMLAnchorElement>) =>
+                                    menuClickHandler(e, 0)
+                                }
                             >
                                 About PFC{" "}
                                 {menuShown === 0 ? (
@@ -116,7 +119,9 @@ export default function MainMenuContents() {
                         <li className="hover-trigger-menu-item">
                             <Link
                                 to="/pfc-programs/"
-                                onClick={() => menuClickHandler(1)}
+                                onClick={(e: MouseEvent<HTMLAnchorElement>) =>
+                                    menuClickHandler(e, 1)
+                                }
                             >
                                 Programs{" "}
                                 {menuShown === 1 ? (
@@ -206,7 +211,9 @@ export default function MainMenuContents() {
                         <li className="hover-trigger-menu-item">
                             <Link
                                 to="/resources/"
-                                onClick={() => menuClickHandler(2)}
+                                onClick={(e: MouseEvent<HTMLAnchorElement>) =>
+                                    menuClickHandler(e, 2)
+                                }
                             >
                                 Resources{" "}
                                 {menuShown === 2 ? (

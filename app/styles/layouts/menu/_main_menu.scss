@@ -23,7 +23,26 @@
         align-items: stretch;
     }
 
-    #main-menu-logo {
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+        display: flex;
+        margin-right: 2rem;
+        font-size: 1.3rem;
+        font-weight: 300;
+        font-family: fonts.$pfc-menu-capital;
+        align-items: center;
+        justify-content: center;
+
+        @media only screen and (max-width: 600px) {
+            margin: 0;
+            font-size: 1.2rem;
+            justify-content: space-between;
+        }
+    }
+
+    #main-menu-left-contents {
         img {
             height: 142px;
             transition: height .2s;
@@ -57,25 +76,6 @@
                     }
                 }
             }
-        }
-    }
-
-    a {
-        text-decoration: none;
-        text-transform: uppercase;
-        color: black;
-        display: flex;
-        margin-right: 2rem;
-        font-size: 1.3rem;
-        font-weight: 300;
-        font-family: fonts.$pfc-menu-capital;
-        align-items: center;
-        justify-content: center;
-
-        @media only screen and (max-width: 600px) {
-            margin: 0;
-            font-size: 1.2rem;
-            justify-content: space-between;
         }
     }
 
