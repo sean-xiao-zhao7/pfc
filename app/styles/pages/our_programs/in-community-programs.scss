@@ -10,6 +10,10 @@
                 font-size: 1.8rem;
                 text-shadow: 1px 1px 5px white;
             }
+
+            @media only screen and (max-width: 600px) {
+                display: block;
+            }
         }
     }
 }
