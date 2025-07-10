@@ -71,5 +71,21 @@
             margin-bottom: .5rem;
             margin-top: .5rem;
         }
+
+
+        @media only screen and (max-width: 600px) {
+            overflow: scroll;
+            padding-left: 15rem;
+
+            .day-box {
+                height: 5rem;
+                width: 5rem;
+                padding: .5rem;
+
+                span {
+                    font-size: 1rem;
+                }
+            }
+        }
     }
 }
