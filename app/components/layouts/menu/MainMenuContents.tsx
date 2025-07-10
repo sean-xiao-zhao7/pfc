@@ -269,14 +269,23 @@ export default function MainMenuContents() {
                 </div>
                 <ul className="button-menu mobile">
                     <li className="hover-trigger-menu-item">
-                        <Link to="/get-involved/">
+                        <Link
+                            to="/get-involved/"
+                            onClick={(e: MouseEvent<HTMLAnchorElement>) =>
+                                menuClickHandler(e, 4)
+                            }
+                        >
                             <MainButton
                                 text="Get Involved"
                                 color="orange"
                                 type="button"
                             />
                         </Link>
-                        <ul className="sub-menu">
+                        <ul
+                            className={
+                                "sub-menu" + (menuShown == 4 ? " visible" : "")
+                            }
+                        >
                             <li id="menu-item-37352">
                                 <Link to="/calendar/category/pfcevents/">
                                     PFC Events
@@ -312,14 +321,24 @@ export default function MainMenuContents() {
                         </ul>
                     </li>
                     <li className="hover-trigger-menu-item">
-                        <Link to="/donate-online/">
+                        <Link
+                            to="/donate-online/"
+                            onClick={(e: MouseEvent<HTMLAnchorElement>) =>
+                                menuClickHandler(e, 5)
+                            }
+                        >
                             <MainButton
                                 text="Donate"
                                 color="blue"
                                 type="button"
                             />
                         </Link>
-                        <ul className="sub-menu two-cols one-row">
+                        <ul
+                            className={
+                                "sub-menu two-cols one-row " +
+                                (menuShown == 5 ? " visible" : "")
+                            }
+                        >
                             <li id="menu-item-1264">
                                 <Link to="/donate-online/pathway-partners/">
                                     Pathway Partners

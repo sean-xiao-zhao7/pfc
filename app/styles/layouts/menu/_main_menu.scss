@@ -230,11 +230,23 @@
 
     .button-menu {
         &.mobile {
-            display: none;
-
             @media only screen and (max-width:600px) {
                 display: flex;
                 height: 90px;
+            }
+
+            .sub-menu {
+                max-height: 1rem;
+                transition: max-height 0.25s ease-in;
+                background-color: white;
+
+                @media only screen and (max-width: 600px) {
+                    &.visible {
+                        visibility: visible;
+                        max-height: 10rem;
+                        height: 10rem;
+                    }
+                }
             }
         }
 
