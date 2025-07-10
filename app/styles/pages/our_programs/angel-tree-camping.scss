@@ -7,6 +7,13 @@
         img {
             padding: 0 12rem;
             width: calc(100% - 24rem);
+            object-fit: cover;
+
+            @media only screen and (max-width: 600px) {
+                width: 100%;
+                height: auto;
+                padding: 0rem;
+            }
         }
     }
 
@@ -16,6 +23,10 @@
         button {
             position: absolute;
             right: 0;
+
+            @media only screen and (max-width: 600px) {
+                position: static;
+            }
         }
     }
 
