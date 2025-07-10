@@ -379,6 +379,12 @@
         &.align-baseline {
             align-items: baseline;
         }
+
+        @media only screen and (max-width: 600px) {
+            display: flex;
+            flex-direction: column;
+            margin-top: 1rem;
+        }
     }
 
     .four-cols {
