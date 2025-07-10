@@ -20,5 +20,15 @@
             font-size: 1.4rem;
             text-shadow: 1px 1px 1px rgb(89, 89, 89);
         }
+
+        @media only screen and (max-width: 600px) {
+            padding: 3rem;
+            background-size: auto 120%;
+
+            h1 {
+                font-size: 3rem;
+                text-align: center;
+            }
+        }
     }
 }

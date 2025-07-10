@@ -64,8 +64,7 @@ export default function InPrisonPrograms() {
                             alt="Calling prisoner"
                         />
                         <img
-                            src="/images/shared
-                            /PFC-By-Phone3.png"
+                            src="/images/shared/PFC-By-Phone3.png"
                             alt="PFC by phone"
                         />
                         <div className="center">

@@ -330,6 +330,11 @@
                 height: auto;
                 width: auto;
             }
+
+            @media only screen and (max-width: 600px) {
+                height: auto;
+                width: auto;
+            }
         }
 
         .box {
