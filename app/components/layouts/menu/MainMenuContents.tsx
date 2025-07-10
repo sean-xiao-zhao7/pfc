@@ -84,46 +84,64 @@ export default function MainMenuContents() {
                                 }
                             >
                                 <li id="menu-item-68">
-                                    <Link to="/about-us/who-we-are/">
+                                    <Link
+                                        to="/about-us/who-we-are/"
+                                        onClick={onBlurHandler}
+                                    >
                                         Who We Are
                                     </Link>
                                 </li>
                                 <li id="menu-item-35931">
-                                    <Link to="/facilitating-transformation/">
+                                    <Link
+                                        to="/facilitating-transformation/"
+                                        onClick={onBlurHandler}
+                                    >
                                         Facilitating Transformation
                                     </Link>
                                 </li>
                                 <li id="menu-item-102">
-                                    <Link to="/about-us/pfc-team/">
+                                    <Link
+                                        to="/about-us/pfc-team/"
+                                        onClick={onBlurHandler}
+                                    >
                                         PFC Team
                                     </Link>
                                 </li>
                                 <li id="menu-item-105">
-                                    <Link to="/about-us/our-board/">
+                                    <Link
+                                        to="/about-us/our-board/"
+                                        onClick={onBlurHandler}
+                                    >
                                         Our Board
                                     </Link>
                                 </li>
                                 <li id="menu-item-850">
-                                    <Link to="/about-us/regional-offices/">
+                                    <Link
+                                        to="/about-us/regional-offices/"
+                                        onClick={onBlurHandler}
+                                    >
                                         Regional Offices
                                     </Link>
                                 </li>
                                 <li id="menu-item-98">
-                                    <Link to="/about-us/our-financials/">
+                                    <Link
+                                        to="/about-us/our-financials/"
+                                        onClick={onBlurHandler}
+                                    >
                                         Our Financials
                                     </Link>
                                 </li>
                                 <li id="menu-item-851">
-                                    <Link to="/about-us/statement-of-faith/">
+                                    <Link
+                                        to="/about-us/statement-of-faith/"
+                                        onClick={onBlurHandler}
+                                    >
                                         Statement of Faith
                                     </Link>
                                 </li>
                             </ul>
                         </li>
-                        <li
-                            className="hover-trigger-menu-item"
-                            onBlur={onBlurHandler}
-                        >
+                        <li className="hover-trigger-menu-item">
                             <Link
                                 to="/pfc-programs/"
                                 onClick={(e: MouseEvent<HTMLAnchorElement>) =>
@@ -144,17 +162,26 @@ export default function MainMenuContents() {
                                 }
                             >
                                 <li id="menu-item-830">
-                                    <Link to="/our-programs/prisoners/in-prison-programs/">
+                                    <Link
+                                        to="/our-programs/prisoners/in-prison-programs/"
+                                        onClick={onBlurHandler}
+                                    >
                                         In Prison Programs
                                     </Link>
                                     <ul>
                                         <li id="menu-item-75">
-                                            <Link to="/our-programs/prisoners/in-prison-programs/faith-justice/">
+                                            <Link
+                                                to="/our-programs/prisoners/in-prison-programs/faith-justice/"
+                                                onClick={onBlurHandler}
+                                            >
                                                 Faith &amp; Justice
                                             </Link>
                                         </li>
                                         <li id="menu-item-76">
-                                            <Link to="/our-programs/prisoners/in-prison-programs/pf-by-phone/">
+                                            <Link
+                                                to="/our-programs/prisoners/in-prison-programs/pf-by-phone/"
+                                                onClick={onBlurHandler}
+                                            >
                                                 PFC By Phone
                                             </Link>
                                         </li>
@@ -166,46 +193,70 @@ export default function MainMenuContents() {
                                     </Link>
                                     <ul>
                                         <li id="menu-item-1143">
-                                            <Link to="/our-programs/restorative-justice/sycamore-tree/">
+                                            <Link
+                                                to="/our-programs/restorative-justice/sycamore-tree/"
+                                                onClick={onBlurHandler}
+                                            >
                                                 The Sycamore Tree
                                             </Link>
                                         </li>
                                         <li id="menu-item-766">
-                                            <Link to="/our-programs/restorative-justice/restorative-prison/">
+                                            <Link
+                                                to="/our-programs/restorative-justice/restorative-prison/"
+                                                onClick={onBlurHandler}
+                                            >
                                                 Restorative Prison
                                             </Link>
                                         </li>
                                     </ul>
                                 </li>
                                 <li id="menu-item-80">
-                                    <Link to="/our-programs/in-community-programs/">
+                                    <Link
+                                        to="/our-programs/in-community-programs/"
+                                        onClick={onBlurHandler}
+                                    >
                                         In Community Programs
                                     </Link>
                                     <ul>
                                         <li id="menu-item-79">
-                                            <Link to="/our-programs/in-community-programs/bridgecare/">
+                                            <Link
+                                                to="/our-programs/in-community-programs/bridgecare/"
+                                                onClick={onBlurHandler}
+                                            >
                                                 Bridgecare
                                             </Link>
                                             <ul className="sub-menu">
                                                 <li id="menu-item-1257">
-                                                    <Link to="/our-programs/in-community-programs/bridgecare/1life/">
+                                                    <Link
+                                                        to="/our-programs/in-community-programs/bridgecare/1life/"
+                                                        onClick={onBlurHandler}
+                                                    >
                                                         1Life
                                                     </Link>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li id="menu-item-771">
-                                            <Link to="/our-programs/in-community-programs/angel-tree/">
+                                            <Link
+                                                to="/our-programs/in-community-programs/angel-tree/"
+                                                onClick={onBlurHandler}
+                                            >
                                                 Angel Tree
                                             </Link>
                                             <ul>
                                                 <li id="menu-item-89">
-                                                    <Link to="/our-programs/in-community-programs/angel-tree/angel-tree-camping/">
+                                                    <Link
+                                                        to="/our-programs/in-community-programs/angel-tree/angel-tree-camping/"
+                                                        onClick={onBlurHandler}
+                                                    >
                                                         Angel Tree Camping
                                                     </Link>
                                                 </li>
                                                 <li id="menu-item-90">
-                                                    <Link to="/our-programs/in-community-programs/angel-tree/angel-tree-christmas/">
+                                                    <Link
+                                                        to="/our-programs/in-community-programs/angel-tree/angel-tree-christmas/"
+                                                        onClick={onBlurHandler}
+                                                    >
                                                         Angel Tree Christmas
                                                     </Link>
                                                 </li>
@@ -236,22 +287,34 @@ export default function MainMenuContents() {
                                 }
                             >
                                 <li id="menu-item-64">
-                                    <Link to="/resources/books/">
+                                    <Link
+                                        to="/resources/books/"
+                                        onClick={onBlurHandler}
+                                    >
                                         Recommend Readings
                                     </Link>
                                 </li>
                                 <li id="menu-item-1714">
-                                    <Link to="/resources/institutional-chaplains-partners/">
+                                    <Link
+                                        to="/resources/institutional-chaplains-partners/"
+                                        onClick={onBlurHandler}
+                                    >
                                         Institutional Chaplain Partners
                                     </Link>
                                 </li>
                                 <li id="menu-item-100">
-                                    <Link to="/resources/churches-volunteers/church-resources/">
+                                    <Link
+                                        to="/resources/churches-volunteers/church-resources/"
+                                        onClick={onBlurHandler}
+                                    >
                                         Church Resources
                                     </Link>
                                 </li>
                                 <li id="menu-item-101">
-                                    <Link to="/resources/churches-volunteers/volunteer-resources/">
+                                    <Link
+                                        to="/resources/churches-volunteers/volunteer-resources/"
+                                        onClick={onBlurHandler}
+                                    >
                                         Volunteer Resources
                                     </Link>
                                 </li>
@@ -259,6 +322,7 @@ export default function MainMenuContents() {
                                     <Link
                                         target="_blank"
                                         to="https://prisonfellowshipbridgecare.ca/"
+                                        onClick={onBlurHandler}
                                     >
                                         Ex-Prisoner Resources
                                     </Link>
@@ -287,34 +351,52 @@ export default function MainMenuContents() {
                             }
                         >
                             <li id="menu-item-37352">
-                                <Link to="/calendar/category/pfcevents/">
+                                <Link
+                                    to="/calendar/category/pfcevents/"
+                                    onClick={onBlurHandler}
+                                >
                                     PFC Events
                                 </Link>
                             </li>
                             <li id="menu-item-107">
-                                <Link to="/get-involved/volunteer/">
+                                <Link
+                                    to="/get-involved/volunteer/"
+                                    onClick={onBlurHandler}
+                                >
                                     Volunteer
                                 </Link>
                             </li>
                             <li id="menu-item-108">
-                                <Link to="/resources/institutional-chaplains/">
+                                <Link
+                                    to="/resources/institutional-chaplains/"
+                                    onClick={onBlurHandler}
+                                >
                                     Institutional Chaplains
                                 </Link>
                             </li>
                             <li id="menu-item-82">
-                                <Link to="/get-involved/prayer-partners/">
+                                <Link
+                                    to="/get-involved/prayer-partners/"
+                                    onClick={onBlurHandler}
+                                >
                                     Prayer Partners
                                 </Link>
                                 <ul className="sub-menu">
                                     <li id="menu-item-37358">
-                                        <Link to="/calendar/category/prayer-calendar/">
+                                        <Link
+                                            to="/calendar/category/prayer-calendar/"
+                                            onClick={onBlurHandler}
+                                        >
                                             Prayer Calendar
                                         </Link>
                                     </li>
                                 </ul>
                             </li>
                             <li id="menu-item-83">
-                                <Link to="/get-involved/raise-awareness/">
+                                <Link
+                                    to="/get-involved/raise-awareness/"
+                                    onClick={onBlurHandler}
+                                >
                                     Raise awareness
                                 </Link>
                             </li>
@@ -340,12 +422,18 @@ export default function MainMenuContents() {
                             }
                         >
                             <li id="menu-item-1264">
-                                <Link to="/donate-online/pathway-partners/">
+                                <Link
+                                    to="/donate-online/pathway-partners/"
+                                    onClick={onBlurHandler}
+                                >
                                     Pathway Partners
                                 </Link>
                             </li>
                             <li id="menu-item-398">
-                                <Link to="/donate-online/ways-to-donate/">
+                                <Link
+                                    to="/donate-online/ways-to-donate/"
+                                    onClick={onBlurHandler}
+                                >
                                     Ways to Donate
                                 </Link>
                             </li>
