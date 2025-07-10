@@ -432,6 +432,20 @@
         .box {
             height: 800px;
         }
+
+        @media only screen and (max-width: 600px) {
+            display: flex;
+            flex-direction: column;
+
+            .box {
+                height: 350px;
+                width: 100%;
+            }
+
+            img {
+                object-position: center 0;
+            }
+        }
     }
 
     .testimony {
