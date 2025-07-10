@@ -1,18 +1,46 @@
 @use '../../fonts'as fonts;
 
 #facilitating-transformation {
-    .slogan:nth-child(1) {
-        background-image: url(/images/shared/facilitating-transformation-slogan-background.png);
-        background-repeat: no-repeat;
-        background-position-x: center;
-        background-position-y: center;
-        background-size: auto 100%;
-        padding: 9rem 0;
+    .slogan {
+        text-align: center;
+        background-size: auto 110%;
+        margin-bottom: 2rem;
 
-        h1 {
-            font-size: 4rem;
-            font-family: fonts.$pfc-cursive;
-            margin: 0 0 0 20rem;
+        p {
+            font-size: 1.1rem;
+            padding: 0 12rem;
+
+            @media only screen and (max-width: 600px) {
+                padding: 1rem;
+            }
+        }
+
+        &:nth-child(1) {
+            background-image: url(/images/shared/facilitating-transformation-slogan-background.png);
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-position-y: center;
+            background-size: auto 100%;
+            padding: 9rem 0;
+
+            h1 {
+                font-size: 4rem;
+                font-family: fonts.$pfc-cursive;
+                margin: 0 0 0 20rem;
+
+                @media only screen and (max-width: 600px) {
+                    font-size: 3rem;
+                    margin: 0;
+                }
+            }
+
+            @media only screen and (max-width: 600px) {
+                padding: 3rem;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            margin: 0 0 1rem 0;
         }
     }
 
@@ -26,18 +54,11 @@
 
             &.cursive {
                 font-size: 2rem;
+
+                @media only screen and (max-width: 600px) {
+                    margin-top: 1rem;
+                }
             }
-        }
-    }
-
-    .slogan {
-        text-align: center;
-        background-size: auto 110%;
-        margin-bottom: 2rem;
-
-        p {
-            font-size: 1.1rem;
-            padding: 0 12rem;
         }
     }
 }

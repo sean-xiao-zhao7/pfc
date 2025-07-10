@@ -58,8 +58,6 @@ export default function FacilitatingTransformation() {
                         src="/images/pages/facilitating-transformation/facilitating-transformation1.png"
                         alt="facilitating transformation image 1"
                     />
-                </div>
-                <div className="two-cols">
                     <img
                         src="/images/pages/facilitating-transformation/facilitating-transformation2.png"
                         alt="facilitating transformation image 2"
