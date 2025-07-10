@@ -12,17 +12,26 @@
     &.large-text.more p {
         font-size: 1.4rem;
         font-family: fonts.$pfc-menu-capital;
-
     }
 
     &.orange {
         background-image: url(/images/graphics/button-background-orange.png);
+
+        @media only screen and (max-width: 600px) {
+            padding: 1rem 2rem;
+            background-size: auto 110%;
+        }
     }
 
     &.black {
         background-image: url(/images/graphics/button-background-black.png);
         background-size: 100% 20rem;
         padding: 5rem;
+
+        @media only screen and (max-width: 600px) {
+            padding: 1rem 2rem;
+            background-size: auto 110%;
+        }
     }
 
     &.blue {
@@ -30,11 +39,21 @@
         background-size: 90% auto;
         padding: 7rem 15rem;
 
+        @media only screen and (max-width: 600px) {
+            padding: 1rem 2rem;
+            background-size: auto 110%;
+        }
+
     }
 
     &.green {
         background-image: url(/images/graphics/button-background-green.png);
         background-size: 100% 20rem;
         padding: 5rem;
+
+        @media only screen and (max-width: 600px) {
+            padding: 1rem 2rem;
+            background-size: auto 110%;
+        }
     }
 }
