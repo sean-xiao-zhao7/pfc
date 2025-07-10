@@ -1,7 +1,7 @@
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { FaFacebookF, FaXTwitter, FaInstagram } from "react-icons/fa6";
-import SpaceDivider from "~/components/blocks/SpaceDivider";
+import { Link } from "react-router";
 
 export default function TopLinks() {
     return (
@@ -52,7 +52,7 @@ export default function TopLinks() {
                         </a>
                     </li>
                     <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-37108">
-                        <a href="/contact-us/">CONTACT US</a>
+                        <Link to="/contact-us/">CONTACT US</Link>
                     </li>
                 </ul>
             </div>
@@ -76,7 +76,7 @@ export default function TopLinks() {
                         </a>
                     </li>
                     <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-37108">
-                        <a href="/contact-us/">CONTACT US</a>
+                        <Link to="/contact-us/">CONTACT US</Link>
                     </li>
                     <li className="et-social-icon et-social-facebook">
                         <a

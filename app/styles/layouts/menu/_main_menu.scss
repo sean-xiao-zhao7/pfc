@@ -230,6 +230,8 @@
 
     .button-menu {
         &.mobile {
+            display: none;
+
             @media only screen and (max-width:600px) {
                 display: flex;
                 height: 90px;
