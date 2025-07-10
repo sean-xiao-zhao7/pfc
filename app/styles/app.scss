@@ -18,7 +18,6 @@
 @use "buttons/pfc-button";
 
 // pages
-@use "home/home";
 @use "pages/pages-shared";
 
 //widgets
@@ -36,6 +35,7 @@ body {
 html,
 body {
     margin: 0;
+    overflow-x: hidden;
 }
 
 ul {

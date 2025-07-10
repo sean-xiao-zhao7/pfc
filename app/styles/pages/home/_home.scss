@@ -1,6 +1,6 @@
 @use './hero_carousel';
-@use '../fonts'as fonts;
-@use '../colors'as colors;
+@use '../../fonts'as fonts;
+@use '../../colors'as colors;
 
 main#home {
     @media only screen and (max-width: 600px) {
@@ -138,14 +138,6 @@ main#home {
                 grid-template-columns: repeat(3, min-content);
                 justify-content: space-between;
 
-                @media only screen and (max-width: 600px) {
-                    display: block;
-
-                    &>div:not(:last-child) {
-                        margin-bottom: 2rem;
-                    }
-                }
-
                 img {
                     width: 20rem;
                 }
@@ -160,6 +152,18 @@ main#home {
 
                 p {
                     font-weight: 300;
+                }
+
+                @media only screen and (max-width: 600px) {
+                    display: block;
+
+                    &>div:not(:last-child) {
+                        margin-bottom: 2rem;
+                    }
+
+                    img {
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -208,6 +212,12 @@ main#home {
 
                     @media only screen and (max-width: 600px) {
                         margin: 0;
+                    }
+                }
+
+                @media only screen and (max-width: 600px) {
+                    img {
+                        width: 100%;
                     }
                 }
             }
