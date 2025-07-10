@@ -94,26 +94,16 @@
                 }
             }
 
-            // .sub-menu {
-            //     visibility: hidden;
-
-            //     &.visible {
-            //         visibility: visible;
-            //     }
-            // }
-            li.hover-trigger-menu-item:hover .sub-menu {
-                max-height: 10rem;
+            li .sub-menu {
+                max-height: 1rem;
                 transition: max-height 0.25s ease-in;
-                visibility: visible;
                 background-color: white;
 
                 @media only screen and (max-width: 600px) {
-                    max-height: 20rem;
-                    height: 15rem;
-
-                    &.large {
-                        max-height: 25rem;
-                        height: 25rem;
+                    &.visible {
+                        visibility: visible;
+                        max-height: 30rem;
+                        height: 30rem;
                     }
                 }
             }

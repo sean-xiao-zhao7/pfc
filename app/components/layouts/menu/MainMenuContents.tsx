@@ -47,6 +47,10 @@ export default function MainMenuContents() {
         setMenuShown((current) => (id === current ? -1 : id));
     };
 
+    const onBlurHandler = () => {
+        setMenuShown(-1);
+    };
+
     return (
         <div id="main-menu-contents-container">
             <div id="main-menu-left-contents">
@@ -116,7 +120,10 @@ export default function MainMenuContents() {
                                 </li>
                             </ul>
                         </li>
-                        <li className="hover-trigger-menu-item">
+                        <li
+                            className="hover-trigger-menu-item"
+                            onBlur={onBlurHandler}
+                        >
                             <Link
                                 to="/pfc-programs/"
                                 onClick={(e: MouseEvent<HTMLAnchorElement>) =>
@@ -132,7 +139,7 @@ export default function MainMenuContents() {
                             </Link>
                             <ul
                                 className={
-                                    "sub-menu large" +
+                                    "sub-menu " +
                                     (menuShown == 1 ? " visible" : "")
                                 }
                             >
