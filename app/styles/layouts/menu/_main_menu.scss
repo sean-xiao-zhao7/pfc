@@ -94,10 +94,15 @@
                 }
             }
 
-            li .sub-menu {
+            li ul.sub-menu {
                 max-height: 1rem;
                 transition: max-height 0.25s ease-in;
                 background-color: white;
+
+                position: absolute;
+                overflow: hidden;
+                visibility: hidden;
+                z-index: 100;
 
                 @media only screen and (max-width: 600px) {
                     &.visible {
@@ -235,18 +240,39 @@
             @media only screen and (max-width:600px) {
                 display: flex;
                 height: 90px;
-            }
+                flex-direction: column;
+                padding: 0;
+                margin: 0;
+                justify-content: center;
+                align-items: center;
 
-            .sub-menu {
-                max-height: 1rem;
-                transition: max-height 0.25s ease-in;
-                background-color: white;
+                .sub-menu {
+                    max-height: 1rem;
+                    transition: max-height 0.25s ease-in;
+                    background-color: white;
 
-                @media only screen and (max-width: 600px) {
-                    &.visible {
-                        visibility: visible;
-                        max-height: 10rem;
-                        height: 10rem;
+                    position: absolute;
+                    overflow: hidden;
+                    visibility: hidden;
+                    z-index: 100;
+
+                    @media only screen and (max-width: 600px) {
+                        &.visible {
+                            visibility: visible;
+                            max-height: 10rem;
+                            height: 10rem;
+                        }
+                    }
+                }
+
+                a {
+                    display: inline;
+                    text-align: center;
+
+                    button {
+                        font-size: 1rem;
+                        padding: 0.5rem;
+                        width: 8rem;
                     }
                 }
             }
@@ -255,12 +281,6 @@
         button {
             font-weight: 500;
             text-transform: uppercase;
-
-            @media only screen and (max-width:600px) {
-                font-size: 1rem;
-                padding: 0.5rem;
-                width: 100%;
-            }
         }
     }
 }
