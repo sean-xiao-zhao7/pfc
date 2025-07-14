@@ -1,24 +1,21 @@
 #in-prison-programs {
-    p {
-        font-size: 1.2rem;
-    }
-
     .slogan {
         background-image: url(/images/pages/in-prison-programs/jagged-edged-inprison-banner.jpg);
         background-repeat: no-repeat;
         background-position-x: center;
         background-position-y: center;
-        background-size: 120% auto;
-        padding: 7rem 0;
+        background-size: 110% auto;
+        padding: 4rem 0 2rem;
 
         h1 {
-            font-size: 5rem;
+            font-size: 4rem;
             margin: 0;
         }
 
         p {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             text-shadow: 1px 1px 1px rgb(89, 89, 89);
+            text-align: center;
         }
 
         @media only screen and (max-width: 600px) {

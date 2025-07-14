@@ -4,6 +4,8 @@ import { Link } from "react-router";
 import PFCLogo from "../blocks/PFCLogo";
 
 export default function Footer() {
+    const year = new Date().getUTCFullYear();
+
     return (
         <div id="footer">
             <PFCLogo />
@@ -20,38 +22,6 @@ export default function Footer() {
                 </Link>
             </div>
             <div className="sub-menus-container">
-                <ul className="sub-menu">
-                    <li id="menu-item-37352">
-                        <Link to="/calendar/category/pfcevents/">
-                            PFC Events
-                        </Link>
-                    </li>
-                    <li id="menu-item-107">
-                        <Link to="/get-involved/volunteer/">Volunteer</Link>
-                    </li>
-                    <li id="menu-item-108">
-                        <Link to="/resources/institutional-chaplains/">
-                            Institutional Chaplains
-                        </Link>
-                    </li>
-                    <li id="menu-item-82">
-                        <Link to="/get-involved/prayer-partners/">
-                            Prayer Partners
-                        </Link>
-                        <ul className="sub-menu">
-                            <li id="menu-item-37358">
-                                <Link to="/calendar/category/prayer-calendar/">
-                                    Prayer Calendar
-                                </Link>
-                            </li>
-                        </ul>
-                    </li>
-                    <li id="menu-item-83">
-                        <Link to="/get-involved/raise-awareness/">
-                            Raise awareness
-                        </Link>
-                    </li>
-                </ul>
                 <ul className="sub-menu">
                     <li id="menu-item-830">
                         <Link to="/our-programs/prisoners/in-prison-programs/">
@@ -154,9 +124,41 @@ export default function Footer() {
                         </Link>
                     </li>
                 </ul>
+                <ul className="sub-menu">
+                    <li id="menu-item-37352">
+                        <Link to="/calendar/category/pfcevents/">
+                            PFC Events
+                        </Link>
+                    </li>
+                    <li id="menu-item-107">
+                        <Link to="/get-involved/volunteer/">Volunteer</Link>
+                    </li>
+                    <li id="menu-item-108">
+                        <Link to="/resources/institutional-chaplains/">
+                            Institutional Chaplains
+                        </Link>
+                    </li>
+                    <li id="menu-item-82">
+                        <Link to="/get-involved/prayer-partners/">
+                            Prayer Partners
+                        </Link>
+                        <ul className="sub-menu">
+                            <li id="menu-item-37358">
+                                <Link to="/calendar/category/prayer-calendar/">
+                                    Prayer Calendar
+                                </Link>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-83">
+                        <Link to="/get-involved/raise-awareness/">
+                            Raise awareness
+                        </Link>
+                    </li>
+                </ul>
             </div>
             <TopLinks />
-            <p>© 2025 Prison Fellowship Canada | All Rights Reserved</p>
+            <p>© {year} Prison Fellowship Canada | All Rights Reserved</p>
         </div>
     );
 }

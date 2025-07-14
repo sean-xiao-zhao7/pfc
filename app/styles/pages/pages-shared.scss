@@ -205,10 +205,18 @@
 
         p {
             font-size: 1.2rem;
+
+            &.page-intro {
+                font-size: 1.4rem;
+                text-align: start;
+                margin-top: 4rem;
+                margin-bottom: 4rem;
+            }
         }
 
         img {
             max-width: 100%;
+            border-radius: 5px;
         }
 
         &.full-width {
@@ -327,7 +335,8 @@
             object-fit: cover;
             height: 20rem;
 
-            &.non-child {
+            &.non-child,
+            &.size-auto {
                 height: auto;
                 width: auto;
             }
