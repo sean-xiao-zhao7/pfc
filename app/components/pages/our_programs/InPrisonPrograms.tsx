@@ -93,9 +93,9 @@ export default function InPrisonPrograms() {
                     <div className="center">
                         <p>
                             And let us consider how we may spur one another on
-                            toward love and good deeds
+                            toward love and good deeds.
                         </p>
-                        <p>HEBREWS 10:24</p>
+                        <p>Hebrews 10:24</p>
                     </div>
                 </PfcBlock>
                 <SpaceDivider />

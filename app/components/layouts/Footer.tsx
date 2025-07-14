@@ -24,9 +24,6 @@ export default function Footer() {
             <div className="sub-menus-container">
                 <ul className="sub-menu">
                     <li id="menu-item-830">
-                        <Link to="/our-programs/prisoners/in-prison-programs/">
-                            In Prison Programs
-                        </Link>
                         <ul>
                             <li id="menu-item-75">
                                 <Link to="/our-programs/prisoners/in-prison-programs/faith-justice/">
@@ -60,6 +57,11 @@ export default function Footer() {
                 </ul>
                 <ul className="sub-menu">
                     <li id="menu-item-80">
+                        <Link to="/our-programs/prisoners/in-prison-programs/">
+                            In Prison Programs
+                        </Link>
+                    </li>
+                    <li id="menu-item-80">
                         <Link to="/our-programs/in-community-programs/">
                             In Community Programs
                         </Link>
@@ -68,13 +70,6 @@ export default function Footer() {
                                 <Link to="/our-programs/in-community-programs/bridgecare/">
                                     Bridgecare
                                 </Link>
-                                <ul className="sub-menu">
-                                    <li id="menu-item-1257">
-                                        <Link to="/our-programs/in-community-programs/bridgecare/1life/">
-                                            1Life
-                                        </Link>
-                                    </li>
-                                </ul>
                             </li>
                             <li id="menu-item-771">
                                 <Link to="/our-programs/in-community-programs/angel-tree/">
@@ -84,11 +79,6 @@ export default function Footer() {
                                     <li id="menu-item-89">
                                         <Link to="/our-programs/in-community-programs/angel-tree/angel-tree-camping/">
                                             Angel Tree Camping
-                                        </Link>
-                                    </li>
-                                    <li id="menu-item-90">
-                                        <Link to="/our-programs/in-community-programs/angel-tree/angel-tree-christmas/">
-                                            Angel Tree Christmas
                                         </Link>
                                     </li>
                                 </ul>
@@ -142,13 +132,6 @@ export default function Footer() {
                         <Link to="/get-involved/prayer-partners/">
                             Prayer Partners
                         </Link>
-                        <ul className="sub-menu">
-                            <li id="menu-item-37358">
-                                <Link to="/calendar/category/prayer-calendar/">
-                                    Prayer Calendar
-                                </Link>
-                            </li>
-                        </ul>
                     </li>
                     <li id="menu-item-83">
                         <Link to="/get-involved/raise-awareness/">
