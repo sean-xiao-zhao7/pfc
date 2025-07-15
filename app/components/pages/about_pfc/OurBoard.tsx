@@ -12,13 +12,12 @@ export default function OurBoard() {
                 <h1>Our Board of Directors</h1>
             </div>
             <div className="body">
-                <p className="center">
+                <p className="less-margin page-intro">
                     The PFC Board of Directors consists of passionate
                     individuals with diverse skills and backgrounds, who are
                     eager to serve the ministry with sincerity.
                 </p>
             </div>
-            <SpaceDivider />
             <div>
                 <div className="five-cols">
                     <div className="box">

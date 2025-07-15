@@ -12,7 +12,7 @@ export default function RegionalOffices() {
                 <h1>Our Regions</h1>
             </div>
             <div className="body">
-                <p>
+                <p className="page-intro">
                     Prison Fellowship Canada offers programs nationally to
                     various institutions throughout Canada. Check out what’s
                     happening in each of our regions below.
