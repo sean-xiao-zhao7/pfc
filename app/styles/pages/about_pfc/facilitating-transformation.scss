@@ -4,7 +4,7 @@
     .slogan {
         text-align: center;
         background-size: auto 110%;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
 
         p {
             font-size: 1.1rem;
@@ -20,8 +20,8 @@
             background-repeat: no-repeat;
             background-position-x: center;
             background-position-y: center;
-            background-size: auto 100%;
-            padding: 9rem 0;
+            background-size: 110% 100%;
+            padding: 5rem 0;
 
             h1 {
                 font-size: 4rem;
@@ -50,15 +50,34 @@
         }
 
         p {
-            font-size: 1.1rem;
+            margin: 0;
+        }
 
-            &.cursive {
-                font-size: 2rem;
+        p.cursive {
+            font-size: 2.2rem;
 
-                @media only screen and (max-width: 600px) {
-                    margin-top: 1rem;
-                }
+            @media only screen and (max-width: 600px) {
+                margin-top: 1rem;
             }
+        }
+
+        .two-cols {
+            img {
+                height: 100%;
+            }
+        }
+    }
+
+    .pfc-block {
+        &.blue {
+            padding: 3rem 15rem 4rem;
+            background-size: 110% 30rem;
+            margin: 0;
+        }
+
+        &.orange {
+            background-size: 110% 110%;
+            padding: 3rem 10rem
         }
     }
 }
