@@ -362,7 +362,7 @@
         img {
             width: 100%;
             object-fit: cover;
-            height: 20rem;
+            height: 100%; // 20rem
 
             &.non-child,
             &.size-auto {
@@ -399,6 +399,10 @@
                 img:nth-child(2) {
                     width: auto;
                     height: auto;
+                }
+
+                p {
+                    text-align: left;
                 }
             }
         }

@@ -13,7 +13,7 @@ export default function AngelTreeChristmas() {
                 />
             </div>
             <div className="body">
-                <p className="center">
+                <p className="page-intro">
                     PFC’s Angel Tree Christmas program connects church
                     communities and individuals with the families of prisoners
                     through the delivery of a Christmas gift on behalf of the
@@ -21,6 +21,10 @@ export default function AngelTreeChristmas() {
                     receive a gift under the tree at Christmas but maintain
                     connections and bonds with their incarcerated parent.
                 </p>
+                <IFrame
+                    url={"https://www.youtube.com/embed/eP_dZzKHCsM"}
+                    className={"full-width"}
+                />
                 <div className="center">
                     <PfcButton
                         color="green"
@@ -28,27 +32,9 @@ export default function AngelTreeChristmas() {
                         type="button"
                     />
                 </div>
-                <IFrame
-                    url={"https://www.youtube.com/embed/eP_dZzKHCsM"}
-                    className={"full-width"}
-                />
-                <PfcBlock color="black">
-                    <div className="center">
-                        <h2 className="cursive">Testimonies</h2>
-                        <p>
-                            Angel Tree has meant so much to my kids being on the
-                            receiving end for many years. For my daughter, it’s
-                            about sharing a moment with her Dad when she opens
-                            the gift on the phone with him. She really wanted to
-                            make that happen for someone else this year.”
-                        </p>
-                        <p>
-                            – Mother of an Angel Tree Christmas gift Recipient
-                        </p>
-                    </div>
-                </PfcBlock>
+                <SpaceDivider />
                 <div>
-                    <h2>LAST YEAR’S PROGRAM IMPACT</h2>
+                    <h2 className="center">LAST YEAR’S PROGRAM IMPACT</h2>
                     <div className="three-cols">
                         <div className="center">
                             <img
@@ -99,6 +85,24 @@ export default function AngelTreeChristmas() {
                             <p>FAMILIES INCLUDED</p>
                         </div>
                     </div>
+                    <PfcBlock color="black">
+                        <div className="center">
+                            <h2>Testimony</h2>
+                            <p>
+                                Angel Tree has meant so much to my kids being on
+                                the receiving end for many years. For my
+                                daughter, it’s about sharing a moment with her
+                                Dad when she opens the gift on the phone with
+                                him. She really wanted to make that happen for
+                                someone else this year.”
+                            </p>
+                            <p>
+                                – Mother of an Angel Tree Christmas gift
+                                Recipient
+                            </p>
+                        </div>
+                    </PfcBlock>
+                    <SpaceDivider />
                     <div className="floating-image-container">
                         <h2>Angel Tree Kids Across Canada!</h2>
                         <img

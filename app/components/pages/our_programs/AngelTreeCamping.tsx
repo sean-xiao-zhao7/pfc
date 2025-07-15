@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import IFrame from "~/components/blocks/IFrame";
 import PfcBlock from "~/components/blocks/PfcBlock";
 import SpaceDivider from "~/components/blocks/SpaceDivider";
@@ -12,6 +13,7 @@ export default function AngelTreeCamping() {
                     alt="Angel Tree Camping"
                 />
             </div>
+            <SpaceDivider />
             <div className="body">
                 <div className="two-cols">
                     <div className="box button-bottom-right">
@@ -25,17 +27,20 @@ export default function AngelTreeCamping() {
                             opportunity to hear the good news of Jesus Christ
                             and the difference He can make in their lives.
                         </p>
-                        <PfcButton
-                            color="green"
-                            text="Donate Now"
-                            type="button"
-                        />
+                        <Link to="https://prisonfellowship.ca/donate-online/">
+                            <PfcButton
+                                color="green"
+                                text="Donate Now"
+                                type="button"
+                            />
+                        </Link>
                     </div>
                     <IFrame
                         url={"https://www.youtube.com/embed/GpMoAmLx110"}
                         className=""
                     />
                 </div>
+                <SpaceDivider />
                 <SpaceDivider />
                 <div className="three-cols">
                     <img
@@ -55,9 +60,10 @@ export default function AngelTreeCamping() {
                         camp as Angel Tree kids, whether in person or virtually.
                     </p>
                 </div>
+                <SpaceDivider />
                 <PfcBlock color="black">
                     <div className="center">
-                        <h2 className="cursive">Testimonies</h2>
+                        <h2>Testimony</h2>
                         <p>
                             “You have no idea how happy this makes them. It is a
                             huge blessing for them. We are grateful beyond
@@ -97,8 +103,10 @@ export default function AngelTreeCamping() {
                         </p>
                     </div>
                 </div>
+                <SpaceDivider />
+                <SpaceDivider />
                 <div>
-                    <h2>LAST YEAR’S PROGRAM IMPACT</h2>
+                    <h2 className="center">LAST YEAR’S PROGRAM IMPACT</h2>
                     <div className="three-cols">
                         <div className="center">
                             <img
@@ -132,7 +140,7 @@ export default function AngelTreeCamping() {
                                 and do not hinder them, for the kingdom of
                                 heaven belongs to such as these.”
                             </p>
-                            <p>MATTHEW 19:14</p>
+                            <p>Matthew 19:14 (NIV)</p>
                         </div>
                     </PfcBlock>
                 </div>
