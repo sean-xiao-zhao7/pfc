@@ -1,4 +1,6 @@
+import { Link } from "react-router";
 import PfcBlock from "~/components/blocks/PfcBlock";
+import SpaceDivider from "~/components/blocks/SpaceDivider";
 import PfcButton from "~/components/buttons/PfcButton";
 
 export default function RestorRestorativePrison() {
@@ -12,24 +14,26 @@ export default function RestorRestorativePrison() {
                 <h1>Restorative Prison</h1>
             </div>
             <div className="body">
-                <div className="center">
-                    <p>
-                        PFC recognizes that restoring the prison is equally
-                        important to restoring the prisoner. The Restorative
-                        Prison project looks at an institution holistically,
-                        supporting and teaching both staff and residents in the
-                        principles of Restorative Justice from a Biblical
-                        perspective.
-                    </p>
-                </div>
+                <p className="page-intro">
+                    PFC recognizes that restoring the prison is equally
+                    important to restoring the prisoner.
+                    <br />
+                    <br />
+                    The Restorative Prison project looks at an institution
+                    holistically, supporting and teaching both staff and
+                    residents in the principles of Restorative Justice from a
+                    Biblical perspective.
+                </p>
                 <div className="two-cols">
                     <div className="box">
                         <img
                             src="/images/pages/restorative-prison/WEB-IMAGES-2_Page-canpol-980x700.jpg"
                             alt="Officers"
                         />
-                        <div className="center">
-                            <h2>INSTITUTIONAL STAFF TRAINING</h2>
+                        <div>
+                            <div className="center">
+                                <h2>INSTITUTIONAL STAFF TRAINING</h2>
+                            </div>
                             <p>
                                 Staff training consists of a three-part training
                                 process that equips and prepares Youth Services
@@ -44,10 +48,15 @@ export default function RestorRestorativePrison() {
                             src="/images/shared/in-cell-study.png"
                             alt="In prison study"
                         />
-                        <div className="center">
-                            <h2>PRISONER’S PROGRAM</h2>
+                        <div>
+                            <div className="center">
+                                <h2>PRISONER’S PROGRAM</h2>
+                            </div>
                             <p>
-                                Prisoners participate in The Sycamore Tree
+                                Prisoners participate in{" "}
+                                <Link to="/our-programs/restorative-justice/sycamore-tree/">
+                                    The Sycamore Tree
+                                </Link>{" "}
                                 program (based on the story of Zaccheus) which
                                 requires both individual and circle work. PFC
                                 also offers Restorative Justice topical
@@ -56,7 +65,17 @@ export default function RestorRestorativePrison() {
                         </div>
                     </div>
                 </div>
-
+                <SpaceDivider />
+                <PfcBlock color="black">
+                    <div className="center">
+                        <p>
+                            He has shown you, O mortal, what is good. And what
+                            does the LORD require of you? To act justly and to
+                            love mercy and to walk humbly with your God.
+                        </p>
+                        <p>Micah 6:8</p>
+                    </div>
+                </PfcBlock>
                 <div>
                     <h2>What’s Involved?</h2>
                     <p>
@@ -79,17 +98,7 @@ export default function RestorRestorativePrison() {
                         crime.
                     </p>
                 </div>
-
-                <PfcBlock color="black">
-                    <div className="center">
-                        <p>
-                            He has shown you, O mortal, what is good. And what
-                            does the LORD require of you? To act justly and to
-                            love mercy and to walk humbly with your God.
-                        </p>
-                        <p>Micah 6:8</p>
-                    </div>
-                </PfcBlock>
+                <SpaceDivider />
             </div>
         </div>
     );

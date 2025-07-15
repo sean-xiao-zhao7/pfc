@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import PfcBlock from "~/components/blocks/PfcBlock";
 import SpaceDivider from "~/components/blocks/SpaceDivider";
 import PfcButton from "~/components/buttons/PfcButton";
@@ -17,23 +18,14 @@ export default function OurPrograms() {
                 </div>
             </div>
             <div className="body">
-                <div className="center">
-                    <img
-                        src="/images/home/cropped-favicon.png"
-                        alt="PFC logo"
-                        className="pfc-logo"
-                    />
-                    <p>
-                        PFC’s programs are designed to bring incarcerated and
-                        released individuals the transformation that is felt and
-                        seen in both the heart and the mind. This transformation
-                        leads individuals to know they are a transformed new
-                        creation as well as given the power of the Spirit to
-                        align their will to the will of God and carry out His
-                        commands.
-                    </p>
-                </div>
-                <SpaceDivider />
+                <p className="page-intro">
+                    PFC’s programs are designed to bring incarcerated and
+                    released individuals the transformation that is felt and
+                    seen in both the heart and the mind. This transformation
+                    leads individuals to know they are a transformed new
+                    creation as well as given the power of the Spirit to align
+                    their will to the will of God and carry out His commands.
+                </p>
                 <div className="two-cols">
                     <div className="box">
                         <img
@@ -49,11 +41,13 @@ export default function OurPrograms() {
                                 neighbour and to develop life skills that will
                                 benefit them in the future.
                             </p>
-                            <PfcButton
-                                text="Learn more"
-                                color="black"
-                                type="button"
-                            />
+                            <Link to="/our-programs/prisoners/in-prison-programs/">
+                                <PfcButton
+                                    text="Learn more"
+                                    color="black"
+                                    type="button"
+                                />
+                            </Link>
                         </div>
                     </div>
                     <div className="box">
@@ -71,18 +65,21 @@ export default function OurPrograms() {
                                 PFC Programs are all designed to help strengthen
                                 the community and reduce recidivism.
                             </p>
-                            <PfcButton
-                                text="Learn more"
-                                color="black"
-                                type="button"
-                            />
+                            <Link to="/our-programs/in-community-programs/">
+                                <PfcButton
+                                    text="Learn more"
+                                    color="black"
+                                    type="button"
+                                />
+                            </Link>
                         </div>
                     </div>
                 </div>
                 <SpaceDivider />
+                <SpaceDivider />
                 <div className="testimony">
                     <div className="left">
-                        <h1 className="cursive">Testimony</h1>
+                        <h2>Testimony</h2>
                         <p>
                             “Prison Fellowship Canada is playing a spiritual
                             mentoring role in my life and is helping me to be
@@ -98,7 +95,7 @@ export default function OurPrograms() {
                             className="with-text"
                         />
                         <div>
-                            <h1>RESTORATIVE JUSTICE</h1>
+                            <h2>RESTORATIVE JUSTICE</h2>
                             <p>
                                 Restorative justice takes brokenness and works
                                 to make it whole. Only when individuals are
@@ -107,17 +104,17 @@ export default function OurPrograms() {
                                 justice and we offer multiple programs that help
                                 heal all those affected by crime.
                             </p>
-                            <a href="https://prisonfellowship.ca/our-programs/restorative-justice/">
+                            <Link to="/our-programs/restorative-justice/">
                                 <PfcButton
                                     text="Learn more"
                                     color="black"
                                     type="button"
                                 />
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
-
+                <SpaceDivider />
                 <PfcBlock color="green">
                     <div className="center">
                         <p>

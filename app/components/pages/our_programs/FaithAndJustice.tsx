@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import PfcBlock from "~/components/blocks/PfcBlock";
 import PfcButton from "~/components/buttons/PfcButton";
 
@@ -24,17 +25,22 @@ export default function FaithAndJustice() {
                         src="/images/pages/faith-and-justice/Annual-Report-2021-Images-File-1_Page_29-980x654.jpg"
                         alt="man in wheat field"
                     />
-                    <div className="center">
-                        <h2>THE FORGIVENESS JOURNEY</h2>
+                    <div>
+                        <div className="center">
+                            <h2>THE FORGIVENESS JOURNEY</h2>
+                        </div>
                         <p>
                             Forgiveness is a hard concept to grasp and accept,
                             particularly if you have done something that has
-                            left you with a deep sense of guilt or shame. This
-                            program focuses on God’s unconditional love and His
-                            offer to forgive everyone regardless of their past
-                            or what they have done or how far they are from Him.
-                            His mercy, grace and love for each person is greater
-                            than any guilt and comes first – before anything.
+                            left you with a deep sense of guilt or shame.
+                        </p>
+                        <p>
+                            This program focuses on God’s unconditional love and
+                            His offer to forgive everyone regardless of their
+                            past or what they have done or how far they are from
+                            Him. His mercy, grace and love for each person is
+                            greater than any guilt and comes first – before
+                            anything.
                         </p>
                     </div>
                 </div>
@@ -43,15 +49,20 @@ export default function FaithAndJustice() {
                         src="/images/pages/faith-and-justice/WEB-IMAGES-2_Page_46-2048x1463.jpg"
                         alt="people walking in streets"
                     />
-                    <div className="center">
-                        <h2>THE RE-ENTRY JOURNEY</h2>
+                    <div>
+                        <div className="center">
+                            <h2>THE RE-ENTRY JOURNEY</h2>
+                        </div>
                         <p>
                             This program centres around practical life skills
                             that are Biblically based. It is written to reach a
                             diverse audience regardless of their age, culture or
-                            education level. The program demonstrates a
-                            committed and careful use of Scripture and contains
-                            insights from a variety of disciplines.
+                            education level.
+                        </p>
+                        <p>
+                            The program demonstrates a committed and careful use
+                            of Scripture and contains insights from a variety of
+                            disciplines.
                         </p>
                     </div>
                 </div>
@@ -60,8 +71,10 @@ export default function FaithAndJustice() {
                         src="/images/pages/faith-and-justice/1-4b992d58-71de-4355-8867-3a45459b5949-1024x688.jpg"
                         alt="tree and road"
                     />
-                    <div className="center">
-                        <h2>Walking the good path</h2>
+                    <div>
+                        <div className="center">
+                            <h2>Walking the good path</h2>
+                        </div>
                         <p>
                             Based on the metaphors and images used to describe
                             Jesus in the Gospel of John, this program is about
@@ -75,8 +88,10 @@ export default function FaithAndJustice() {
                         src="/images/pages/faith-and-justice/people-talking-in-a-circle.jpg"
                         alt="people talking in a group"
                     />
-                    <div className="center">
-                        <h2>The SYCAMORE TREE</h2>
+                    <div>
+                        <div className="center">
+                            <h2>The SYCAMORE TREE</h2>
+                        </div>
                         <p>
                             Our restorative justice program offers those who
                             have caused harm to others through crime and those
@@ -84,18 +99,22 @@ export default function FaithAndJustice() {
                             of the impact of crime and proceed along the pathway
                             to healing and transformation.
                         </p>
-                        <PfcButton
-                            text="Learn more"
-                            color="black"
-                            type="button"
-                        />
+                        <div className="center">
+                            <Link to="/our-programs/restorative-justice/sycamore-tree/">
+                                <PfcButton
+                                    text="Learn more"
+                                    color="black"
+                                    type="button"
+                                />
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>
             <div className="body">
                 <PfcBlock color="black">
                     <div className="center">
-                        <h1>Testimonies</h1>
+                        <h2>Testimonies</h2>
                         <p>
                             We have seen a couple of prisoners experience
                             transformation recently during The Prisoner’s

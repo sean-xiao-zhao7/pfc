@@ -1,3 +1,5 @@
+import SpaceDivider from "~/components/blocks/SpaceDivider";
+
 export default function PFCByPhone() {
     return (
         <div className="page-container" id="PFC-by-phone">
@@ -16,13 +18,9 @@ export default function PFCByPhone() {
                     </p>
                 </div>
             </div>
-            <div className="body two-cols">
-                <div className="box">
-                    <img
-                        src="/images/pages/pfc-by-phone/PFByPhone6.png"
-                        alt="Phone inside prison"
-                    />
-                    <div className="center">
+            <div className="body">
+                <div className="two-cols">
+                    <div>
                         <h2>PURPOSE OF THE PROGRAM</h2>
                         <p>
                             The purpose of these calls is for conversation,
@@ -30,13 +28,15 @@ export default function PFCByPhone() {
                             encourage prisoners in their spiritual journey.
                         </p>
                     </div>
-                </div>
-                <div className="box">
+                    <img
+                        src="/images/pages/pfc-by-phone/PFByPhone6.png"
+                        alt="Phone inside prison"
+                    />
                     <img
                         src="/images/shared/Annual-Report-2021-Images-File-1_Page_34-980x654.jpg"
                         alt="Calling prison"
                     />
-                    <div className="center">
+                    <div>
                         <h2>HOW THE PROGRAM WORKS</h2>
                         <p>
                             Prison Fellowship Canada by Phone (PFC By Phone)
@@ -47,6 +47,7 @@ export default function PFCByPhone() {
                         </p>
                     </div>
                 </div>
+                <SpaceDivider />
             </div>
         </div>
     );

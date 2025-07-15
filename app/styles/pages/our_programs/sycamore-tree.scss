@@ -1,20 +1,33 @@
+@use '../../colors'as colors;
+
 #sycamore-tree {
+    .two-cols {
+        img {
+            height: 100%;
+        }
+    }
+
     .two-cols.small {
         display: grid;
         grid-template-columns: repeat(2, calc(50% - 2rem));
         grid-column-gap: 2rem;
         grid-row-gap: 2rem;
-        justify-content: center;
+        justify-content: space-between;
         align-items: flex-start;
 
         img {
-            width: 50%;
+            width: 100%;
             object-fit: cover;
-            height: 10rem;
+            height: 20rem;
 
             @media only screen and (max-width: 600px) {
                 width: 100%;
             }
+        }
+
+        a {
+            text-decoration: none;
+            color: colors.$pfc-blue;
         }
     }
 }
