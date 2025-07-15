@@ -216,6 +216,11 @@
                 text-align: start;
                 margin-top: 4rem;
                 margin-bottom: 4rem;
+
+                &.less-margin {
+                    margin-top: 3rem;
+                    margin-bottom: 3rem;
+                }
             }
         }
 

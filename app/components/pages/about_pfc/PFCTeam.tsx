@@ -1,3 +1,5 @@
+import SpaceDivider from "~/components/blocks/SpaceDivider";
+
 export default function PFCTeam() {
     return (
         <div className="page-container" id="pfc-team">
@@ -10,7 +12,7 @@ export default function PFCTeam() {
                 <h1>Our Team</h1>
             </div>
             <div className="body">
-                <p className="center">
+                <p className="page-intro less-margin">
                     Prison Fellowship Canada’s team consists of a group of
                     people who are all passionate about Prison Ministry and
                     service. PFC’s vision is made possible by a team consisting
@@ -163,6 +165,7 @@ export default function PFCTeam() {
                     </div>
                 </div>
             </div>
+            <SpaceDivider />
         </div>
     );
 }
