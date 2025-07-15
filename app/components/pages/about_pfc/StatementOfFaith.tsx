@@ -11,7 +11,7 @@ export default function StatementOfFaith() {
             </div>
             <div className="body">
                 <h1>Nicene Creed</h1>
-                <p>
+                <p className="page-intro">
                     We believe in one God, the Father, the Almighty, maker of
                     heaven and earth, of all that is, seen and unseen.
                     <br />
@@ -48,7 +48,7 @@ export default function StatementOfFaith() {
             </div>
             <div className="body">
                 <h1>Apostles Creed</h1>
-                <p>
+                <p className="page-intro">
                     We believe in God, the Father Almighty, Creator of heaven
                     and earth.
                     <br />

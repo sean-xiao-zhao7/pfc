@@ -10,18 +10,15 @@ export default function OurFinancials() {
                 <h1>Our Financials</h1>
             </div>
             <div className="body">
-                <p className="center">
+                <p className="page-intro">
                     Integrity and accountability are key values for PFC. We are
-                    committed to transparency and openness in all we do. Below
-                    are the PFC Annual Reports for the last 6 years. Click on
-                    the images to download a PDF copy and review what PFC has
-                    been doing every day.
+                    committed to transparency and openness in all we do.
+                    <br />
+                    Below are the PFC Annual Reports for the last 6 years. Click
+                    on images to download a PDF copy of each report.
                 </p>
             </div>
             <div className="body center" id="main">
-                <h1>
-                    Click on images to download PDF copies of our Annual Report
-                </h1>
                 <div className="center box-shadow">
                     <img
                         src="/images/pages/our_financials/Annual-Report-Cover-image-1.png"
