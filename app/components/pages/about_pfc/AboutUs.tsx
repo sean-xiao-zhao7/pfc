@@ -14,22 +14,26 @@ export default function AboutUs() {
                 <h1>About Prison Fellowship Canada</h1>
             </div>
             <div className="body">
+                <p>
+                    For over four decades Prison Fellowship Canada (PFC) has
+                    been working with the Canadian Christian community to help
+                    transform the lives of anyone affected by crime. PFC’S
+                    mandate is to offer hope, purpose and positive change –
+                    through the forgiveness-based teachings of Jesus which call
+                    on us all to dig deeper to love unconditionally.
+                </p>
                 <div className="center">
-                    <h2>Who We Are</h2>
-                    <p>
-                        For over four decades Prison Fellowship Canada (PFC) has
-                        been working with the Canadian Christian community to
-                        help transform the lives of anyone affected by crime.
-                        PFC’S mandate is to offer hope, purpose and positive
-                        change – through the forgiveness-based teachings of
-                        Jesus which call on us all to dig deeper to love
-                        unconditionally.
-                    </p>
-                    <PfcButton text="Learn more" color="black" type="button" />
+                    <Link to="/about-us/who-we-are/">
+                        <PfcButton
+                            text="More About PFC"
+                            color="black"
+                            type="button"
+                        />
+                    </Link>
                 </div>
                 <div className="four-cols align-top">
                     <div className="box">
-                        <h3>Our Team</h3>
+                        <h2>Our Team</h2>
                         <img
                             src="/images/pages/about-us/Screenshot-2024-03-04-at-11.35.55-AM.png"
                             alt="Our team"
@@ -43,7 +47,7 @@ export default function AboutUs() {
                         </Link>
                     </div>
                     <div className="box">
-                        <h3>Our Board</h3>
+                        <h2>Our Board</h2>
                         <img
                             src="/images/pages/about-us/PFCBoard2022.jpg"
                             alt="Our Board"
@@ -57,7 +61,7 @@ export default function AboutUs() {
                         </Link>
                     </div>
                     <div className="box">
-                        <h3>Our Financials</h3>
+                        <h2>Our Financials</h2>
                         <img
                             src="/images/pages/about-us/2022-Annual-Report-EN-2048x1583-2-2.jpeg"
                             alt="Our Financials"
@@ -71,7 +75,7 @@ export default function AboutUs() {
                         </Link>
                     </div>
                     <div className="box">
-                        <h3>Regional Offices</h3>
+                        <h2>Regional Offices</h2>
                         <img
                             src="/images/pages/about-us/PFCregions.jpg"
                             alt="Regional Offices"
