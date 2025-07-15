@@ -1,3 +1,5 @@
+import SpaceDivider from "~/components/blocks/SpaceDivider";
+
 export default function WhoWeAre() {
     return (
         <div className="page-container" id="who-we-are">
@@ -10,7 +12,7 @@ export default function WhoWeAre() {
                 <h1>Who We Are</h1>
             </div>
             <div className="body">
-                <p>
+                <p className="page-intro less-margin">
                     Prison Fellowship Canada’s mandate is to meet people who
                     have committed crimes or who are impacted by crime –
                     families of prisoners or victims of crime – wherever they
@@ -104,7 +106,7 @@ export default function WhoWeAre() {
                 </div>
                 <div className="two-col-green-boxes-container">
                     <div className="box">
-                        <h3>OUR VISION</h3>
+                        <h2>OUR VISION</h2>
                         <p>
                             Our vision is to be a national community of
                             reconciliation and restoration to prisoners,
@@ -114,7 +116,7 @@ export default function WhoWeAre() {
                         </p>
                     </div>
                     <div className="box">
-                        <h3>OUR MISSION</h3>
+                        <h2>OUR MISSION</h2>
                         <p>
                             Our mission is to prepare and mobilize the Canadian
                             Christian community in response to the issue of
@@ -129,24 +131,31 @@ export default function WhoWeAre() {
                     alt="PFC logo"
                     className="pfc-logo"
                 />
-                <h1>What We Believe</h1>
+                <h1>Our Beginning</h1>
             </div>
-            <div className="body">
-                <h2>OUR BEGINNING</h2>
+            <div className="two-cols body">
                 <img
                     src="/images/pages/whoweare/street.jpg"
                     alt="Our beginnings"
                 />
-                <p>
-                    Finding himself in prison after holding a prominent
-                    political role, Chuck Colson experienced the transformation
-                    that only the Gospel can provide. He says, “I found myself
-                    increasingly drawn to the idea that God had put me in prison
-                    for a purpose and that I should do something for those I had
-                    left behind”. From there, an important and life- changing
-                    ministry was born.
-                </p>
+                <div className="page-intro">
+                    <p>
+                        Finding himself in prison after holding a prominent
+                        political role, Chuck Colson experienced the
+                        transformation that only the Gospel can provide.
+                    </p>
+                    <p className="emphasis">
+                        He says, “I found myself increasingly drawn to the idea
+                        that God had put me in prison for a purpose and that I
+                        should do something for those I had left behind”.
+                    </p>
+                    <p>
+                        From there, an important and life- changing ministry was
+                        born.
+                    </p>
+                </div>
             </div>
+            <SpaceDivider />
         </div>
     );
 }
